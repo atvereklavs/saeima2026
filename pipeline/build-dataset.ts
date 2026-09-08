@@ -56,6 +56,7 @@ function main(): void {
   for (const l of index.lists) listPages.set(l.slug, parseListPage(must(cvkListUrl(l.slug))));
 
   const curated = readJson<Record<string, CuratedList>>(join(DATA_DIR, "curated", "lists.json"), {});
+  delete (curated as Record<string, unknown>)._comment;
   const previous = readJson<Candidate[]>(join(DATA_DIR, "candidates.json"), []);
   const previousById = new Map(previous.map((c) => [c.id, c]));
 

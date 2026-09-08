@@ -1,1 +1,17 @@
-{}
+{
+  "_comment": "Hand-curated facts per list slug. short_name is used in cards, tables and the explorer; other keys are filled in slice 5 from cited sources.",
+  "suverena-vara--apvieniba-jaunlatviesi": { "short_name": "Suverēnā vara / Jaunlatvieši" },
+  "mes-mainam-noteikumus": { "short_name": "Mēs mainām noteikumus" },
+  "politisko-partiju-apvieniba-saskanas-centrs": { "short_name": "Saskaņas Centrs" },
+  "zalo-un-zemnieku-savieniba": { "short_name": "Zaļo un Zemnieku savienība" },
+  "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": { "short_name": "Nacionālā apvienība" },
+  "gobzema-saraksts": { "short_name": "Gobzema saraksts" },
+  "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": { "short_name": "Apvienotais saraksts" },
+  "latvija-pirmaja-vieta": { "short_name": "Latvija pirmajā vietā" },
+  "jauna-vienotiba": { "short_name": "Jaunā Vienotība" },
+  "jkp-jauna-konservativa-partija": { "short_name": "Jaunā konservatīvā partija" },
+  "latvijas-attistibai": { "short_name": "Latvijas attīstībai" },
+  "austosa-saule-latvijai": { "short_name": "Austošā Saule Latvijai" },
+  "politiska-partija-stabilitatei": { "short_name": "Stabilitātei!" },
+  "progresivie": { "short_name": "Progresīvie" }
+}

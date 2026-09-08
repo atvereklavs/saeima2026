@@ -34,7 +34,7 @@ export function constituencyName(slug: string): string {
 /** Short display name for a list: curated short name, else a trimmed CVK name. */
 export function listShortName(list: ListRecord): string {
   if (list.short_name) return list.short_name;
-  return list.name.replace(/^"|"$/g, "").replace(/^Politisk[āo] partij[au] /i, "").replace(/^Politisko partiju apvienība /i, "");
+  return list.name.replace(/^"(.*)"$/, "$1");
 }
 
 export function formatNumber(n: number | null, locale: Locale, digits = 1): string {
