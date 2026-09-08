@@ -1,14 +1,19 @@
 {
- "built_at": "2026-09-08T14:02:34.996Z",
+ "built_at": "2026-09-08T17:05:38.266Z",
  "election_date": "2026-10-03",
  "cvk_index_fetched_at": "2026-09-08T13:49:37.837Z",
- "cvk_last_updated": null,
+ "cvk_last_updated": "2026-09-04T14:30",
  "counts": {
   "lists": 14,
   "candidates": 1428,
   "active": 1428,
   "withdrawn": 0,
-  "with_profile": 0
+  "with_profile": 1428,
+  "with_official_history": 182,
+  "matched_delna_14": 110,
+  "matched_delna_13": 49,
+  "matched_titania": 154,
+  "matched_wikidata": 113
  },
  "constituencies": [
   {
@@ -34,7 +39,7 @@
  ],
  "tiers": {
   "minister": {
-   "lv": "Ministrs / ministru prezidents",
+   "lv": "Ministrs / Ministru prezidents",
    "en": "Minister / prime minister"
   },
   "sitting_mp": {
@@ -50,8 +55,8 @@
    "en": "Municipal councillor / leader"
   },
   "civil_service": {
-   "lv": "Valsts pārvalde",
-   "en": "Civil service"
+   "lv": "Valsts vai pašvaldības pārvalde",
+   "en": "Public administration"
   },
   "newcomer": {
    "lv": "Bez amata valsts pārvaldē",

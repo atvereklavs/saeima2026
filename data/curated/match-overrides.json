@@ -1,1 +1,9 @@
-{"delna":{},"titania":{},"wikidata":{}}
+{
+  "_comment": "Manual joins by CVK candidate id. delna: Delna name string or null to suppress. titania: {term: unid} merged per term, or null to suppress all terms. wikidata: QID or null to suppress. Reviewed against data/reports/matching.json.",
+  "delna": {},
+  "titania": {
+    "79910": { "12": "12B6D57F344C49B7C2257D7B0032D7F4" },
+    "83870": { "12": "90C03CD8C1A9A42CC2257D7B0032D8BC" }
+  },
+  "wikidata": {}
+}

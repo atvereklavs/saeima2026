@@ -21,11 +21,18 @@ export type MinisterRole = { role: string; from: string | null; to: string | nul
 export type History = {
   tier: string;
   flags: string[];
+  /** true when no official source (Delna, Saeima, Wikidata) matched; tier comes from CVK text only */
   provisional: boolean;
+  sitting_mp: boolean;
+  mandate_status_14: string | null;
+  faction_14: string | null;
+  elected_from_14: string | null;
   saeima_terms: number[];
+  terms_count: number;
   committees: Committee[];
   minister_roles: MinisterRole[];
   municipal_role: "councillor" | "mayor" | null;
+  sources: { delna_14: boolean; delna_13: boolean; titania: Record<string, string>; wikidata: string | null };
 };
 
 export type Candidate = {

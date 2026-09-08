@@ -1,0 +1,45 @@
+---
+import { t, type Locale } from "../i18n/labels.ts";
+import type { History } from "../../pipeline/lib/types.ts";
+interface Props { history: History; locale: Locale }
+const { history: h, locale } = Astro.props;
+const termLabel = (n: number): string => t(locale, "candidate.term_n").replace("{n}", String(n));
+const span = (from: string | null, to: string | null): string => {
+  if (!from && !to) return "";
+  const f = from ? from.slice(0, 4) : "";
+  const tt = to ? to.slice(0, 4) : t(locale, "candidate.current");
+  return f && tt ? `${f} - ${tt}` : f || tt;
+};
+const byTerm = new Map<number, typeof h.committees>();
+for (const c of h.committees) byTerm.set(c.term ?? 0, [...(byTerm.get(c.term ?? 0) ?? []), c]);
+const src = (s: string): string => t(locale, `source.${s}` as never) ?? s;
+---
+<ul class="timeline">
+  {h.minister_roles.map((r) => (
+    <li>
+      <strong>{r.role}</strong>
+      {span(r.from, r.to) && <span class="muted"> · {span(r.from, r.to)}</span>}
+      <span class="badge outline" style="margin-left:0.4rem">{src(r.source)}</span>
+    </li>
+  ))}
+  {h.saeima_terms.map((n) => {
+    const cs = byTerm.get(n) ?? [];
+    return (
+      <li>
+        <strong>{termLabel(n)}</strong>
+        {n === 14 && h.faction_14 && <span class="muted"> · {h.faction_14}</span>}
+        {n === 14 && h.mandate_status_14 && <span class="muted"> · {h.mandate_status_14}</span>}
+        {n === 14 && h.elected_from_14 && <div class="muted" style="font-size:0.88rem">{t(locale, "candidate.elected_from")}: {h.elected_from_14}</div>}
+        {cs.length > 0 && (
+          <ul style="margin:0.35rem 0 0;padding-left:1rem;font-size:0.9rem">
+            {cs.map((c) => (
+              <li>
+                {c.name} <span class="muted">({t(locale, `kind.${c.kind}` as never)}{span(c.from, c.to) ? `, ${span(c.from, c.to)}` : ""})</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
+    );
+  })}
+</ul>

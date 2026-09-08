@@ -1,17 +1,20 @@
 // Derived fields: experience tier, age. Rules live in ../rules/*.json.
 import { readFileSync } from "node:fs";
 import { foldText } from "./names.ts";
+import type { Position } from "./types.ts";
 
 export const ELECTION_YEAR = 2026;
 
-export type TierRule = { any: string[]; none?: string[] };
+export type Block = { any: string[]; none?: string[] };
+export type TierRule = { line?: Block; role?: Block };
 export type TierRules = {
   order: string[];
   labels: Record<string, { lv: string; en: string }>;
   rules: Record<string, TierRule>;
 };
 
-type Compiled = { name: string; any: RegExp[]; none: RegExp[] }[];
+type CompiledBlock = { any: RegExp[]; none: RegExp[] };
+type Compiled = { name: string; line: CompiledBlock | null; role: CompiledBlock | null }[];
 
 export function loadTierRules(): TierRules {
   return JSON.parse(readFileSync(new URL("../rules/tiers.json", import.meta.url), "utf8")) as TierRules;
@@ -19,30 +22,35 @@ export function loadTierRules(): TierRules {
 
 const compiledCache = new WeakMap<TierRules, Compiled>();
 
+function compileBlock(b: Block | undefined): CompiledBlock | null {
+  return b ? { any: b.any.map((p) => new RegExp(p, "i")), none: (b.none ?? []).map((p) => new RegExp(p, "i")) } : null;
+}
+
 function compile(rules: TierRules): Compiled {
   let c = compiledCache.get(rules);
   if (!c) {
-    c = Object.entries(rules.rules).map(([name, r]) => ({
-      name,
-      any: r.any.map((p) => new RegExp(p, "i")),
-      none: (r.none ?? []).map((p) => new RegExp(p, "i")),
-    }));
+    c = Object.entries(rules.rules).map(([name, r]) => ({ name, line: compileBlock(r.line), role: compileBlock(r.role) }));
     compiledCache.set(rules, c);
   }
   return c;
 }
 
+const passes = (b: CompiledBlock | null, text: string): boolean =>
+  b !== null && text.length > 0 && b.any.some((re) => re.test(text)) && !b.none.some((re) => re.test(text));
+
 /**
- * Apply tier rules to position lines ("Workplace, Role"). A rule fires when one
- * line satisfies `any` and none of `none`. The tier is the highest-precedence
- * rule that fired; `flags` keeps every rule that fired.
+ * Apply tier rules to declared positions. A rule fires when one position
+ * passes the rule's `line` block (on "workplace, role") or its `role` block
+ * (on the role alone). The tier is the highest-precedence rule that fired;
+ * `flags` keeps every rule that fired.
  */
-export function deriveTier(lines: string[], rules: TierRules): { tier: string; flags: string[] } {
+export function deriveTier(positions: Position[], rules: TierRules): { tier: string; flags: string[] } {
   const flags = new Set<string>();
-  for (const line of lines) {
-    const t = foldText(line);
+  for (const p of positions) {
+    const role = foldText(p.role ?? "");
+    const line = foldText(p.role ? `${p.workplace}, ${p.role}` : p.workplace);
     for (const rule of compile(rules)) {
-      if (rule.any.some((re) => re.test(t)) && !rule.none.some((re) => re.test(t))) flags.add(rule.name);
+      if (passes(rule.line, line) || passes(rule.role, role)) flags.add(rule.name);
     }
   }
   const tier = rules.order.find((n) => flags.has(n)) ?? "newcomer";

@@ -40,6 +40,8 @@ export type FetchOptions = {
   accept?: string;
   /** Return { status: 404, text: "" } instead of throwing on 404. */
   allowNotFound?: boolean;
+  /** Cache under .cache/raw/<cacheKey> instead of a path derived from the URL (for long query URLs). */
+  cacheKey?: string;
 };
 
 export class FatalFetchError extends Error {}
@@ -56,7 +58,13 @@ function log(): Record<string, FetchLogEntry> {
 }
 
 function saveLog(): void {
-  atomicWrite(LOG_PATH, JSON.stringify(log(), null, 1));
+  // Merge over whatever is on disk so two pipeline stages running side by
+  // side do not clobber each other's entries.
+  const onDisk = existsSync(LOG_PATH)
+    ? (JSON.parse(readFileSync(LOG_PATH, "utf8")) as Record<string, FetchLogEntry>)
+    : {};
+  logCache = { ...onDisk, ...log() };
+  atomicWrite(LOG_PATH, JSON.stringify(logCache, null, 1));
 }
 
 export function atomicWrite(path: string, content: string): void {
@@ -87,8 +95,8 @@ export function cachePathFor(url: string): string {
 }
 
 /** Read a cached body without touching the network; null when absent. */
-export function readCached(url: string): string | null {
-  const p = cachePathFor(url);
+export function readCached(url: string, cacheKey?: string): string | null {
+  const p = cacheKey ? join(RAW_DIR, cacheKey) : cachePathFor(url);
   return existsSync(p) ? readFileSync(p, "utf8") : null;
 }
 
@@ -105,7 +113,7 @@ async function pace(): Promise<void> {
 }
 
 export async function fetchCached(url: string, opts: FetchOptions = {}): Promise<FetchResult> {
-  const path = cachePathFor(url);
+  const path = opts.cacheKey ? join(RAW_DIR, opts.cacheKey) : cachePathFor(url);
   if (!opts.refresh && existsSync(path)) {
     const entry = log()[url];
     return {

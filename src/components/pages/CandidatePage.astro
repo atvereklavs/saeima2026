@@ -3,11 +3,14 @@ import { t, type Locale } from "../../i18n/labels.ts";
 import { formatDate, listBySlug, listPath, listShortName, meta, tierLabel } from "../../lib/data.ts";
 import type { Candidate } from "../../../pipeline/lib/types.ts";
 import TierBadge from "../TierBadge.astro";
+import Timeline from "../Timeline.astro";
 interface Props { locale: Locale; candidate: Candidate }
 const { locale, candidate: c } = Astro.props;
 const list = listBySlug.get(c.list_slug);
 const h = c.history;
-const otherFlags = h.flags.filter((f) => f !== h.tier);
+const otherFlags = h.flags.filter((f) => f !== h.tier && f !== "minister" && f !== "sitting_mp" && f !== "former_mp");
+const hasTimeline = h.minister_roles.length > 0 || h.saeima_terms.length > 0;
+const outLinks = (["saeima", "delna", "polistats", "wikipedia_lv", "wikipedia_en", "wikidata"] as const).filter((k) => c.links[k]);
 const positions = c.positions.length ? c.positions : c.positions_raw.map((line) => ({ workplace: line, role: "" }));
 ---
 <p class="breadcrumb">
@@ -47,11 +50,16 @@ const positions = c.positions.length ? c.positions : c.positions_raw.map((line) 
     <h2>{t(locale, "candidate.history")}</h2>
     <div class="card">
       <dl class="kv">
-        <dt>{t(locale, "candidate.tier")}</dt><dd><TierBadge tier={h.tier} locale={locale} provisional={h.provisional} /></dd>
+        <dt>{t(locale, "candidate.tier")}</dt>
+        <dd>
+          <TierBadge tier={h.tier} locale={locale} provisional={h.provisional} />
+          {!h.provisional && <span class="badge outline" style="margin-left:0.4rem">{t(locale, "candidate.official")}</span>}
+        </dd>
         {otherFlags.length > 0 && <><dt>{t(locale, "candidate.flags")}</dt><dd class="chips">{otherFlags.map((f) => <span class="chip">{tierLabel(f, locale)}</span>)}</dd></>}
-        {h.municipal_role && <><dt>{t(locale, "list.coalition.extra_parliamentary").slice(0, 0)}{locale === "lv" ? "Pašvaldība" : "Municipality"}</dt><dd>{h.municipal_role === "mayor" ? (locale === "lv" ? "vadītājs / vietnieks" : "mayor / deputy mayor") : (locale === "lv" ? "deputāts" : "councillor")}</dd></>}
+        {h.municipal_role && <><dt>{locale === "lv" ? "Pašvaldība" : "Municipality"}</dt><dd>{h.municipal_role === "mayor" ? (locale === "lv" ? "vadītājs / vietnieks" : "mayor / deputy mayor") : (locale === "lv" ? "deputāts" : "councillor")}</dd></>}
       </dl>
-      {h.provisional && <p class="muted" style="margin:0.5rem 0 0;font-size:0.88rem">{t(locale, "candidate.provisional")}</p>}
+      {hasTimeline && <div style="margin-top:0.9rem"><Timeline history={h} locale={locale} /></div>}
+      {h.provisional && <p class="muted" style="margin:0.6rem 0 0;font-size:0.88rem">{t(locale, "candidate.no_official")} {t(locale, "candidate.provisional")}</p>}
     </div>
 
     {meta.publish_kgb && c.kgb_no_collaboration !== null && c.kgb_no_collaboration !== undefined && (
@@ -76,6 +84,7 @@ const positions = c.positions.length ? c.positions : c.positions_raw.map((line) 
     <div class="card" style="margin-top:1rem">
       <h3 style="margin:0">{t(locale, "candidate.sources")}</h3>
       <p style="margin:0"><a href={locale === "en" ? c.links.cvk_en : c.links.cvk}>{t(locale, "candidate.cvk_source")}</a></p>
+      {outLinks.map((k) => <p style="margin:0"><a href={c.links[k]} rel="noopener">{t(locale, `link.${k}` as never)}</a></p>)}
       {c.sources.cvk.updated_at && <small class="muted">{t(locale, "candidate.updated")}: {c.sources.cvk.updated_at.replace("T", " ")}</small>}
       <small class="muted">{t(locale, "candidate.cvk_note")}</small>
       {!c.has_profile && <small class="muted">{t(locale, "candidate.no_profile")}</small>}

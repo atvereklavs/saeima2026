@@ -1,41 +1,52 @@
 {
-  "_comment": "Experience tiers derived from position lines (workplace + role). Patterns are regexes matched against diacritic-folded lowercase text, so write them in ASCII. 'any' must hit and no 'none' may hit within the same line. Order = precedence, highest first.",
+  "_comment": "Experience tiers derived from declared positions. Patterns are regexes matched against diacritic-folded lowercase text, so write them in ASCII. A rule fires for a position when its `line` block (workplace + role) or its `role` block (role only) passes: every `any` block needs one hit and no `none` hit. Order = precedence, highest first.",
   "order": ["minister", "sitting_mp", "former_mp", "municipal", "civil_service", "newcomer"],
   "labels": {
-    "minister": { "lv": "Ministrs / ministru prezidents", "en": "Minister / prime minister" },
+    "minister": { "lv": "Ministrs / Ministru prezidents", "en": "Minister / prime minister" },
     "sitting_mp": { "lv": "Pašreizējais Saeimas deputāts", "en": "Sitting MP" },
     "former_mp": { "lv": "Bijušais Saeimas deputāts", "en": "Former MP" },
     "municipal": { "lv": "Pašvaldības deputāts / vadītājs", "en": "Municipal councillor / leader" },
-    "civil_service": { "lv": "Valsts pārvalde", "en": "Civil service" },
+    "civil_service": { "lv": "Valsts vai pašvaldības pārvalde", "en": "Public administration" },
     "newcomer": { "lv": "Bez amata valsts pārvaldē", "en": "No public office record" }
   },
   "rules": {
     "minister": {
-      "any": ["\\bministr[se]\\b", "ministru prezident"],
-      "none": ["ministrij", "parlamentar", "padomniek", "sekretar", "biroj", "bijus"]
+      "role": {
+        "any": ["\\bministr[se]\\b", "ministru prezident"],
+        "none": ["padomniek", "palig", "palidz", "sekretar", "biroj", "vietniek", "konsultant", "bijus", "kandidat", "prezidenta ", "prezidentes "]
+      }
     },
     "sitting_mp": {
-      "any": ["saeim[a-z]*[^a-z]+.*deputat", "deputat.*saeim"],
-      "none": ["palig", "konsultant", "darbinie", "biroj", "kancelej", "pasvaldib", "\\bdome", "bijus", "eiropas parlament", "kandidat"]
+      "line": {
+        "any": ["saeim[a-z]*[^a-z]+.*deputat", "deputat.*saeim", "saeimas priekssedetaj"],
+        "none": ["palig", "palidz", "konsultant", "darbinie", "biroj", "kancelej", "administr", "pasvaldib", "\\bdome", "bijus", "eiropas parlament", "kandidat", "tulk"]
+      }
     },
     "former_mp": {
-      "any": ["bijus[a-z]* .*saeimas deputat"]
+      "line": { "any": ["bijus[a-z]* .*saeimas deputat", "bijus[a-z]* .*saeimas priekssedetaj"] }
     },
     "municipal": {
-      "any": [
-        "(\\bdome|pasvaldib|novad|valstspilset).*(deputat|priekssedetaj|\\bmer[se]\\b|vicemer)",
-        "(deputat|priekssedetaj|\\bmer[se]\\b|vicemer).*(\\bdome|pasvaldib|novad|valstspilset)"
-      ],
-      "none": ["saeim", "bijus", "kandidat"]
+      "line": {
+        "any": [
+          "(\\bdome|pasvaldib|novad|valstspilset).*(\\bdeputat|priekssedetaj|\\bmer[se]\\b|vicemer)",
+          "(\\bdeputat|priekssedetaj|\\bmer[se]\\b|vicemer).*(\\bdome|pasvaldib|novad|valstspilset)"
+        ],
+        "none": ["saeim", "bijus", "kandidat", "komisijas priekssedetaj", "komitejas priekssedetaj", "biroj", "palig"]
+      }
     },
     "civil_service": {
-      "any": [
-        "ministrij",
-        "valsts (kancelej|agentur|dienest|inspekcij|parvald|policij|ienemum|kontrol)",
-        "saeimas kancelej",
-        "ministru kabinet"
-      ],
-      "none": ["bijus"]
+      "line": {
+        "any": [
+          "ministrij",
+          "valsts (kancelej|agentur|dienest|inspekcij|parvald|policij|ienemum|kontrol)",
+          "saeimas kancelej",
+          "ministru kabinet",
+          "ministru prezidenta padomniek",
+          "izpilddirektor",
+          "(pasvaldib|\\bdome).*(departamenta (direktor|vadit)|parvaldes (vadit|prieksniek)|nodalas vadit)"
+        ],
+        "none": ["bijus", "pension"]
+      }
     }
   }
 }

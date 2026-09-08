@@ -5,10 +5,13 @@
 // data/lists.json, data/candidates.json, data/candidates.index.json, data/meta.json.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { cachedEntry, readCached } from "./lib/http.ts";
+import { CACHE_ROOT, cachedEntry, readCached } from "./lib/http.ts";
+import { buildHistory } from "./lib/history.ts";
+import type { CandidateMatch } from "./match.ts";
+import { DELNA_MPS_URL, POLISTATS_DEPUTIES_URL, saeimaDeputyUrl } from "./lib/sources.ts";
 import { parseAllCandidatesTable, parseCandidatePage, parseIndex, parseListPage } from "./lib/cvk-parsers.ts";
 import type { CvkCandidatePage, CvkListPage, CvkTableRow } from "./lib/cvk-parsers.ts";
-import { ageBand, ageOf, deriveTier, loadTierRules, mean, median } from "./lib/derive.ts";
+import { ageBand, ageOf, loadTierRules, mean, median } from "./lib/derive.ts";
 import { nameKey } from "./lib/names.ts";
 import { cvkCandidateUrl, cvkCandidateUrlEn, cvkIndexUrl, cvkListUrl, cvkListUrlEn, cvkTableUrl } from "./lib/cvk-urls.ts";
 
@@ -58,6 +61,9 @@ function main(): void {
   const curated = readJson<Record<string, CuratedList>>(join(DATA_DIR, "curated", "lists.json"), {});
   delete (curated as Record<string, unknown>)._comment;
   const previous = readJson<Candidate[]>(join(DATA_DIR, "candidates.json"), []);
+  const matches = readJson<CandidateMatch[]>(join(CACHE_ROOT, "raw", "match.json"), []);
+  const matchById = new Map(matches.map((m) => [m.id, m]));
+  let withHistory = 0;
   const previousById = new Map(previous.map((c) => [c.id, c]));
 
   const candidates: Candidate[] = [];
@@ -73,11 +79,27 @@ function main(): void {
 
     const positionsRaw = row.workplace_raw ? row.workplace_raw.split("\n") : [];
     const positions = profile?.positions.length ? profile.positions : positionsRaw.map(splitPositionLine);
-    const lines = positions.map((p) => (p.role ? `${p.workplace}, ${p.role}` : p.workplace));
-    const { tier, flags } = deriveTier(lines.length ? lines : positionsRaw, rules);
+    const m = matchById.get(row.id);
+    const history = buildHistory(m, positions, rules);
+    if (!history.provisional) withHistory += 1;
     const birthYear = profile?.birth_year ?? row.birth_year;
     const age = ageOf(birthYear);
     const headline = positions[0] ? (positions[0].role ? `${positions[0].role}, ${positions[0].workplace}` : positions[0].workplace) : positionsRaw[0] ?? null;
+    const latestTerm = Object.keys(history.sources.titania).map(Number).sort((a, b) => b - a)[0];
+    const links: Record<string, string> = {
+      cvk: url,
+      cvk_en: cvkCandidateUrlEn(row.path),
+      cvk_list: cvkListUrl(row.list_slug),
+    };
+    if (latestTerm) links.saeima = saeimaDeputyUrl(latestTerm, history.sources.titania[String(latestTerm)]);
+    if (history.sources.delna_14) links.delna = DELNA_MPS_URL;
+    else if (history.sources.delna_13) links.delna = DELNA_MPS_URL.replace("saeima=14", "saeima=13");
+    if (history.saeima_terms.length) links.polistats = POLISTATS_DEPUTIES_URL;
+    if (m?.wikidata) {
+      links.wikidata = `https://www.wikidata.org/wiki/${m.wikidata.qid}`;
+      if (m.wikidata.lvwiki) links.wikipedia_lv = m.wikidata.lvwiki;
+      if (m.wikidata.enwiki) links.wikipedia_en = m.wikidata.enwiki;
+    }
 
     const c: Candidate = {
       id: row.id,
@@ -102,27 +124,14 @@ function main(): void {
       positions_raw: positionsRaw,
       headline_role: headline,
       has_profile: Boolean(profile),
-      history: {
-        tier,
-        flags,
-        provisional: true,
-        saeima_terms: [],
-        committees: [],
-        minister_roles: [],
-        municipal_role: flags.includes("municipal")
-          ? /priekssedetaj|\bmer[se]\b|vicemer/i.test(nameKey(lines.join(" | ")))
-            ? "mayor"
-            : "councillor"
-          : null,
-      },
+      history,
       tags: [],
-      links: {
-        cvk: url,
-        cvk_en: cvkCandidateUrlEn(row.path),
-        cvk_list: cvkListUrl(row.list_slug),
-      },
+      links,
       sources: {
         cvk: { url, fetched_at: cachedEntry(url)?.fetched_at ?? cachedEntry(cvkTableUrl)?.fetched_at ?? null, updated_at: profile?.updated_at ?? null },
+        ...(m?.delna14 || m?.delna13 ? { delna: { url: links.delna, fetched_at: cachedEntry("https://deputatiuzdelnas.lv/data/tab_b/groups_14.csv")?.fetched_at ?? null } } : {}),
+        ...(latestTerm ? { saeima: { url: links.saeima, fetched_at: cachedEntry(links.saeima)?.fetched_at ?? null } } : {}),
+        ...(m?.wikidata ? { wikidata: { url: links.wikidata, fetched_at: null } } : {}),
       },
       photo: null,
     };
@@ -242,6 +251,11 @@ function main(): void {
       active: active.length,
       withdrawn: candidates.length - active.length,
       with_profile: withProfile,
+      with_official_history: withHistory,
+      matched_delna_14: matches.filter((m) => m.delna14).length,
+      matched_delna_13: matches.filter((m) => m.delna13).length,
+      matched_titania: matches.filter((m) => Object.keys(m.titania).length > 0).length,
+      matched_wikidata: matches.filter((m) => m.wikidata).length,
     },
     constituencies: index.constituencies,
     tiers: rules.labels,
@@ -257,7 +271,7 @@ function main(): void {
   writeFileSync(join(DATA_DIR, "candidates.index.json"), JSON.stringify(indexRows, null, 1));
   writeFileSync(join(DATA_DIR, "meta.json"), JSON.stringify(meta, null, 1));
   const tierSummary = rules.order.map((t) => `${t}=${active.filter((c) => c.history.tier === t).length}`).join(" ");
-  console.log(`lists=${lists.length} candidates=${candidates.length} active=${active.length} with_profile=${withProfile}`);
+  console.log(`lists=${lists.length} candidates=${candidates.length} active=${active.length} with_profile=${withProfile} with_official_history=${withHistory}`);
   console.log(`tiers: ${tierSummary}`);
 }
 

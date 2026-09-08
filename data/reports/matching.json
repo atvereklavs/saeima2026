@@ -1,0 +1,183 @@
+{
+ "generated_at": "2026-09-08T17:05:36.387Z",
+ "counts": {
+  "delna14": {
+   "none": 1318,
+   "birth_year": 110
+  },
+  "delna13": {
+   "none": 1379,
+   "birth_year": 49
+  },
+  "titania12": {
+   "none": 1389,
+   "exact_unique": 37,
+   "override": 2
+  },
+  "titania13": {
+   "none": 1376,
+   "via_delna_link": 48,
+   "exact_unique": 4
+  },
+  "titania14": {
+   "none": 1318,
+   "via_delna_link": 110
+  },
+  "wikidata": {
+   "none": 1315,
+   "birth_year": 113
+  }
+ },
+ "issues": [
+  {
+   "source": "wikidata",
+   "id": 87780,
+   "name": "Jānis Ozoliņš",
+   "birth_year": 1960,
+   "note": "name matches but birth year differs (1938)",
+   "candidates": [
+    "Jānis Ozoliņš Q16358928 (1938)"
+   ]
+  },
+  {
+   "source": "delna14",
+   "id": 82990,
+   "name": "Jānis Patmalnieks",
+   "birth_year": 1974,
+   "note": "name matches but birth year differs (1980)",
+   "candidates": [
+    "Jānis Patmalnieks (1980)"
+   ]
+  },
+  {
+   "source": "titania14",
+   "id": 82990,
+   "name": "Jānis Patmalnieks",
+   "birth_year": 1974,
+   "note": "name shared by several 2026 candidates and the record has no birth year",
+   "candidates": [
+    "Frakcija JAUNĀ VIENOTĪBA E482E63221656BB6C22588E0002AE07C"
+   ]
+  },
+  {
+   "source": "wikidata",
+   "id": 82140,
+   "name": "Mārtiņš Roze",
+   "birth_year": 1990,
+   "note": "name matches but birth year differs (1964)",
+   "candidates": [
+    "Mārtiņš Roze Q2625193 (1964)"
+   ]
+  },
+  {
+   "source": "delna13",
+   "id": 79510,
+   "name": "Jānis Urbanovičs",
+   "birth_year": 1997,
+   "note": "name matches but birth year differs (1959)",
+   "candidates": [
+    "Urbanovičs, Jānis (1959)"
+   ]
+  },
+  {
+   "source": "titania12",
+   "id": 79510,
+   "name": "Jānis Urbanovičs",
+   "birth_year": 1997,
+   "note": "name shared by several 2026 candidates and the record has no birth year",
+   "candidates": [
+    "Frakcija SASKAŅA 12B6D57F344C49B7C2257D7B0032D7F4"
+   ]
+  },
+  {
+   "source": "titania13",
+   "id": 79510,
+   "name": "Jānis Urbanovičs",
+   "birth_year": 1997,
+   "note": "name shared by several 2026 candidates and the record has no birth year",
+   "candidates": [
+    "“Saskaņa” sociāldemokrātiskās partijas frakcija C7A852119E61AFD9C22583320029E45C"
+   ]
+  },
+  {
+   "source": "wikidata",
+   "id": 79510,
+   "name": "Jānis Urbanovičs",
+   "birth_year": 1997,
+   "note": "name matches but birth year differs (1959)",
+   "candidates": [
+    "Jānis Urbanovičs Q164247 (1959)"
+   ]
+  },
+  {
+   "source": "delna14",
+   "id": 79670,
+   "name": "Viktors Valainis",
+   "birth_year": 1943,
+   "note": "name matches but birth year differs (1986)",
+   "candidates": [
+    "Viktors Valainis (1986)"
+   ]
+  },
+  {
+   "source": "delna13",
+   "id": 79670,
+   "name": "Viktors Valainis",
+   "birth_year": 1943,
+   "note": "name matches but birth year differs (1986)",
+   "candidates": [
+    "Valainis, Viktors (1986)"
+   ]
+  },
+  {
+   "source": "titania12",
+   "id": 79670,
+   "name": "Viktors Valainis",
+   "birth_year": 1943,
+   "note": "name shared by several 2026 candidates and the record has no birth year",
+   "candidates": [
+    "Pie frakcijām nepiederošie deputāti 90C03CD8C1A9A42CC2257D7B0032D8BC"
+   ]
+  },
+  {
+   "source": "titania13",
+   "id": 79670,
+   "name": "Viktors Valainis",
+   "birth_year": 1943,
+   "note": "name shared by several 2026 candidates and the record has no birth year",
+   "candidates": [
+    "Zaļo un Zemnieku savienības frakcija 37EF19346F1C2181C22583320029E67A"
+   ]
+  },
+  {
+   "source": "wikidata",
+   "id": 79670,
+   "name": "Viktors Valainis",
+   "birth_year": 1943,
+   "note": "name matches but birth year differs (1986)",
+   "candidates": [
+    "Viktors Valainis Q9368732 (1986)"
+   ]
+  },
+  {
+   "source": "wikidata",
+   "id": 85970,
+   "name": "Jānis Vanags",
+   "birth_year": 1989,
+   "note": "name matches but birth year differs (1907)",
+   "candidates": [
+    "Jānis Vanags Q16359063 (1907)"
+   ]
+  },
+  {
+   "source": "wikidata",
+   "id": 81700,
+   "name": "Ivars Zariņš",
+   "birth_year": 1981,
+   "note": "name matches but birth year differs (1969)",
+   "candidates": [
+    "Ivars Zariņš Q11714346 (1969)"
+   ]
+  }
+ ]
+}

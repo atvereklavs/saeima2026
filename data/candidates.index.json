@@ -64,7 +64,7 @@
   "position": 5,
   "birth_year": 1954,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Pensionāre",
   "status": "active"
@@ -218,7 +218,7 @@
   "position": 1,
   "birth_year": 1977,
   "age_band": "40-49",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "valstspilsētas domes deputāts, Rīgas valstspilsētas pašvaldība",
   "status": "active"
@@ -316,7 +316,7 @@
   "position": 8,
   "birth_year": 1963,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Autovadītājs, Senson Auto SIA",
   "status": "active"
@@ -456,7 +456,7 @@
   "position": 1,
   "birth_year": 1977,
   "age_band": "40-49",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Valstspilsētas domes deputāts, Rīgas valstspilsētas pašvaldība",
   "status": "active"
@@ -484,7 +484,7 @@
   "position": 3,
   "birth_year": 1970,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "izpilddirektore, SIA \"Hergensoresinvest\"",
   "status": "active"
@@ -554,7 +554,7 @@
   "position": 8,
   "birth_year": 1958,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Valdēs loceklis, Sabiedrība ar ierobežotu atbildību \"DR. SOLOMATINA ACU REHABILITĀCIJAS UN REDZES KOREKCIJAS CENTRS\"",
   "status": "active"
@@ -598,7 +598,7 @@
   "age_band": "40-49",
   "tier": "municipal",
   "tags": [],
-  "headline_role": "galvenā referente, Rīgas valstspilsētas pašvaldība, Rīgas domes deputātu frakcija “SUVERĒNĀ VARA, APVIENĪBA JAUNLATVIEŠI”",
+  "headline_role": "Rīgas domes deputātu frakcija “SUVERĒNĀ VARA, APVIENĪBA JAUNLATVIEŠI”, galvenā referente, Rīgas valstspilsētas pašvaldība",
   "status": "active"
  },
  {
@@ -640,7 +640,7 @@
   "age_band": "40-49",
   "tier": "municipal",
   "tags": [],
-  "headline_role": "APVIENĪBA JAUNLATVIEŠI”, Rīgas valstspilsētas pašvaldība, Galvenā referente, Rīgas domes deputātu frakcija “SUVERĒNĀ VARA",
+  "headline_role": "Galvenā referente, Rīgas domes deputātu frakcija “SUVERĒNĀ VARA, APVIENĪBA JAUNLATVIEŠI”, Rīgas valstspilsētas pašvaldība",
   "status": "active"
  },
  {
@@ -724,7 +724,7 @@
   "age_band": "30-39",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "ārsts, VCA Pļavnieki ",
+  "headline_role": "ārsts, VCA Pļavnieki",
   "status": "active"
  },
  {
@@ -834,7 +834,7 @@
   "position": 28,
   "birth_year": 1970,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "brīvprātīgais, Politiskā partija \"Suverēnā vara\"",
   "status": "active"
@@ -1058,7 +1058,7 @@
   "position": 1,
   "birth_year": 1988,
   "age_band": "30-39",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "deputāte, Ādažu novada dome",
   "status": "active"
@@ -1184,7 +1184,7 @@
   "position": 10,
   "birth_year": 1983,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "VALDES LOCEKLIS, SIA VURCS",
   "status": "active"
@@ -1410,7 +1410,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "mentors, A/S Valmieras Stikla Šķiedra, Mehatronikas inženieris",
+  "headline_role": "Mehatronikas inženieris, mentors, A/S Valmieras Stikla Šķiedra",
   "status": "active"
  },
  {
@@ -1662,7 +1662,7 @@
   "age_band": "30-39",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Būvdarbu vadītājs, SIA \"RNRG\" ",
+  "headline_role": "Būvdarbu vadītājs, SIA \"RNRG\"",
   "status": "active"
  },
  {
@@ -1744,7 +1744,7 @@
   "position": 1,
   "birth_year": 1986,
   "age_band": "40-49",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Deputāts, Kuldīgas novada dome",
   "status": "active"
@@ -1884,7 +1884,7 @@
   "position": 2,
   "birth_year": 1964,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Latgales koordinatore, Nodibinājums ''Caritas Latvija''",
   "status": "active"
@@ -1940,7 +1940,7 @@
   "position": 6,
   "birth_year": 1994,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Iepirkumu speciālists, Rēzeknes Gaļas kombināts",
   "status": "active"
@@ -2026,7 +2026,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "valdes loceklis, Mēs mainām noteikumus, ģenerālsekretārs",
+  "headline_role": "ģenerālsekretārs, valdes loceklis, Mēs mainām noteikumus",
   "status": "active"
  },
  {
@@ -2208,7 +2208,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "sociālā uzņēmējdarbība un ilgtspēja, Pašnodarbinātā, Mārketings",
+  "headline_role": "Mārketings, sociālā uzņēmējdarbība un ilgtspēja, Pašnodarbinātā",
   "status": "active"
  },
  {
@@ -2264,7 +2264,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Vadošā pētnieki p.i., Rīgas Stradiņa Universitāte, Asociētais profesors",
+  "headline_role": "Asociētais profesors, Vadošā pētnieki p.i., Rīgas Stradiņa Universitāte",
   "status": "active"
  },
  {
@@ -2362,7 +2362,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "rehabilitācija mājās. Ergoterapeite., Veselības centru apvienība MC \"Elite\", Rehabilitācijas nodaļas vadītāja/koordinātore, dienas stacionāra",
+  "headline_role": "Rehabilitācijas nodaļas vadītāja/koordinātore, dienas stacionāra, rehabilitācija mājās. Ergoterapeite., Veselības centru apvienība MC \"Elite\"",
   "status": "active"
  },
  {
@@ -2430,7 +2430,7 @@
   "position": 3,
   "birth_year": 1978,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "valdes locekle/ izpilddirektore, Latvijas veselības tūrisma klasteris",
   "status": "active"
@@ -2444,7 +2444,7 @@
   "position": 4,
   "birth_year": 1970,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "vecākā juriste, SIA \"Rīgas nami\"",
   "status": "active"
@@ -2458,7 +2458,7 @@
   "position": 5,
   "birth_year": 1967,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Īpašnieks, Mežsētas ZS",
   "status": "active"
@@ -2486,7 +2486,7 @@
   "position": 7,
   "birth_year": 1964,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Izglītības metodiķe, Rīgas 13. vidusskola",
   "status": "active"
@@ -2738,7 +2738,7 @@
   "position": 5,
   "birth_year": 1949,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "-, Pensionāre",
   "status": "active"
@@ -2780,9 +2780,9 @@
   "position": 8,
   "birth_year": 1967,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
-  "headline_role": "īpašumu un investīciju departamenta direktora pienākumu izpildītāja., Patreiz Ropažu novada pašvaldība, Patreiz bez noteiktas amata vietas. Iepriekš Juridiskā, personālvadības un iepirkumu departamenta direktora vietniece, pēdējais amats Attīstības",
+  "headline_role": "Patreiz bez noteiktas amata vietas. Iepriekš Juridiskā, personālvadības un iepirkumu departamenta direktora vietniece, pēdējais amats Attīstības, īpašumu un investīciju departamenta direktora pienākumu izpildītāja., Patreiz Ropažu novada pašvaldība",
   "status": "active"
  },
  {
@@ -2822,7 +2822,7 @@
   "position": 1,
   "birth_year": 1972,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Vispārējās vidējās izglītības skolotājs, Liepājas Dzintara vidusskola",
   "status": "active"
@@ -2950,7 +2950,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Valdes loceklis, Biedrība \"Vienības centrs\" ",
+  "headline_role": "Valdes loceklis, Biedrība \"Vienības centrs\"",
   "status": "active"
  },
  {
@@ -3130,7 +3130,7 @@
   "position": 15,
   "birth_year": 1960,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Valdes loceklis, “Saskaņa” sociāldemokrātiskā partija",
   "status": "active"
@@ -3158,7 +3158,7 @@
   "position": 1,
   "birth_year": 1959,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Valdes priekšsēdētājs, \"SASKAŅA\" sociāldemokrātiskā partija",
   "status": "active"
@@ -3172,7 +3172,7 @@
   "position": 2,
   "birth_year": 1969,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Valdes priekšsēdētājs, \"Centra Partija\"",
   "status": "active"
@@ -3214,7 +3214,7 @@
   "position": 5,
   "birth_year": 1965,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Attīstības direktors, AS \"Rīgas namu apsaimniekotājs\"",
   "status": "active"
@@ -3256,7 +3256,7 @@
   "position": 8,
   "birth_year": 1953,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Valdes priekšsēdētājs, Latvijas Krievu mācībvalodas skolu atbalsta asociācija",
   "status": "active"
@@ -3664,7 +3664,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "valdes loceklis, A/S \"MARIKA\", Ģenerāldirektors",
+  "headline_role": "Ģenerāldirektors, valdes loceklis, A/S \"MARIKA\"",
   "status": "active"
  },
  {
@@ -3676,7 +3676,7 @@
   "position": 1,
   "birth_year": 1945,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Pensionārs",
   "status": "active"
@@ -3690,7 +3690,7 @@
   "position": 2,
   "birth_year": 1962,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Pensionārs",
   "status": "active"
@@ -3732,7 +3732,7 @@
   "position": 5,
   "birth_year": 1963,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "projektu vadītājs, SIA \"Getliņi EKO\"",
   "status": "active"
@@ -3846,7 +3846,7 @@
   "age_band": "30-39",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "video filmu un televīzijas programmu producents, Pašnodarbinātais, Kinofilmu",
+  "headline_role": "Kinofilmu, video filmu un televīzijas programmu producents, Pašnodarbinātais",
   "status": "active"
  },
  {
@@ -3942,7 +3942,7 @@
   "position": 20,
   "birth_year": 1990,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Izpilddirektors, Eproma Latvia SIA",
   "status": "active"
@@ -3972,7 +3972,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Valdes loceklis, SIA \"SELEZNOVS\" ",
+  "headline_role": "Valdes loceklis, SIA \"SELEZNOVS\"",
   "status": "active"
  },
  {
@@ -4042,7 +4042,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Direktors, SIA \"AMOTO.LV\", Valdes loceklis",
+  "headline_role": "Valdes loceklis, Direktors, SIA \"AMOTO.LV\"",
   "status": "active"
  },
  {
@@ -4084,7 +4084,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "iepirkumu speciāliste, SIA \"Dobeles komunālie pakalpojumi\", Juriste",
+  "headline_role": "Juriste, iepirkumu speciāliste, SIA \"Dobeles komunālie pakalpojumi\"",
   "status": "active"
  },
  {
@@ -4112,7 +4112,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Vadītajas vietnieks izglītības jomā, Rīgas pirmsskolas izglītības iestāde ”Dzīpariņš” ",
+  "headline_role": "Vadītajas vietnieks izglītības jomā, Rīgas pirmsskolas izglītības iestāde ”Dzīpariņš”",
   "status": "active"
  },
  {
@@ -4264,7 +4264,7 @@
   "position": 1,
   "birth_year": 1972,
   "age_band": "50-59",
-  "tier": "civil_service",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Ministrs, Zemkopības ministrija",
   "status": "active"
@@ -4278,7 +4278,7 @@
   "position": 2,
   "birth_year": 1978,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Mārketinga un tūrisma nodaļas vadītāja vietniece-Ventspils pārstāvniecības Rīgā vadītāja, Ventspils valstspilsētas pašvaldības iestāde \"Ventspils domes administrācija\"",
   "status": "active"
@@ -4294,7 +4294,7 @@
   "age_band": "60+",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "Ārlietu komisijas Baltijas lietu apakškomisijas priekšsēdētājs, Latvijas Republikas Saeima, Deputāts, Mandātu, ētikas un iesniegumu komisijas priekšsēdētājs",
+  "headline_role": "Deputāts, Mandātu, ētikas un iesniegumu komisijas priekšsēdētājs, Ārlietu komisijas Baltijas lietu apakškomisijas priekšsēdētājs, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -4334,7 +4334,7 @@
   "position": 6,
   "birth_year": 1986,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Īpašnieks, SIA ''Nubes Digital Group''",
   "status": "active"
@@ -4348,7 +4348,7 @@
   "position": 7,
   "birth_year": 1960,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Kuldīgas filiāles vadītāja, Latvijas Universitāte",
   "status": "active"
@@ -4378,7 +4378,7 @@
   "age_band": "30-39",
   "tier": "municipal",
   "tags": [],
-  "headline_role": "Deputāts, Saldus novada pašvaldība ",
+  "headline_role": "Deputāts, Saldus novada pašvaldība",
   "status": "active"
  },
  {
@@ -4516,7 +4516,7 @@
   "position": 3,
   "birth_year": 1982,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Valdes loceklis, Daugavpils Olimpiskais Centrs",
   "status": "active"
@@ -4544,7 +4544,7 @@
   "position": 5,
   "birth_year": 1974,
   "age_band": "50-59",
-  "tier": "civil_service",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Ministra arštata padomnieks Latvijas austrumu pierobežas jautājumos, Zemkopības ministrija",
   "status": "active"
@@ -4656,7 +4656,7 @@
   "position": 13,
   "birth_year": 1970,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Rugāju apvienības pārvaldes vadītāja, Balvu novada pašvaldība",
   "status": "active"
@@ -4672,7 +4672,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Vadītāja, SIA KASO PLUS, Valdes priekšsēdētāja",
+  "headline_role": "Valdes priekšsēdētāja, Vadītāja, SIA KASO PLUS",
   "status": "active"
  },
  {
@@ -4712,7 +4712,7 @@
   "position": 17,
   "birth_year": 1952,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "minister",
   "tags": [],
   "headline_role": "pensionārs",
   "status": "active"
@@ -4726,7 +4726,7 @@
   "position": 1,
   "birth_year": 1986,
   "age_band": "40-49",
-  "tier": "civil_service",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Ministrs, Ekonomikas ministrija",
   "status": "active"
@@ -4770,7 +4770,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "viceprezidents, Latvijas Ārstu biedrība, Prezidenta p.i.",
+  "headline_role": "Prezidenta p.i., viceprezidents, Latvijas Ārstu biedrība",
   "status": "active"
  },
  {
@@ -4796,7 +4796,7 @@
   "position": 6,
   "birth_year": 1958,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "raidījuma Dr.Apinis vadītājs, TV24",
   "status": "active"
@@ -4854,7 +4854,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "kriminālsodu izpildes un glābšanas dienestu vadība vadītāja, Latvijas Universitāte, Asociētā profesore; Vadošā pētniece; Maģistra studiju programmas Eiropas studijas un ekonomiskā diplomātija direktore; Maģistra studiju apakšprogrammas Tiesībaizsardzības",
+  "headline_role": "Asociētā profesore; Vadošā pētniece; Maģistra studiju programmas Eiropas studijas un ekonomiskā diplomātija direktore; Maģistra studiju apakšprogrammas Tiesībaizsardzības, kriminālsodu izpildes un glābšanas dienestu vadība vadītāja, Latvijas Universitāte",
   "status": "active"
  },
  {
@@ -4896,7 +4896,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "usg metode, Rīgas veselības centrs filiāle Ķengarags, pediatrs ",
+  "headline_role": "pediatrs , usg metode, Rīgas veselības centrs filiāle Ķengarags",
   "status": "active"
  },
  {
@@ -4908,7 +4908,7 @@
   "position": 14,
   "birth_year": 1980,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Zvērināts advokāts, Privātprakse",
   "status": "active"
@@ -4994,7 +4994,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "SERTIFICĒTS BŪVINŽENIERIS, SAMNERS SIA , VALDES LOCEKLIS",
+  "headline_role": "VALDES LOCEKLIS, SERTIFICĒTS BŪVINŽENIERIS, SAMNERS SIA",
   "status": "active"
  },
  {
@@ -5104,7 +5104,7 @@
   "position": 28,
   "birth_year": 1974,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Satiksmes organizācijas pārvaldes priekšnieka p.i., Rīgas valstspilsētas pašvaldības Ārtelpas un mobilitātes departaments",
   "status": "active"
@@ -5316,7 +5316,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Direktors, Rīgas Valsts 3.ģimnāzija ",
+  "headline_role": "Direktors, Rīgas Valsts 3.ģimnāzija",
   "status": "active"
  },
  {
@@ -5328,7 +5328,7 @@
   "position": 1,
   "birth_year": 1969,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "sitting_mp",
   "tags": [],
   "headline_role": "Saeimas priekšsēdētāja, Latvijas Republikas Saeima",
   "status": "active"
@@ -5384,7 +5384,7 @@
   "position": 5,
   "birth_year": 1969,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Īpašnieks, Zemnieku saimniecība \"Mežgaiļi\"",
   "status": "active"
@@ -5398,7 +5398,7 @@
   "position": 6,
   "birth_year": 1961,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "sitting_mp",
   "tags": [],
   "headline_role": "Ģimenes ārsts, SIA ''KĀRVINS''",
   "status": "active"
@@ -5454,7 +5454,7 @@
   "position": 10,
   "birth_year": 1966,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Latvijas Lielo pilsētu asociācijas izpilddirektors, Latvijas Lielo pilsētu asociācija",
   "status": "active"
@@ -5470,7 +5470,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Deputāta palīgs, Latvijas Republikas Saeima ",
+  "headline_role": "Deputāta palīgs, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -5482,7 +5482,7 @@
   "position": 12,
   "birth_year": 1967,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "VETERINĀRĀRSTS, SIA ZEMNIEKU VET.APTIEKA",
   "status": "active"
@@ -5496,7 +5496,7 @@
   "position": 13,
   "birth_year": 1972,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Centrālās pārvaldes Sporta nodaļas vadītājs, Ādažu novada pašvaldība",
   "status": "active"
@@ -5538,7 +5538,7 @@
   "position": 16,
   "birth_year": 1972,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Valds priekšsēdētājs, SIA LLKC Latvijas Lauku konsultāciju un izglītības centrs",
   "status": "active"
@@ -5708,7 +5708,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Valdes locekle, SIA \"Poga LV\" ",
+  "headline_role": "Valdes locekle, SIA \"Poga LV\"",
   "status": "active"
  },
  {
@@ -5720,7 +5720,7 @@
   "position": 29,
   "birth_year": 1961,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Valdes priekšsēdētājs, AS \"ALMO HARDWOOD\"",
   "status": "active"
@@ -5860,7 +5860,7 @@
   "position": 8,
   "birth_year": 1971,
   "age_band": "50-59",
-  "tier": "civil_service",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Ministra padomnieks, Labklājības ministrija",
   "status": "active"
@@ -5874,7 +5874,7 @@
   "position": 9,
   "birth_year": 1976,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Juridiskā departamenta vadītājs, Jelgavas novada pašvaldība",
   "status": "active"
@@ -5888,7 +5888,7 @@
   "position": 10,
   "birth_year": 1980,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Valdes loceklis, SIA ''Pīlādžlauki''",
   "status": "active"
@@ -5960,7 +5960,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Producents, Add Event ",
+  "headline_role": "Producents, Add Event",
   "status": "active"
  },
  {
@@ -6016,7 +6016,7 @@
   "age_band": "30-39",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "Frakcijas \"Nacionālā apvienība\" priekšsēdētāja vietnieks, Latvijas Republikas Saeima, Deputāts",
+  "headline_role": "Deputāts, Frakcijas \"Nacionālā apvienība\" priekšsēdētāja vietnieks, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -6056,7 +6056,7 @@
   "position": 4,
   "birth_year": 1988,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Filiāles vadītājs, Latvijas Kara muzejs",
   "status": "active"
@@ -6070,7 +6070,7 @@
   "position": 5,
   "birth_year": 1967,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Direktors, Talsu Valsts ģimnāzija",
   "status": "active"
@@ -6084,7 +6084,7 @@
   "position": 6,
   "birth_year": 1971,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "sitting_mp",
   "tags": [],
   "headline_role": "Latviešu valodas un literatūras skolotājs, Liepājas Valsts ģimnāzija",
   "status": "active"
@@ -6126,7 +6126,7 @@
   "position": 9,
   "birth_year": 1980,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Izpilddirektors, SIA \"LAC serviss\"",
   "status": "active"
@@ -6224,7 +6224,7 @@
   "position": 16,
   "birth_year": 1983,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Realizācijas daļas vadītājs, SIA \"Miesnieks\"",
   "status": "active"
@@ -6282,7 +6282,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "valdes locekle, SIA AGRITEKO, Īpašniece",
+  "headline_role": "Īpašniece, valdes locekle, SIA AGRITEKO",
   "status": "active"
  },
  {
@@ -6322,7 +6322,7 @@
   "position": 7,
   "birth_year": 1973,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Īpašnieks, Zemnieku saimniecība \"KOTIŅI\"",
   "status": "active"
@@ -6336,7 +6336,7 @@
   "position": 8,
   "birth_year": 1987,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Vecākais industriālo izstrādājumu pārdevējs, Light Guide Optics International, SIA",
   "status": "active"
@@ -6352,7 +6352,7 @@
   "age_band": "40-49",
   "tier": "municipal",
   "tags": [],
-  "headline_role": "energopārvaldnieks, Rēzeknes novada pašvaldība, Deputāts, Nekustamo īpašumu pārvaldnieks",
+  "headline_role": "Deputāts, Nekustamo īpašumu pārvaldnieks, energopārvaldnieks, Rēzeknes novada pašvaldība",
   "status": "active"
  },
  {
@@ -6366,7 +6366,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "juriste, SIA \"Dališevskas juridiskais birojs\", Valdes locekle",
+  "headline_role": "Valdes locekle, juriste, SIA \"Dališevskas juridiskais birojs\"",
   "status": "active"
  },
  {
@@ -6406,7 +6406,7 @@
   "position": 13,
   "birth_year": 1963,
   "age_band": "60+",
-  "tier": "civil_service",
+  "tier": "newcomer",
   "tags": [],
   "headline_role": "Izdienas pensionārs, Iekšlietu ministrija",
   "status": "active"
@@ -6476,7 +6476,7 @@
   "position": 1,
   "birth_year": 1974,
   "age_band": "50-59",
-  "tier": "civil_service",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Ministre, Latvijas Republikas Izglītības un zinātnes ministrija",
   "status": "active"
@@ -6518,7 +6518,7 @@
   "position": 4,
   "birth_year": 1976,
   "age_band": "50-59",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Valstspilsētas domes deputāts, Rīgas valstspilsētas pašvaldība",
   "status": "active"
@@ -6534,7 +6534,7 @@
   "age_band": "40-49",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "Saeimas Cilvēktiesību un sabiedrisko lietu komisijas sekretārs, Latvijas Republikas Saeima, Deputāts",
+  "headline_role": "Deputāts, Saeimas Cilvēktiesību un sabiedrisko lietu komisijas sekretārs, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -6560,7 +6560,7 @@
   "position": 7,
   "birth_year": 1968,
   "age_band": "50-59",
-  "tier": "civil_service",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Kultūras ministra biroja vadītājs, Latvijas Republikas Kultūras ministrija",
   "status": "active"
@@ -6588,7 +6588,7 @@
   "position": 9,
   "birth_year": 2000,
   "age_band": "<30",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Valdes loceklis, Biedrība ''Latvija Latviešiem''",
   "status": "active"
@@ -6630,7 +6630,7 @@
   "position": 12,
   "birth_year": 1986,
   "age_band": "40-49",
-  "tier": "sitting_mp",
+  "tier": "newcomer",
   "tags": [],
   "headline_role": "Saeimas deputātes Ināras Mūrnieces palīdze, Latvijas Republikas Saeima",
   "status": "active"
@@ -6658,7 +6658,7 @@
   "position": 14,
   "birth_year": 1978,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Ekonomikas un finanšu konsultants, Pašnodarbinātais",
   "status": "active"
@@ -6672,7 +6672,7 @@
   "position": 15,
   "birth_year": 1977,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "sitting_mp",
   "tags": [],
   "headline_role": "Skolotājs, Rīgas Mākslas un mediju tehnikums",
   "status": "active"
@@ -6688,7 +6688,7 @@
   "age_band": "50-59",
   "tier": "civil_service",
   "tags": [],
-  "headline_role": "vecākā eksperte, Viedās administrācijas un reģionālās attīstības ministrija, Pašvaldību departaments",
+  "headline_role": "Pašvaldību departaments, vecākā eksperte, Viedās administrācijas un reģionālās attīstības ministrija",
   "status": "active"
  },
  {
@@ -6868,7 +6868,7 @@
   "position": 29,
   "birth_year": 1981,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Jurists, SIA \"Oritaun\"",
   "status": "active"
@@ -7078,7 +7078,7 @@
   "position": 1,
   "birth_year": 1988,
   "age_band": "30-39",
-  "tier": "civil_service",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Iekšlietu ministrs, Latvijas Republikas Iekšlietu ministrija",
   "status": "active"
@@ -7092,7 +7092,7 @@
   "position": 2,
   "birth_year": 1970,
   "age_band": "50-59",
-  "tier": "sitting_mp",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Saeimas deputāte, Latvijas Republikas Saeima",
   "status": "active"
@@ -7108,7 +7108,7 @@
   "age_band": "50-59",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "Ilgtspējīgas attīstības komisijas priekšsēdētājs, Latvijas Republikas Saeima, Deputāts",
+  "headline_role": "Deputāts, Ilgtspējīgas attīstības komisijas priekšsēdētājs, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -7122,7 +7122,7 @@
   "age_band": "40-49",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "14. Saeimas sekretārs, Latvijas Republikas Saeima, Deputāts",
+  "headline_role": "Deputāts, 14. Saeimas sekretārs, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -7134,7 +7134,7 @@
   "position": 5,
   "birth_year": 1983,
   "age_band": "40-49",
-  "tier": "civil_service",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Ministres padomnieks, Izglītības un zinātnes ministrija",
   "status": "active"
@@ -7178,7 +7178,7 @@
   "age_band": "60+",
   "tier": "municipal",
   "tags": [],
-  "headline_role": "veselības un kultūras jomās, Madonas novada pašvaldība, Madonas novada pašvaldības domes priekšsēdētāja vietnieks sociālajā",
+  "headline_role": "Madonas novada pašvaldības domes priekšsēdētāja vietnieks sociālajā, veselības un kultūras jomās, Madonas novada pašvaldība",
   "status": "active"
  },
  {
@@ -7190,7 +7190,7 @@
   "position": 9,
   "birth_year": 1960,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Vēsturnieks, Ogres Vēstures un mākslas muzejs",
   "status": "active"
@@ -7204,7 +7204,7 @@
   "position": 10,
   "birth_year": 1987,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Docents, Rīgas Tehniskā universitāte",
   "status": "active"
@@ -7232,7 +7232,7 @@
   "position": 12,
   "birth_year": 1983,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Izpilddirektora vietnieks administratīvajos un finanšu jautājumos, Talsu novada pašvaldība",
   "status": "active"
@@ -7388,7 +7388,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "skolas muzeja vadītāja, Valmieras Valsts ģimnāzija, Vēstures skolotāja",
+  "headline_role": "Vēstures skolotāja, skolas muzeja vadītāja, Valmieras Valsts ģimnāzija",
   "status": "active"
  },
  {
@@ -7540,7 +7540,7 @@
   "position": 3,
   "birth_year": 1981,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Priekšēdētāja vietnieks tautsaimniecības jautājumos, Jelgavas novada dome",
   "status": "active"
@@ -7554,7 +7554,7 @@
   "position": 4,
   "birth_year": 1963,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Vēstures nodaļas vadītājs, Bauskas muzejs",
   "status": "active"
@@ -7612,7 +7612,7 @@
   "age_band": "60+",
   "tier": "municipal",
   "tags": [],
-  "headline_role": "Vides un attīstības komitejas vadītāja vietnieks, Bauskas novada dome, Deputāts",
+  "headline_role": "Deputāts, Vides un attīstības komitejas vadītāja vietnieks, Bauskas novada dome",
   "status": "active"
  },
  {
@@ -7680,9 +7680,9 @@
   "position": 13,
   "birth_year": 1971,
   "age_band": "50-59",
-  "tier": "municipal",
+  "tier": "newcomer",
   "tags": [],
-  "headline_role": "Vides un infrastruktūras komitejas priekšsēdētājs, Ķekavas novada Dome, Deputāts",
+  "headline_role": "Deputāts, Vides un infrastruktūras komitejas priekšsēdētājs, Ķekavas novada Dome",
   "status": "active"
  },
  {
@@ -7736,7 +7736,7 @@
   "position": 17,
   "birth_year": 1980,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Audita un kapitālsabiedrību uzraudzības nodaļas vadītājs, Bauskas novada pašvaldība",
   "status": "active"
@@ -7750,7 +7750,7 @@
   "position": 18,
   "birth_year": 1968,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Frakcijas \"Nacionālā apvienība\" konsultants, Latvijas Republikas Saeima",
   "status": "active"
@@ -7948,7 +7948,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "grāmatvede, Valsts kase, IS konsultants darba samaksas jautājumos",
+  "headline_role": "IS konsultants darba samaksas jautājumos, grāmatvede, Valsts kase",
   "status": "active"
  },
  {
@@ -8522,7 +8522,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "labiekārtošanas darbi, Allerio Nordic, kārtības uzturētājs",
+  "headline_role": "kārtības uzturētājs, labiekārtošanas darbi, Allerio Nordic",
   "status": "active"
  },
  {
@@ -8592,7 +8592,7 @@
   "age_band": "<30",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "freelance, Pašnodarbināta persona, Reklāma/mārketings",
+  "headline_role": "Reklāma/mārketings, freelance, Pašnodarbināta persona",
   "status": "active"
  },
  {
@@ -8772,7 +8772,7 @@
   "position": 1,
   "birth_year": 1961,
   "age_band": "60+",
-  "tier": "civil_service",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Ministrs, Latvijas Republikas Finanšu ministrija",
   "status": "active"
@@ -8788,7 +8788,7 @@
   "age_band": "50-59",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "Saeimas priekšsēdētājas biedre, Latvijas Republikas Saeima, Deputāte",
+  "headline_role": "Deputāte, Saeimas priekšsēdētājas biedre, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -8816,7 +8816,7 @@
   "age_band": "30-39",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "Ilgtspējīgas attīstības komisijas loceklis, Latvijas Republikas Saeima, Deputāts, Ārlietu komisijas loceklis",
+  "headline_role": "Deputāts, Ārlietu komisijas loceklis, Ilgtspējīgas attīstības komisijas loceklis, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -8828,7 +8828,7 @@
   "position": 5,
   "birth_year": 1966,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Ražošanas vadītājs, SIA \"Riori\"",
   "status": "active"
@@ -8842,7 +8842,7 @@
   "position": 6,
   "birth_year": 1970,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Komercdarbības konsultants, SIA \"Ventspils Port Services\"",
   "status": "active"
@@ -8898,7 +8898,7 @@
   "position": 10,
   "birth_year": 1964,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Izpilddirektore, Saldus novada pašvaldība",
   "status": "active"
@@ -8914,7 +8914,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "direktors, SIA \"AGAMIKS\", Valdes loceklis",
+  "headline_role": "Valdes loceklis, direktors, SIA \"AGAMIKS\"",
   "status": "active"
  },
  {
@@ -8998,7 +8998,7 @@
   "age_band": "40-49",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "frakcijas priekšsēdētājs, Latvijas Republikas Saeima, Deputāts",
+  "headline_role": "Deputāts, frakcijas priekšsēdētājs, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -9010,7 +9010,7 @@
   "position": 2,
   "birth_year": 1966,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Prezidents, Latvijas Basketbola Savienība",
   "status": "active"
@@ -9024,7 +9024,7 @@
   "position": 3,
   "birth_year": 1967,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Valdes locekle, SIA \"5 labas ziņas\"",
   "status": "active"
@@ -9066,7 +9066,7 @@
   "position": 6,
   "birth_year": 1964,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Valdes priekšsēdētājs, SIA \"Arka Preiļi\"",
   "status": "active"
@@ -9150,7 +9150,7 @@
   "position": 12,
   "birth_year": 1965,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Attīstības plānošanas nodaļas vadītājs, Rēzeknes novada pašvaldība",
   "status": "active"
@@ -9220,7 +9220,7 @@
   "position": 17,
   "birth_year": 1959,
   "age_band": "60+",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Deputāte, Rēzeknes novada pašvaldības dome",
   "status": "active"
@@ -9290,7 +9290,7 @@
   "position": 5,
   "birth_year": 1972,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Padomes locekle, Rīgas Stradiņa Universitāte",
   "status": "active"
@@ -9334,7 +9334,7 @@
   "age_band": "40-49",
   "tier": "civil_service",
   "tags": [],
-  "headline_role": "sakaru un citu lielo projektu īstenošanas jautājumos, Valsts kanceleja, Ministru Prezidenta padomnieks transporta",
+  "headline_role": "Ministru Prezidenta padomnieks transporta, sakaru un citu lielo projektu īstenošanas jautājumos, Valsts kanceleja",
   "status": "active"
  },
  {
@@ -9346,7 +9346,7 @@
   "position": 9,
   "birth_year": 1955,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Docents, Latvijas Universitāte",
   "status": "active"
@@ -9430,7 +9430,7 @@
   "position": 15,
   "birth_year": 1984,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Vietējais palīgs, Eiropas Parlamenta deputāts Reinis Pozņaks",
   "status": "active"
@@ -9486,7 +9486,7 @@
   "position": 19,
   "birth_year": 1996,
   "age_band": "30-39",
-  "tier": "municipal",
+  "tier": "newcomer",
   "tags": [],
   "headline_role": "Priekšsēdētāja vietnieka biroja vadītājs, Rīgas valstpilsētas pašvaldība",
   "status": "active"
@@ -9516,7 +9516,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Valdes loceklis, Biedrība \"Latvijas Aizsardzības industrijas asociācija\" ",
+  "headline_role": "Valdes loceklis, Biedrība \"Latvijas Aizsardzības industrijas asociācija\"",
   "status": "active"
  },
  {
@@ -9556,9 +9556,9 @@
   "position": 24,
   "birth_year": 1964,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
-  "headline_role": "prokūrists, Latvijas Olimpiskā komiteja, Viceprezidents, Juridiskās komisijas vadītājs",
+  "headline_role": "Viceprezidents, Juridiskās komisijas vadītājs, prokūrists, Latvijas Olimpiskā komiteja",
   "status": "active"
  },
  {
@@ -9600,7 +9600,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Valdes loceklis, SIA \"EON\" ",
+  "headline_role": "Valdes loceklis, SIA \"EON\"",
   "status": "active"
  },
  {
@@ -9712,7 +9712,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "valdes loceklis, SIA \"Zvērināta advokāta Dēvija Elnioņa birojs\" , Zvērināts advokāts, biroja vadītājs",
+  "headline_role": "Zvērināts advokāts, biroja vadītājs, valdes loceklis, SIA \"Zvērināta advokāta Dēvija Elnioņa birojs\"",
   "status": "active"
  },
  {
@@ -9808,7 +9808,7 @@
   "position": 42,
   "birth_year": 1959,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Saeimas deputāta palīgs, Latvijas Republikas Saeima",
   "status": "active"
@@ -9836,7 +9836,7 @@
   "position": 1,
   "birth_year": 1984,
   "age_band": "40-49",
-  "tier": "civil_service",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Ministrs, Latvijas Republikas Tieslietu ministrija",
   "status": "active"
@@ -9850,9 +9850,9 @@
   "position": 2,
   "birth_year": 1966,
   "age_band": "60+",
-  "tier": "sitting_mp",
+  "tier": "minister",
   "tags": [],
-  "headline_role": "iekšlietu un korupcijas novēršanas komisijas priekšsēdētājs, Latvijas Republikas Saeima, Deputāts, Aizsardzības",
+  "headline_role": "Deputāts, Aizsardzības, iekšlietu un korupcijas novēršanas komisijas priekšsēdētājs, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -9866,7 +9866,7 @@
   "age_band": "50-59",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "Budžeta un finanšu (nodokļu) komisijas priekšsēdētāja, Latvijas Republikas Saeima, Deputāte",
+  "headline_role": "Deputāte, Budžeta un finanšu (nodokļu) komisijas priekšsēdētāja, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -9880,7 +9880,7 @@
   "age_band": "40-49",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "kultūras un zinātnes komisijas priekšsēdētājs, Latvijas Republikas Saeima, Deputāts, Izglītības",
+  "headline_role": "Deputāts, Izglītības, kultūras un zinātnes komisijas priekšsēdētājs, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -9948,7 +9948,7 @@
   "position": 9,
   "birth_year": 1962,
   "age_band": "60+",
-  "tier": "civil_service",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Parlamentārais sekretārs, Viedās administrācijas un reģionālās attīstības ministrija",
   "status": "active"
@@ -9990,7 +9990,7 @@
   "position": 12,
   "birth_year": 1971,
   "age_band": "50-59",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Deputāts, Gulbenes novada pašvaldība",
   "status": "active"
@@ -10004,7 +10004,7 @@
   "position": 13,
   "birth_year": 1976,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Neiroķirurgs, Paula Stradiņa klīniskā universitātes slimnīca",
   "status": "active"
@@ -10018,7 +10018,7 @@
   "position": 14,
   "birth_year": 1967,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Prezidents, Latvijas Agronomu biedrība",
   "status": "active"
@@ -10062,7 +10062,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "mākslinieciskā vadītāja, SIA \"Vidzemes koncertzāle\", Valdes locekle",
+  "headline_role": "Valdes locekle, mākslinieciskā vadītāja, SIA \"Vidzemes koncertzāle\"",
   "status": "active"
  },
  {
@@ -10118,7 +10118,7 @@
   "age_band": "30-39",
   "tier": "municipal",
   "tags": [],
-  "headline_role": "priekšsēdētāja vietniece izglītības un sporta lietu jautājumos, Ķekavas novada pašvaldības dome, Deputāte",
+  "headline_role": "Deputāte, priekšsēdētāja vietniece izglītības un sporta lietu jautājumos, Ķekavas novada pašvaldības dome",
   "status": "active"
  },
  {
@@ -10172,7 +10172,7 @@
   "position": 25,
   "birth_year": 1986,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Centrālās administrācijas īpašumu apsaimniekošanas pārvaldes vadītājs, Cēsu novada pašvaldība",
   "status": "active"
@@ -10270,7 +10270,7 @@
   "position": 1,
   "birth_year": 1982,
   "age_band": "40-49",
-  "tier": "civil_service",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Ministrs, Viedās administrācijas un reģionālās attīstības ministrija",
   "status": "active"
@@ -10286,7 +10286,7 @@
   "age_band": "60+",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "frakcijas priekšsēdētāja vietniece, Latvijas Republikas Saeima, Deputāte",
+  "headline_role": "Deputāte, frakcijas priekšsēdētāja vietniece, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -10298,7 +10298,7 @@
   "position": 3,
   "birth_year": 1982,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Ārsts kardiologs un reto slimību kabineta atbildīgais ārsts, Paula Stradiņa Klīniskā universitātes slimnīca",
   "status": "active"
@@ -10326,7 +10326,7 @@
   "position": 5,
   "birth_year": 1985,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Saimnieciskās darbības veicējs, Pašnodarbināta persona",
   "status": "active"
@@ -10356,7 +10356,7 @@
   "age_band": "30-39",
   "tier": "municipal",
   "tags": [],
-  "headline_role": "civilās aizsardzības inženieris, Jēkabpils novada pašvaldība, Deputāts",
+  "headline_role": "Deputāts, civilās aizsardzības inženieris, Jēkabpils novada pašvaldība",
   "status": "active"
  },
  {
@@ -10424,7 +10424,7 @@
   "position": 12,
   "birth_year": 1990,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Valdes loceklis, \"AUTO ASOCIĀCIJA\"",
   "status": "active"
@@ -10466,7 +10466,7 @@
   "position": 15,
   "birth_year": 1982,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Skolotāja, Jelgavas Spīdolas Valsts ģimnāzija",
   "status": "active"
@@ -10494,7 +10494,7 @@
   "position": 17,
   "birth_year": 1989,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Valdes loceklis, Sia \"LIL Projekts\"",
   "status": "active"
@@ -10522,7 +10522,7 @@
   "position": 1,
   "birth_year": 1967,
   "age_band": "50-59",
-  "tier": "sitting_mp",
+  "tier": "minister",
   "tags": [],
   "headline_role": "deputāte, Latvijas Republikas Saeima",
   "status": "active"
@@ -10536,7 +10536,7 @@
   "position": 2,
   "birth_year": 1979,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "VALDES LOCEKLIS, AK INVEST SIA",
   "status": "active"
@@ -10566,7 +10566,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "namu pārzinis, Dzīvokļu īpašnieku biedrība “Mežu 43”, valdes priekšsēdētāja",
+  "headline_role": "valdes priekšsēdētāja, namu pārzinis, Dzīvokļu īpašnieku biedrība “Mežu 43”",
   "status": "active"
  },
  {
@@ -10746,7 +10746,7 @@
   "position": 1,
   "birth_year": 1965,
   "age_band": "60+",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Pašvaldības domes deputāts, Rēzeknes valstspilsētas pašvaldība",
   "status": "active"
@@ -10830,7 +10830,7 @@
   "position": 7,
   "birth_year": 1975,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "darba aizsardzības speciālists, VAS \"Latvijas dzelzceļš\"",
   "status": "active"
@@ -10844,9 +10844,9 @@
   "position": 8,
   "birth_year": 1980,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
-  "headline_role": "grāmatvede, SIA ALFA SPEKTRS, valdes priekšsedētāja",
+  "headline_role": "valdes priekšsedētāja, grāmatvede, SIA ALFA SPEKTRS",
   "status": "active"
  },
  {
@@ -10872,7 +10872,7 @@
   "position": 10,
   "birth_year": 1990,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Vilces līdzekļa vadītājs/mašīnists, SIA LDZ CARGO",
   "status": "active"
@@ -10970,7 +10970,7 @@
   "position": 17,
   "birth_year": 1961,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "pensionārs",
   "status": "active"
@@ -10984,7 +10984,7 @@
   "position": 1,
   "birth_year": 1970,
   "age_band": "50-59",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "domes deputāts, Rīgas pilsētas pašvaldība",
   "status": "active"
@@ -10998,7 +10998,7 @@
   "position": 2,
   "birth_year": 1973,
   "age_band": "50-59",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Deputāts, Rīgas Dome",
   "status": "active"
@@ -11012,7 +11012,7 @@
   "position": 3,
   "birth_year": 1958,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "mācītājs, Rīgas Mateja baptistu draudze",
   "status": "active"
@@ -11026,7 +11026,7 @@
   "position": 4,
   "birth_year": 1966,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Pašnodarbinātā persona, Regīna Ločmele, 191166-10610",
   "status": "active"
@@ -11054,7 +11054,7 @@
   "position": 6,
   "birth_year": 1985,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Eiropas parlamenta deputāta palīgs, Eiropas Parlaments",
   "status": "active"
@@ -11068,7 +11068,7 @@
   "position": 7,
   "birth_year": 1981,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Valdes loceklis, Merķeļa Fonds",
   "status": "active"
@@ -11334,7 +11334,7 @@
   "position": 26,
   "birth_year": 1971,
   "age_band": "50-59",
-  "tier": "sitting_mp",
+  "tier": "newcomer",
   "tags": [],
   "headline_role": "deputātes Ilzes Stobovas palīdze, Latvijas Republikas Saeimas frakcija Latvija Pirmajā Vietā",
   "status": "active"
@@ -11586,7 +11586,7 @@
   "position": 2,
   "birth_year": 1964,
   "age_band": "60+",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Domes priekšsēdētājs, Valkas novada pašvaldība",
   "status": "active"
@@ -11600,7 +11600,7 @@
   "position": 3,
   "birth_year": 1966,
   "age_band": "60+",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Deputāts, Rīgas Dome",
   "status": "active"
@@ -11628,7 +11628,7 @@
   "position": 5,
   "birth_year": 1944,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "pensionars",
   "status": "active"
@@ -11740,7 +11740,7 @@
   "position": 13,
   "birth_year": 1981,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Mājsaimniece",
   "status": "active"
@@ -11810,7 +11810,7 @@
   "position": 18,
   "birth_year": 1941,
   "age_band": "60+",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Deputāts, Rīgas valstspilsētas pašvaldība",
   "status": "active"
@@ -11838,7 +11838,7 @@
   "position": 20,
   "birth_year": 2000,
   "age_band": "<30",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "tiesneša palīgs, Rīgas pilsētas tiesa",
   "status": "active"
@@ -12246,7 +12246,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "tehniskais eksperts, SIA \"LUX\", Valdes loceklis",
+  "headline_role": "Valdes loceklis, tehniskais eksperts, SIA \"LUX\"",
   "status": "active"
  },
  {
@@ -12272,7 +12272,7 @@
   "position": 2,
   "birth_year": 1962,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Pensionārs",
   "status": "active"
@@ -12286,7 +12286,7 @@
   "position": 3,
   "birth_year": 1964,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Direktors, Liepājas valstspilsētas pašvaldības aģentūra Liepājas Sabiedriskais transports",
   "status": "active"
@@ -12300,7 +12300,7 @@
   "position": 4,
   "birth_year": 1966,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Vadītāja, Rojas Jūras zvejniecības muzejs",
   "status": "active"
@@ -12342,7 +12342,7 @@
   "position": 7,
   "birth_year": 1979,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Direktors, Kuldīgas novada sporta skola",
   "status": "active"
@@ -12524,7 +12524,7 @@
   "position": 4,
   "birth_year": 1973,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Valdes loceklis, SIA BALTIC PRESENTS",
   "status": "active"
@@ -12608,9 +12608,9 @@
   "position": 10,
   "birth_year": 1970,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
-  "headline_role": "programmēšanas skolotājs, Jāņa Eglīša Preiļu Valsts ģimnāzija, Direktora vietnieks informātikas jautājumos",
+  "headline_role": "Direktora vietnieks informātikas jautājumos, programmēšanas skolotājs, Jāņa Eglīša Preiļu Valsts ģimnāzija",
   "status": "active"
  },
  {
@@ -12664,7 +12664,7 @@
   "position": 14,
   "birth_year": 1964,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Direktore, Ludzas Mūzikas pamatskola",
   "status": "active"
@@ -12734,7 +12734,7 @@
   "position": 2,
   "birth_year": 1962,
   "age_band": "60+",
-  "tier": "sitting_mp",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Deputāts, Latvijas Republikas Saeima",
   "status": "active"
@@ -12748,7 +12748,7 @@
   "position": 3,
   "birth_year": 1977,
   "age_band": "40-49",
-  "tier": "sitting_mp",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Deputāte, LR Saeima",
   "status": "active"
@@ -12778,7 +12778,7 @@
   "age_band": "40-49",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "Saeimas priekšsēdētājas biedre, Latvijas Republikas Saeima, Deputāte",
+  "headline_role": "Deputāte, Saeimas priekšsēdētājas biedre, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -12820,7 +12820,7 @@
   "age_band": "40-49",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "Saeimas frakcijas \"Jaunā Vienotība\" priekšsēdētāja vietniece, Latvijas Republikas Saeima, Saeimas deputāte",
+  "headline_role": "Saeimas deputāte, Saeimas frakcijas \"Jaunā Vienotība\" priekšsēdētāja vietniece, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -12874,7 +12874,7 @@
   "position": 12,
   "birth_year": 1989,
   "age_band": "30-39",
-  "tier": "civil_service",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Ministra ārštata padomnieks Rīgas metropoles areāla transporta jautājumos, Latvijas Republikas Satiksmes ministrija",
   "status": "active"
@@ -12902,7 +12902,7 @@
   "position": 14,
   "birth_year": 1979,
   "age_band": "40-49",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Rīgas domes deputāte, Rīgas valstspilsētas pašvaldība",
   "status": "active"
@@ -12958,7 +12958,7 @@
   "position": 18,
   "birth_year": 1991,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Valdes loceklis, EZ EXPERIENCES SIA",
   "status": "active"
@@ -12986,9 +12986,9 @@
   "position": 20,
   "birth_year": 1987,
   "age_band": "30-39",
-  "tier": "municipal",
+  "tier": "newcomer",
   "tags": [],
-  "headline_role": "Mājokļu un vides komitejas priekšsēdētāja vietnieks, Rīgas valstspilsētas pašvaldība, Rīgas domes deputāts",
+  "headline_role": "Rīgas domes deputāts, Mājokļu un vides komitejas priekšsēdētāja vietnieks, Rīgas valstspilsētas pašvaldība",
   "status": "active"
  },
  {
@@ -13028,7 +13028,7 @@
   "position": 23,
   "birth_year": 1978,
   "age_band": "40-49",
-  "tier": "civil_service",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "ministra padomniece juridiskajos jautājumos, Aizsardzības ministrija",
   "status": "active"
@@ -13114,7 +13114,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Valdes priekšsēdētājs, As Padures muiža ",
+  "headline_role": "Valdes priekšsēdētājs, As Padures muiža",
   "status": "active"
  },
  {
@@ -13154,7 +13154,7 @@
   "position": 32,
   "birth_year": 1959,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "minister",
   "tags": [],
   "headline_role": "profesors, Rīgas Ziemeļvalstu augstskola",
   "status": "active"
@@ -13184,7 +13184,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "valdes priekšsēdētāja, Latvijas pilsētu celtniecības projektēšanas institūts, sertificēta arhitekte, pilsētbūvniece",
+  "headline_role": "sertificēta arhitekte, pilsētbūvniece, valdes priekšsēdētāja, Latvijas pilsētu celtniecības projektēšanas institūts",
   "status": "active"
  },
  {
@@ -13252,7 +13252,7 @@
   "position": 39,
   "birth_year": 1963,
   "age_band": "60+",
-  "tier": "municipal",
+  "tier": "newcomer",
   "tags": [],
   "headline_role": "Rīgas domes priekšsēdētāja vietnieka biroja vadītājs, Rīgas dome",
   "status": "active"
@@ -13322,7 +13322,7 @@
   "position": 1,
   "birth_year": 1975,
   "age_band": "50-59",
-  "tier": "sitting_mp",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Saeimas deputāte, Latvijas Republikas Saeima",
   "status": "active"
@@ -13352,7 +13352,7 @@
   "age_band": "50-59",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "Nacionālās drošības komisijas priekšsēdētājs, LR Saeima, Deputāts",
+  "headline_role": "Deputāts, Nacionālās drošības komisijas priekšsēdētājs, LR Saeima",
   "status": "active"
  },
  {
@@ -13364,9 +13364,9 @@
   "position": 4,
   "birth_year": 1974,
   "age_band": "50-59",
-  "tier": "sitting_mp",
+  "tier": "minister",
   "tags": [],
-  "headline_role": "Publisko izdevumu un revīzijas komisijas priekšsēdētāja biedrs, Latvijas Republikas Saeima, Saeimas deputāts",
+  "headline_role": "Saeimas deputāts, Publisko izdevumu un revīzijas komisijas priekšsēdētāja biedrs, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -13392,7 +13392,7 @@
   "position": 6,
   "birth_year": 1971,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "minister",
   "tags": [],
   "headline_role": "valdes locekle, Politiskā partija \"Vienotība\"",
   "status": "active"
@@ -13448,7 +13448,7 @@
   "position": 10,
   "birth_year": 1996,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Reģionālās politikas padomnieks, Politisko partiju apvienība \"Jaunā VIENOTĪBA\"",
   "status": "active"
@@ -13476,7 +13476,7 @@
   "position": 12,
   "birth_year": 1979,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Valkas nodaļas vadītājs, Politiskā partija \"Vienotība\"",
   "status": "active"
@@ -13604,7 +13604,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Valdes loceklis, Biedrība \"Latvijas Ilgtspējīgu iepirkumu asociācija\" ",
+  "headline_role": "Valdes loceklis, Biedrība \"Latvijas Ilgtspējīgu iepirkumu asociācija\"",
   "status": "active"
  },
  {
@@ -13616,7 +13616,7 @@
   "position": 22,
   "birth_year": 1991,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Rīgas valstspilsētas pašvaldības policijas Kvalitātes vadības pārvaldes Iekšējās kontroles nodaļas galvenais speciālists, Rīgas valstspilsētas pašvaldība",
   "status": "active"
@@ -13658,7 +13658,7 @@
   "position": 25,
   "birth_year": 1982,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Sporta darba organizators, Ķekavas novada pašvaldības iestāde Ķekavas novada Sporta centrs",
   "status": "active"
@@ -13728,7 +13728,7 @@
   "position": 30,
   "birth_year": 1975,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Uzņēmējdarbības konsultants, Ropažu novada pašvaldība",
   "status": "active"
@@ -13744,7 +13744,7 @@
   "age_band": "<30",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Stažieris, Eiropas banku iestāde ",
+  "headline_role": "Stažieris, Eiropas banku iestāde",
   "status": "active"
  },
  {
@@ -13758,7 +13758,7 @@
   "age_band": "30-39",
   "tier": "sitting_mp",
   "tags": [],
-  "headline_role": "Saeimas frakcijas \"Jaunā Vienotība\" priekšsēdētājs, Latvijas Republikas Saeima, 14. Saeimas deputāts",
+  "headline_role": "14. Saeimas deputāts, Saeimas frakcijas \"Jaunā Vienotība\" priekšsēdētājs, Latvijas Republikas Saeima",
   "status": "active"
  },
  {
@@ -13770,7 +13770,7 @@
   "position": 2,
   "birth_year": 1985,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "pārdošanas konsultants, IKU Eduards SIA",
   "status": "active"
@@ -13812,7 +13812,7 @@
   "position": 5,
   "birth_year": 1961,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "minister",
   "tags": [],
   "headline_role": "prezidents, Airēšanas federācija",
   "status": "active"
@@ -13938,7 +13938,7 @@
   "position": 14,
   "birth_year": 1975,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Viceprezidents, Latvijas Futbola federācija",
   "status": "active"
@@ -13952,9 +13952,9 @@
   "position": 15,
   "birth_year": 1969,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
-  "headline_role": "Elkšņu pagasts), Jēkabpils novada pašvaldība, Pārvaldes vadītāja (Viesītes pilsēta, Viesītes, Saukas, Rites",
+  "headline_role": "Pārvaldes vadītāja (Viesītes pilsēta, Viesītes, Saukas, Rites, Elkšņu pagasts), Jēkabpils novada pašvaldība",
   "status": "active"
  },
  {
@@ -13980,7 +13980,7 @@
   "position": 17,
   "birth_year": 1992,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Siltumenerģētikas tehniķis, SIA \"Farels Solutions\"",
   "status": "active"
@@ -13994,7 +13994,7 @@
   "position": 18,
   "birth_year": 2002,
   "age_band": "<30",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Deputāta palīgs, Latvijas Republikas Saeima",
   "status": "active"
@@ -14036,7 +14036,7 @@
   "position": 3,
   "birth_year": 1958,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "dziedātāja, pašnodarbinātā",
   "status": "active"
@@ -14066,7 +14066,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "valdes loceklis, SIA \"ICO\" ",
+  "headline_role": "valdes loceklis, SIA \"ICO\"",
   "status": "active"
  },
  {
@@ -14220,7 +14220,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Vēsturniece, Latvijas Biozinātņu un tehnoloģiju universitāte APP “Dārzkopības institūts” ",
+  "headline_role": "Vēsturniece, Latvijas Biozinātņu un tehnoloģiju universitāte APP “Dārzkopības institūts”",
   "status": "active"
  },
  {
@@ -14388,7 +14388,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Saimniecisko procesu nodrošināšanas speciālists, AS \"Pasažieru vilciens\" ",
+  "headline_role": "Saimniecisko procesu nodrošināšanas speciālists, AS \"Pasažieru vilciens\"",
   "status": "active"
  },
  {
@@ -14400,7 +14400,7 @@
   "position": 8,
   "birth_year": 1954,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "pensionāre",
   "status": "active"
@@ -14458,7 +14458,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "BŪVUZRAUGS, SIA \"ISLIENA V\" , PROJEKTU VADĪTĀJS",
+  "headline_role": "PROJEKTU VADĪTĀJS, BŪVUZRAUGS, SIA \"ISLIENA V\"",
   "status": "active"
  },
  {
@@ -14472,7 +14472,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "eksperts, Pašnodarbināts, Skaņu režisors",
+  "headline_role": "Skaņu režisors, eksperts, Pašnodarbināts",
   "status": "active"
  },
  {
@@ -14878,7 +14878,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Pedagogs, Cēsu novada pašvaldība ",
+  "headline_role": "Pedagogs, Cēsu novada pašvaldība",
   "status": "active"
  },
  {
@@ -14974,7 +14974,7 @@
   "position": 2,
   "birth_year": 1985,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Valdes loceklis, SIA Welcome stay",
   "status": "active"
@@ -15016,7 +15016,7 @@
   "position": 5,
   "birth_year": 1979,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Padomes priekšsēdētājs, A/s Jelgavas Siltumtīklu uzņēmums",
   "status": "active"
@@ -15102,7 +15102,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Valdes priekšsēdētājs, SIA AmberBirch ",
+  "headline_role": "Valdes priekšsēdētājs, SIA AmberBirch",
   "status": "active"
  },
  {
@@ -15184,7 +15184,7 @@
   "position": 1,
   "birth_year": 1979,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "valdes loceklis, partija \"Latvijas attīstībai\"",
   "status": "active"
@@ -15284,7 +15284,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "finanšu direktors, SIA DSG Karjeri, valdes loceklis",
+  "headline_role": "valdes loceklis, finanšu direktors, SIA DSG Karjeri",
   "status": "active"
  },
  {
@@ -15338,7 +15338,7 @@
   "position": 1,
   "birth_year": 1960,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Īpašnieks, Zemnieku saimniecība \"Ievas\"",
   "status": "active"
@@ -15520,7 +15520,7 @@
   "position": 8,
   "birth_year": 1973,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "izpilddirektors, SIA ''Ideju lauks''",
   "status": "active"
@@ -15884,7 +15884,7 @@
   "position": 1,
   "birth_year": 1980,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "minister",
   "tags": [],
   "headline_role": "valdes priekšsēdētājs, Latvijas attīstībai",
   "status": "active"
@@ -15912,7 +15912,7 @@
   "position": 3,
   "birth_year": 1974,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "valdes loceklis, SIA Drošas velobraukšanas skola",
   "status": "active"
@@ -16206,7 +16206,7 @@
   "position": 1,
   "birth_year": 1957,
   "age_band": "60+",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "priekšsēdētājs, Aizkraukles novada pašvaldība",
   "status": "active"
@@ -16220,7 +16220,7 @@
   "position": 2,
   "birth_year": 1992,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Izpilddirektors, EWE Neue Energien",
   "status": "active"
@@ -16234,7 +16234,7 @@
   "position": 3,
   "birth_year": 1991,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Komunikācijas nodaļas vadītājs, Aizkraukles novada pašvaldība",
   "status": "active"
@@ -16612,7 +16612,7 @@
   "position": 2,
   "birth_year": 1979,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Karavīrs, Ukrainas bruņotie spēki",
   "status": "active"
@@ -16768,7 +16768,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "informācijas tehnoloģijas un enerģētikas fakultātē, Rīgas Tehniskā Universitāte, Vecākais pasniedzējs Datorzinātnes",
+  "headline_role": "Vecākais pasniedzējs Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultātē, Rīgas Tehniskā Universitāte",
   "status": "active"
  },
  {
@@ -16908,7 +16908,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "sporta darba organizatots, Rīgas Juglas vidusskola, skolotāja",
+  "headline_role": "skolotāja, sporta darba organizatots, Rīgas Juglas vidusskola",
   "status": "active"
  },
  {
@@ -16962,7 +16962,7 @@
   "position": 2,
   "birth_year": 1962,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Pensionārs",
   "status": "active"
@@ -17020,7 +17020,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "nodokļu konsultante, SIA \"T&Advance\", valdes priekšsēdētāja",
+  "headline_role": "valdes priekšsēdētāja, nodokļu konsultante, SIA \"T&Advance\"",
   "status": "active"
  },
  {
@@ -17048,7 +17048,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Projektu vadītāja, AS DAMBIS ",
+  "headline_role": "Projektu vadītāja, AS DAMBIS",
   "status": "active"
  },
  {
@@ -17146,7 +17146,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "sociālais aprūpētājs, Biedrība \"Svētā Jāņa Palīdzība\", Saimniecības pārzinis",
+  "headline_role": "Saimniecības pārzinis, sociālais aprūpētājs, Biedrība \"Svētā Jāņa Palīdzība\"",
   "status": "active"
  },
  {
@@ -17424,7 +17424,7 @@
   "position": 2,
   "birth_year": 1989,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Menedžeris, SIA \"Djuma 4\"",
   "status": "active"
@@ -17564,7 +17564,7 @@
   "position": 7,
   "birth_year": 1974,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Bezdarbnieks",
   "status": "active"
@@ -17592,7 +17592,7 @@
   "position": 2,
   "birth_year": 1984,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Valdes loceklis, \"Stabilitātei- Jā!\" biedrība",
   "status": "active"
@@ -17634,7 +17634,7 @@
   "position": 5,
   "birth_year": 1946,
   "age_band": "60+",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Deputāts, Rīgas valstspilsētas pašvaldība",
   "status": "active"
@@ -17648,7 +17648,7 @@
   "position": 6,
   "birth_year": 1992,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Masu mediju digitalizācijas projektu vadītājs, SIA \"Zīme\"",
   "status": "active"
@@ -17662,7 +17662,7 @@
   "position": 7,
   "birth_year": 1970,
   "age_band": "50-59",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Deputāts, Rīgas valstspilsētas pašvaldība",
   "status": "active"
@@ -17748,7 +17748,7 @@
   "age_band": "60+",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Galvenā grāmatvede, Politiskā partija \"Stabilitātei!\" ",
+  "headline_role": "Galvenā grāmatvede, Politiskā partija \"Stabilitātei!\"",
   "status": "active"
  },
  {
@@ -17902,7 +17902,7 @@
   "age_band": "50-59",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "muitas brokeris, SIA \"GARIVA\", Deklarants",
+  "headline_role": "Deklarants, muitas brokeris, SIA \"GARIVA\"",
   "status": "active"
  },
  {
@@ -17916,7 +17916,7 @@
   "age_band": "30-39",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "Informācijas sistēminženieris, SIA Hortus Digital ",
+  "headline_role": "Informācijas sistēminženieris, SIA Hortus Digital",
   "status": "active"
  },
  {
@@ -18166,7 +18166,7 @@
   "position": 1,
   "birth_year": 1978,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Izpilddirektors, SIA \"Airons\"",
   "status": "active"
@@ -18250,7 +18250,7 @@
   "position": 1,
   "birth_year": 1987,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Valdes locekle, PROGRESĪVIE",
   "status": "active"
@@ -18306,7 +18306,7 @@
   "position": 5,
   "birth_year": 1973,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Ekspertu komisijas priekšsēdētāja, Valsts Kultūrkapitāla fonds",
   "status": "active"
@@ -18488,7 +18488,7 @@
   "position": 2,
   "birth_year": 1985,
   "age_band": "40-49",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Lektors, Rīgas Stradiņa universitāte",
   "status": "active"
@@ -18502,7 +18502,7 @@
   "position": 3,
   "birth_year": 1971,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Direktore, Jāņa Eglīša Preiļu Valsts ģimnāzija",
   "status": "active"
@@ -18532,7 +18532,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "portāla lakuga.lv žurnāliste, Latgaliešu kultūras kustība \"Volūda\", projektu vadītāja",
+  "headline_role": "projektu vadītāja, portāla lakuga.lv žurnāliste, Latgaliešu kultūras kustība \"Volūda\"",
   "status": "active"
  },
  {
@@ -18740,7 +18740,7 @@
   "position": 3,
   "birth_year": 1986,
   "age_band": "40-49",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "deputāte, Rīgas valstpilsētas pašvaldība",
   "status": "active"
@@ -18754,7 +18754,7 @@
   "position": 4,
   "birth_year": 1982,
   "age_band": "40-49",
-  "tier": "sitting_mp",
+  "tier": "minister",
   "tags": [],
   "headline_role": "14.Saeimas deputāts, Latvijas Republikas Saeima",
   "status": "active"
@@ -18768,7 +18768,7 @@
   "position": 5,
   "birth_year": 2000,
   "age_band": "<30",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "politikas konsultante, Jaunatnes organizācija \"Protests\"",
   "status": "active"
@@ -18838,7 +18838,7 @@
   "position": 10,
   "birth_year": 1990,
   "age_band": "30-39",
-  "tier": "municipal",
+  "tier": "minister",
   "tags": [],
   "headline_role": "Rīgas domes deputāte, Rīgas valstspilsētas pašvaldība",
   "status": "active"
@@ -18866,7 +18866,7 @@
   "position": 12,
   "birth_year": 1993,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Izpilddirektors, Kustība \"Par!\"",
   "status": "active"
@@ -19062,7 +19062,7 @@
   "position": 26,
   "birth_year": 1975,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "civil_service",
   "tags": [],
   "headline_role": "Pasniedzējs, MIKC Rīgas Dizaina un mākslas vidusskola",
   "status": "active"
@@ -19132,7 +19132,7 @@
   "position": 31,
   "birth_year": 2000,
   "age_band": "<30",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Eiropas Parlamenta deputāta Mārtiņa Staķa vietējais palīgs, Eiropas Parlamenta deputāta Mārtiņa Staķa birojs",
   "status": "active"
@@ -19246,7 +19246,7 @@
   "age_band": "40-49",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "valdes locekle, Sociālais uzņēmums \"Ligero\", Vadītāja",
+  "headline_role": "Vadītāja, valdes locekle, Sociālais uzņēmums \"Ligero\"",
   "status": "active"
  },
  {
@@ -19370,9 +19370,9 @@
   "position": 5,
   "birth_year": 1992,
   "age_band": "30-39",
-  "tier": "municipal",
+  "tier": "former_mp",
   "tags": [],
-  "headline_role": "veselības un sabiedrības iesaistes jautājumu komitejas priekšsēdētājs, Cēsu novada dome, Sociālo",
+  "headline_role": "Sociālo, veselības un sabiedrības iesaistes jautājumu komitejas priekšsēdētājs, Cēsu novada dome",
   "status": "active"
  },
  {
@@ -19398,7 +19398,7 @@
   "position": 7,
   "birth_year": 1993,
   "age_band": "30-39",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "Turnas tautas nama vadītāja, Valkas novada pašvaldība",
   "status": "active"
@@ -19484,7 +19484,7 @@
   "age_band": "<30",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "izvērtējuma un mācību analītiķis, SIA Zinc Network Limited, Monitoringa",
+  "headline_role": "Monitoringa, izvērtējuma un mācību analītiķis, SIA Zinc Network Limited",
   "status": "active"
  },
  {
@@ -19554,7 +19554,7 @@
   "age_band": "30-39",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "pedagogs- karjeras konsultante, Rīgas Valdorfskola, Direktores vietniece izglītības jomā, vispārējās pamatizglītības skolotāja",
+  "headline_role": "Direktores vietniece izglītības jomā, vispārējās pamatizglītības skolotāja, pedagogs- karjeras konsultante, Rīgas Valdorfskola",
   "status": "active"
  },
  {
@@ -19594,7 +19594,7 @@
   "position": 21,
   "birth_year": 1958,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "municipal",
   "tags": [],
   "headline_role": "izpildinstitūcija, Senioru biedrība \"Saulgrieži\"",
   "status": "active"
@@ -19776,9 +19776,9 @@
   "position": 3,
   "birth_year": 1981,
   "age_band": "40-49",
-  "tier": "municipal",
+  "tier": "newcomer",
   "tags": [],
-  "headline_role": "kultūras un sporta komitejas priekšsēdētājs, Jelgavas valstspilsētas dome, Domes deputāts, Izglītības",
+  "headline_role": "Domes deputāts, Izglītības, kultūras un sporta komitejas priekšsēdētājs, Jelgavas valstspilsētas dome",
   "status": "active"
  },
  {
@@ -19790,7 +19790,7 @@
   "position": 4,
   "birth_year": 1956,
   "age_band": "60+",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
   "headline_role": "Asociētā profesore, Latvijas Univesrsitāte, Ekonomikas un sociālo zinātņu fakultāte",
   "status": "active"
@@ -19804,9 +19804,9 @@
   "position": 5,
   "birth_year": 1970,
   "age_band": "50-59",
-  "tier": "newcomer",
+  "tier": "former_mp",
   "tags": [],
-  "headline_role": "kārtības un pretkorupcijas komitejas vadītāja vietniece, Rīgas dome, Pretkorupcijas un labas pārvaldibas komisijas vadītāja, Drošības",
+  "headline_role": "Pretkorupcijas un labas pārvaldibas komisijas vadītāja, Drošības, kārtības un pretkorupcijas komitejas vadītāja vietniece, Rīgas dome",
   "status": "active"
  },
  {
@@ -19818,7 +19818,7 @@
   "position": 6,
   "birth_year": 2001,
   "age_band": "<30",
-  "tier": "sitting_mp",
+  "tier": "newcomer",
   "tags": [],
   "headline_role": "Deputāta palīdze, Latvijas Republikas Saeima",
   "status": "active"
@@ -19988,7 +19988,7 @@
   "age_band": "30-39",
   "tier": "newcomer",
   "tags": [],
-  "headline_role": "tehniskais konsultants, GoCardless SIA, Klientu apkalpošanas vadītājs",
+  "headline_role": "Klientu apkalpošanas vadītājs, tehniskais konsultants, GoCardless SIA",
   "status": "active"
  }
 ]
