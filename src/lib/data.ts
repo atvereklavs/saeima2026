@@ -27,6 +27,10 @@ export function tierLabel(tier: string, locale: Locale): string {
   return meta.tiers[tier]?.[locale] ?? tier;
 }
 
+export function tagLabel(tag: string, locale: Locale): string {
+  return meta.tags[tag]?.[locale] ?? tag;
+}
+
 export function constituencyName(slug: string): string {
   return meta.constituencies.find((c) => c.slug === slug)?.name ?? slug;
 }

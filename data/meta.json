@@ -1,5 +1,5 @@
 {
- "built_at": "2026-09-08T17:05:38.266Z",
+ "built_at": "2026-09-08T17:09:24.982Z",
  "election_date": "2026-10-03",
  "cvk_index_fetched_at": "2026-09-08T13:49:37.837Z",
  "cvk_last_updated": "2026-09-04T14:30",
@@ -71,7 +71,68 @@
   "civil_service",
   "newcomer"
  ],
- "tags": {},
+ "tags": {
+  "law": {
+   "lv": "Tiesības",
+   "en": "Law"
+  },
+  "finance-economy": {
+   "lv": "Finanses un ekonomika",
+   "en": "Finance and economy"
+  },
+  "health": {
+   "lv": "Veselība",
+   "en": "Health"
+  },
+  "education-science": {
+   "lv": "Izglītība un zinātne",
+   "en": "Education and science"
+  },
+  "defence-security": {
+   "lv": "Aizsardzība un drošība",
+   "en": "Defence and security"
+  },
+  "foreign-affairs": {
+   "lv": "Ārlietas",
+   "en": "Foreign affairs"
+  },
+  "agriculture-environment": {
+   "lv": "Lauksaimniecība un vide",
+   "en": "Agriculture and environment"
+  },
+  "it-digital": {
+   "lv": "IT un digitalizācija",
+   "en": "IT and digital"
+  },
+  "culture-media": {
+   "lv": "Kultūra un mediji",
+   "en": "Culture and media"
+  },
+  "social-welfare": {
+   "lv": "Sociālā joma",
+   "en": "Social welfare"
+  },
+  "transport-infrastructure": {
+   "lv": "Transports, enerģētika, būvniecība",
+   "en": "Transport, energy, construction"
+  },
+  "municipal-governance": {
+   "lv": "Pašvaldības un reģioni",
+   "en": "Municipalities and regions"
+  },
+  "business": {
+   "lv": "Uzņēmējdarbība",
+   "en": "Business"
+  },
+  "civil-society": {
+   "lv": "Pilsoniskā sabiedrība",
+   "en": "Civil society"
+  },
+  "sport": {
+   "lv": "Sports",
+   "en": "Sport"
+  }
+ },
  "publish_kgb": true,
  "excluded_fields": [
   "ethnicity",

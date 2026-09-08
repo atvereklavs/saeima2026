@@ -12,6 +12,7 @@ import { DELNA_MPS_URL, POLISTATS_DEPUTIES_URL, saeimaDeputyUrl } from "./lib/so
 import { parseAllCandidatesTable, parseCandidatePage, parseIndex, parseListPage } from "./lib/cvk-parsers.ts";
 import type { CvkCandidatePage, CvkListPage, CvkTableRow } from "./lib/cvk-parsers.ts";
 import { ageBand, ageOf, loadTierRules, mean, median } from "./lib/derive.ts";
+import { deriveTags, loadTagRules } from "./lib/tags.ts";
 import { nameKey } from "./lib/names.ts";
 import { cvkCandidateUrl, cvkCandidateUrlEn, cvkIndexUrl, cvkListUrl, cvkListUrlEn, cvkTableUrl } from "./lib/cvk-urls.ts";
 
@@ -52,6 +53,7 @@ function splitPositionLine(line: string): Position {
 
 function main(): void {
   const rules = loadTierRules();
+  const tagRules = loadTagRules();
   const index = parseIndex(must(cvkIndexUrl));
   const constituencyName = Object.fromEntries(index.constituencies.map((c) => [c.slug, c.name]));
   const rows = parseAllCandidatesTable(must(cvkTableUrl));
@@ -125,7 +127,7 @@ function main(): void {
       headline_role: headline,
       has_profile: Boolean(profile),
       history,
-      tags: [],
+      tags: deriveTags(profile?.education ?? [], positions, history.committees, tagRules),
       links,
       sources: {
         cvk: { url, fetched_at: cachedEntry(url)?.fetched_at ?? cachedEntry(cvkTableUrl)?.fetched_at ?? null, updated_at: profile?.updated_at ?? null },
@@ -165,6 +167,12 @@ function main(): void {
         .sort((a, b) => a.position - b.position)
         .map((c) => c.id);
     }
+    const tagCounts = new Map<string, number>();
+    for (const c of own) for (const t of c.tags) tagCounts.set(t.tag, (tagCounts.get(t.tag) ?? 0) + 1);
+    const topTags = [...tagCounts.entries()]
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .slice(0, 6)
+      .map(([tag, count]) => ({ tag, count }));
     const leads: Record<string, string> = {};
     for (const [slug, ids] of Object.entries(byConstituency)) {
       const first = own.find((c) => c.id === ids[0]);
@@ -200,7 +208,7 @@ function main(): void {
         avg_age: mean(ages),
         median_age: median(ages),
         education_mix: page.stats.education,
-        top_tags: [] as { tag: string; count: number }[],
+        top_tags: topTags,
         by_constituency: byConstituency,
       },
       links: {
@@ -235,7 +243,7 @@ function main(): void {
     birth_year: c.birth_year,
     age_band: c.age_band,
     tier: c.history.tier,
-    tags: c.tags.slice(0, 3).map((t) => t.tag),
+    tags: c.tags.map((t) => t.tag),
     headline_role: c.headline_role,
     status: c.status,
   }));
@@ -260,7 +268,7 @@ function main(): void {
     constituencies: index.constituencies,
     tiers: rules.labels,
     tier_order: rules.order,
-    tags: {} as Record<string, { lv: string; en: string }>,
+    tags: Object.fromEntries(Object.entries(tagRules.tags).map(([k, v]) => [k, { lv: v.lv, en: v.en }])),
     publish_kgb: PUBLISH_KGB,
     excluded_fields: EXCLUDED_FIELDS,
   };

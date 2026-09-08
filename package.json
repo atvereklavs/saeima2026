@@ -5,7 +5,9 @@
   "type": "module",
   "description": "Latvian 15th Saeima election (3 Oct 2026): lists and candidates by experience, strengths and history in government",
   "license": "MIT",
-  "engines": { "node": ">=22.18" },
+  "engines": {
+    "node": ">=22.18"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -14,9 +16,12 @@
     "test": "node --test 'tests/**/*.test.ts'",
     "pipeline:cvk": "node pipeline/fetch-cvk.ts",
     "pipeline:build": "node pipeline/build-dataset.ts",
-    "pipeline:all": "node pipeline/fetch-cvk.ts && node pipeline/build-dataset.ts",
+    "pipeline:all": "node pipeline/fetch-cvk.ts --details && npm run -s pipeline:external && node pipeline/match.ts && node pipeline/fetch-saeima.ts --deputy-pages && node pipeline/build-dataset.ts",
     "deploy:dry": "astro build && wrangler deploy --dry-run",
-    "deploy": "astro build && wrangler deploy"
+    "deploy": "astro build && wrangler deploy",
+    "pipeline:external": "node pipeline/fetch-delna.ts && node pipeline/fetch-knab.ts && node pipeline/fetch-saeima.ts && node pipeline/fetch-wikidata.ts",
+    "pipeline:match": "node pipeline/match.ts",
+    "pipeline:deputies": "node pipeline/fetch-saeima.ts --deputy-pages"
   },
   "dependencies": {
     "@astrojs/react": "6.0.5",

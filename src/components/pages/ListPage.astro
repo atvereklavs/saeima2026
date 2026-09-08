@@ -5,6 +5,7 @@ import CandidateTable from "../CandidateTable.astro";
 import Meter from "../Meter.astro";
 import Programme from "../Programme.astro";
 import StatsTable from "../StatsTable.astro";
+import TagChips from "../TagChips.astro";
 import TierStack from "../TierStack.astro";
 interface Props { locale: Locale; slug: string }
 const { locale, slug } = Astro.props;
@@ -40,7 +41,15 @@ const coalition = list.curated.coalition;
     <div style="margin-top:1rem">
       <TierStack counts={a.tier_counts} locale={locale} legend />
     </div>
-    <p class="notice soft">{t(locale, "candidate.provisional")}</p>
+    <div style="margin-top:1rem">
+      <h3 style="margin-top:0">{t(locale, "candidate.tags")}</h3>
+      <TagChips
+        tags={a.top_tags.map((x) => x.tag)}
+        counts={Object.fromEntries(a.top_tags.map((x) => [x.tag, x.count]))}
+        locale={locale}
+      />
+    </div>
+    <p class="notice soft">{t(locale, "list.tier_note")}</p>
   </section>
   <section>
     <h2>{t(locale, "list.leads")}</h2>

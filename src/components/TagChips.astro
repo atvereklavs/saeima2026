@@ -1,0 +1,11 @@
+---
+import type { Locale } from "../i18n/labels.ts";
+import { tagLabel } from "../lib/data.ts";
+interface Props { tags: string[]; locale: Locale; counts?: Record<string, number> }
+const { tags, locale, counts } = Astro.props;
+---
+{tags.length > 0 && (
+  <div class="chips">
+    {tags.map((t) => <span class="chip">{tagLabel(t, locale)}{counts && counts[t] !== undefined && ` · ${counts[t]}`}</span>)}
+  </div>
+)}

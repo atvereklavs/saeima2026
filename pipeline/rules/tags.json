@@ -1,0 +1,324 @@
+{
+  "_comment": "Strength-tag taxonomy. Patterns are regexes matched per line against diacritic-folded lowercase text (education entries, declared positions, committee names), so write them in ASCII. A line scores its weight for a tag when any `keywords` pattern hits and no `exclude` pattern hits on the same line; `committees` patterns run only on committee names. A tag applies when the summed score reaches `threshold`.",
+  "version": 1,
+  "threshold": 1,
+  "weights": {
+    "education": 1,
+    "position": 1,
+    "committee": 1.5
+  },
+  "tags": {
+    "law": {
+      "lv": "Tiesības",
+      "en": "Law",
+      "keywords": [
+        "jurist",
+        "juridisk",
+        "advokat",
+        "tiesnes",
+        "prokuror",
+        "notar",
+        "tiesibu zinatn",
+        "tieslietu"
+      ],
+      "committees": [
+        "juridiska komisij"
+      ]
+    },
+    "finance-economy": {
+      "lv": "Finanses un ekonomika",
+      "en": "Finance and economy",
+      "keywords": [
+        "ekonomist",
+        "ekonomik",
+        "finans",
+        "gramatved",
+        "\\bbank",
+        "audit",
+        "nodokl",
+        "apdrosinasan",
+        "investicij"
+      ],
+      "committees": [
+        "budzeta un finansu"
+      ]
+    },
+    "health": {
+      "lv": "Veselība",
+      "en": "Health",
+      "keywords": [
+        "medicin",
+        "\\barst",
+        "slimnic",
+        "farmac",
+        "stomatolog",
+        "psihiatr",
+        "psiholog",
+        "medmas",
+        "veselibas centr",
+        "veselibas aprup",
+        "fizioterap",
+        "veterinararst"
+      ],
+      "committees": [
+        "veselibas"
+      ]
+    },
+    "education-science": {
+      "lv": "Izglītība un zinātne",
+      "en": "Education and science",
+      "keywords": [
+        "pedagog",
+        "skolotaj",
+        "\\bskol",
+        "universitat",
+        "augstskol",
+        "akademij",
+        "docent",
+        "profesor",
+        "lektor",
+        "gimnaz",
+        "izglitibas iestad",
+        "izglitibas parvald",
+        "doktora grad",
+        "zinatnisk",
+        "zinatnu akademij",
+        "petniek",
+        "\\bpetnie"
+      ],
+      "committees": [
+        "izglitibas, kulturas un zinatnes"
+      ]
+    },
+    "defence-security": {
+      "lv": "Aizsardzība un drošība",
+      "en": "Defence and security",
+      "keywords": [
+        "aizsardzib",
+        "militar",
+        "zemessardz",
+        "\\bpolicij",
+        "robezsardz",
+        "ugunsdzes",
+        "drosibas dienest",
+        "karavir",
+        "virsniek",
+        "jaunsardz",
+        "bruno\\w* spek"
+      ],
+      "committees": [
+        "aizsardzibas, ieksliet",
+        "ieksejas drosibas",
+        "nacionalas drosibas"
+      ]
+    },
+    "foreign-affairs": {
+      "lv": "Ārlietas",
+      "en": "Foreign affairs",
+      "keywords": [
+        "arliet",
+        "diplomat",
+        "vestniec",
+        "vestniek",
+        "starptautisko attiecib",
+        "starptautisko tiesib"
+      ],
+      "committees": [
+        "arlietu komisij",
+        "eiropas lietu komisij",
+        "baltijas asamblej",
+        "parlamentaras konferences"
+      ]
+    },
+    "agriculture-environment": {
+      "lv": "Lauksaimniecība un vide",
+      "en": "Agriculture and environment",
+      "keywords": [
+        "lauksaimniec",
+        "zemkopib",
+        "mezsaimniec",
+        "mezizstrad",
+        "\\bvides\\b",
+        "ekolog",
+        "\\bdabas\\b",
+        "zivsaimniec",
+        "agronom",
+        "zemniek",
+        "piensaimniec",
+        "klimat"
+      ],
+      "committees": [
+        "agraras, vides",
+        "vides, klimata"
+      ]
+    },
+    "it-digital": {
+      "lv": "IT un digitalizācija",
+      "en": "IT and digital",
+      "keywords": [
+        "informacijas tehnologij",
+        "programmetaj",
+        "digital",
+        "datorzinatn",
+        "datortikl",
+        "kiberdrosib",
+        "telekomunikacij",
+        "sistemu analitik",
+        "\\bit\\b (specialist|vaditaj|administrator)",
+        "informacijas sistem"
+      ],
+      "committees": [
+        "digitalas transformacij"
+      ]
+    },
+    "culture-media": {
+      "lv": "Kultūra un mediji",
+      "en": "Culture and media",
+      "keywords": [
+        "kultur",
+        "muzik",
+        "makslini",
+        "\\bmaksl",
+        "teatr",
+        "rezisor",
+        "zurnalist",
+        "\\bmedij",
+        "muzej",
+        "bibliotek",
+        "aktier",
+        "komponist",
+        "rakstniek",
+        "dizainer",
+        "folklor"
+      ],
+      "committees": [
+        "mediju politikas"
+      ],
+      "exclude": [
+        "fizkultur"
+      ]
+    },
+    "social-welfare": {
+      "lv": "Sociālā joma",
+      "en": "Social welfare",
+      "keywords": [
+        "labklajib",
+        "sociala darba",
+        "socialais darbinie",
+        "socialo pakalpojum",
+        "socialas aprupes",
+        "socialais dienest",
+        "pensij",
+        "invaliditat",
+        "berntiesib",
+        "barintiesa"
+      ],
+      "committees": [
+        "socialo un darba lietu"
+      ]
+    },
+    "transport-infrastructure": {
+      "lv": "Transports, enerģētika, būvniecība",
+      "en": "Transport, energy, construction",
+      "keywords": [
+        "transport",
+        "logistik",
+        "dzelzcel",
+        "autocel",
+        "satiksm",
+        "buvniec",
+        "buvinzenier",
+        "energetik",
+        "\\bostas\\b",
+        "aviacij",
+        "autopark",
+        "elektroapgad",
+        "siltumapgad"
+      ],
+      "committees": [
+        "tautsaimniecibas, agraras"
+      ]
+    },
+    "municipal-governance": {
+      "lv": "Pašvaldības un reģioni",
+      "en": "Municipalities and regions",
+      "keywords": [
+        "pasvaldib",
+        "novada dom",
+        "pilsetas dom",
+        "valstspilset",
+        "pagasta parvald",
+        "regionalas attistib",
+        "teritorialas plano"
+      ],
+      "committees": [
+        "valsts parvaldes un pasvaldibas",
+        "administrativi teritorialas"
+      ]
+    },
+    "business": {
+      "lv": "Uzņēmējdarbība",
+      "en": "Business",
+      "keywords": [
+        "\\bsia\\b",
+        "\\ba/s\\b",
+        "\\bas \"",
+        "uznemum",
+        "uznemej",
+        "komercdarb",
+        "holding",
+        "rupniec",
+        "rupnic",
+        "tirdzniecib",
+        "valdes (locek|priekssedetaj)",
+        "\\bceo\\b",
+        "menedzment",
+        "loģistik"
+      ],
+      "exclude": [
+        "partij",
+        "apvienib",
+        "organizacij",
+        "biedrib",
+        "nodibinajum",
+        "pasvaldib",
+        "ministrij",
+        "arodbiedrib",
+        "\\bskol",
+        "slimnic",
+        "universitat"
+      ]
+    },
+    "civil-society": {
+      "lv": "Pilsoniskā sabiedrība",
+      "en": "Civil society",
+      "keywords": [
+        "biedrib",
+        "nodibinajum",
+        "\\bfonds\\b",
+        "arodbiedrib",
+        "\\bnvo\\b",
+        "brivpratig",
+        "labdarib"
+      ],
+      "exclude": [
+        "partij",
+        "pensiju fonds"
+      ]
+    },
+    "sport": {
+      "lv": "Sports",
+      "en": "Sport",
+      "keywords": [
+        "\\bsport",
+        "trener",
+        "olimpisk",
+        "futbol",
+        "hokej",
+        "basketbol",
+        "vieglatlet",
+        "fizkultur"
+      ]
+    }
+  }
+}

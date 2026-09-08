@@ -3,6 +3,7 @@ import { t, type Locale } from "../../i18n/labels.ts";
 import { formatDate, listBySlug, listPath, listShortName, meta, tierLabel } from "../../lib/data.ts";
 import type { Candidate } from "../../../pipeline/lib/types.ts";
 import TierBadge from "../TierBadge.astro";
+import TagChips from "../TagChips.astro";
 import Timeline from "../Timeline.astro";
 interface Props { locale: Locale; candidate: Candidate }
 const { locale, candidate: c } = Astro.props;
@@ -22,6 +23,11 @@ const positions = c.positions.length ? c.positions : c.positions_raw.map((line) 
   <TierBadge tier={h.tier} locale={locale} provisional={h.provisional} />
   {c.headline_role && <span class="muted"> · {c.headline_role}</span>}
 </p>
+{c.tags.length > 0 && (
+  <div style="margin:-0.25rem 0 1rem">
+    <TagChips tags={c.tags.map((x) => x.tag)} locale={locale} />
+  </div>
+)}
 
 <div class="section-grid">
   <section>

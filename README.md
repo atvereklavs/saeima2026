@@ -30,7 +30,11 @@ pnpm test                       # parsers, name keys, tier rules
 pnpm pipeline:cvk               # index + 14 list pages + candidate table (16 requests)
 pnpm pipeline:cvk -- --details  # ... plus every candidate page (~1,430 requests, ~9 min, resumable)
 pnpm pipeline:cvk -- --refresh  # re-fetch index/lists/table; candidate pages only where the row changed
+pnpm pipeline:external          # Delna CSVs, KNAB registry, Saeima views, Wikidata SPARQL
+pnpm pipeline:match             # join external records to candidates -> data/reports/matching.json
+pnpm pipeline:deputies          # Saeima deputy pages for matched candidates only (~200)
 pnpm pipeline:build             # cache -> data/*.json (never touches the network)
+pnpm pipeline:all               # everything above in order
 pnpm dev                        # local dev server
 pnpm build && pnpm preview      # static build + preview
 pnpm deploy                     # build + `wrangler deploy` (Cloudflare Workers static assets)
@@ -47,8 +51,8 @@ canonical links and the sitemap).
 | Source | Used for |
 |---|---|
 | [dati.cvk.lv/SV2026](https://dati.cvk.lv/SV2026/kandidatu-saraksti/) | lists, programmes, per-list statistics, candidates' own declarations |
-| [Saeima](https://titania.saeima.lv) and [Delna](https://deputatiuzdelnas.lv) | 13th and 14th Saeima mandates, factions, committees (next slice) |
-| [Wikidata](https://www.wikidata.org) (CC0) | earlier terms, ministerial posts, Wikipedia links (next slice) |
+| [Saeima](https://titania.saeima.lv) and [Delna](https://deputatiuzdelnas.lv) | 12th-14th Saeima mandates, factions, committees with dates |
+| [Wikidata](https://www.wikidata.org) (CC0) | earlier terms, ministerial posts, Wikipedia links |
 | [KNAB](https://info.knab.gov.lv/parties) | party registry facts; finances stay there |
 
 The crawler is single-threaded, waits 350 ms between requests, retries on 5xx
@@ -63,10 +67,14 @@ no cookies and runs no analytics.
 
 ## Experience tier
 
-`pipeline/rules/tiers.json` holds the regex rules that turn declared workplaces
-into a tier (minister, sitting MP, former MP, municipal, civil service, none).
-Until official Saeima and Wikidata records are joined in, the tier is marked
-provisional on every page.
+Official records win: a candidate matched in Delna, Saeima or Wikidata gets
+their tier, terms, committees and ministerial posts from those sources and a
+"confirmed in official sources" badge. For everyone else the tier comes from
+`pipeline/rules/tiers.json`, regex rules over the workplaces declared to the
+CVK, and is marked as derived. Name joins use normalised names plus birth year;
+ambiguities are listed in `data/reports/matching.json` and resolved by hand in
+`data/curated/match-overrides.json`. Strength tags work the same way from
+`pipeline/rules/tags.json`.
 
 ## Licence
 

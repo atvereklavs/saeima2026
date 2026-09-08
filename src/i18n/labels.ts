@@ -81,8 +81,12 @@ export const L = {
   "candidate.tier": { lv: "Pieredzes līmenis", en: "Experience tier" },
   "candidate.flags": { lv: "Atpazītās pazīmes", en: "Signals found" },
   "candidate.provisional": {
-    lv: "Noteikts automātiski pēc kandidāta norādītajām darbavietām. Saeimas un valdības vēsture no oficiālajiem avotiem tiks pievienota.",
-    en: "Derived automatically from the workplaces the candidate declared. Saeima and government history from official sources is coming.",
+    lv: "Noteikts automātiski pēc kandidāta CVK norādītajām darbavietām.",
+    en: "Derived automatically from the workplaces the candidate declared to the CVK.",
+  },
+  "list.tier_note": {
+    lv: "Līmeņi balstās oficiālajos Saeimas, Delnas un Wikidata ierakstos, kur tādi ir (atzīme \"Apstiprināts oficiālajos avotos\"), pārējiem - kandidāta CVK norādītajās darbavietās.",
+    en: "Tiers rest on official Saeima, Delna and Wikidata records where they exist (badge \"Confirmed in official sources\"); for the rest, on the workplaces declared to the CVK.",
   },
   "candidate.kgb": { lv: "Deklarācija par sadarbību ar drošības dienestiem", en: "Declaration on security-service collaboration" },
   "candidate.kgb_no": {

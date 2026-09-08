@@ -19,7 +19,7 @@ const sorted = [...lists].sort((a, b) => a.no - b.no);
 </section>
 <div class="howto">
   <h3>{t(locale, "overview.how")}</h3>
-  <p>{t(locale, "overview.how_text")}</p>
+  <p>{t(locale, "overview.how_text")} {t(locale, "list.tier_note")}</p>
 </div>
 <div class="cards">
   {sorted.map((l) => <ListCard list={l} locale={locale} />)}

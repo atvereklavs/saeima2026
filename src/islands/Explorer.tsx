@@ -14,11 +14,12 @@ type Props = {
   constituencies: { slug: string; name: string }[];
   tiers: Record<string, Label>;
   tierOrder: string[];
+  tags: Record<string, Label>;
   labels: Record<string, string>;
 };
 
-type State = { q: string; list: string; con: string; tier: string; age: string; sort: string };
-const DEFAULT: State = { q: "", list: "", con: "", tier: "", age: "", sort: "list" };
+type State = { q: string; list: string; con: string; tier: string; tag: string; age: string; sort: string };
+const DEFAULT: State = { q: "", list: "", con: "", tier: "", tag: "", age: "", sort: "list" };
 
 function readHash(): State {
   const p = new URLSearchParams(window.location.hash.slice(1));
@@ -63,6 +64,7 @@ export default function Explorer(props: Props) {
       if (s.list && String(r.list_no) !== s.list) return;
       if (s.con && r.constituency !== s.con) return;
       if (s.tier && r.tier !== s.tier) return;
+      if (s.tag && !r.tags.includes(s.tag)) return;
       if (s.age && r.age_band !== s.age) return;
       if (q && !haystack[i].includes(q)) return;
       out.push(r);
@@ -115,6 +117,17 @@ export default function Explorer(props: Props) {
             {props.tierOrder.map((t) => (
               <option key={t} value={t}>{tierLabel(t)}</option>
             ))}
+          </select>
+        </label>
+        <label>
+          {L["candidate.tags"]}
+          <select value={s.tag} onChange={(e) => set({ tag: e.target.value })}>
+            <option value="">{L["explorer.all"]}</option>
+            {Object.entries(props.tags)
+              .sort((a, b) => a[1][locale].localeCompare(b[1][locale], "lv"))
+              .map(([k, v]) => (
+                <option key={k} value={k}>{v[locale]}</option>
+              ))}
           </select>
         </label>
         <label>

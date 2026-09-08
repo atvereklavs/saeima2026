@@ -9,6 +9,7 @@ const labels = labelsFor(locale, [
   "explorer.search", "explorer.all", "explorer.results", "explorer.reset", "explorer.sort", "explorer.sort.list",
   "explorer.sort.name", "explorer.sort.age_asc", "explorer.sort.age_desc", "explorer.more", "explorer.role",
   "candidate.list", "candidate.constituency", "candidate.tier", "candidate.age", "candidate.position", "nav.candidates",
+  "candidate.tags",
 ]);
 ---
 <h1>{t(locale, "explorer.heading")}</h1>
@@ -21,5 +22,6 @@ const labels = labelsFor(locale, [
   constituencies={meta.constituencies}
   tiers={meta.tiers}
   tierOrder={meta.tier_order}
+  tags={meta.tags}
   labels={labels}
 />
