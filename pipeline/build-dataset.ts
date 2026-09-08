@@ -8,7 +8,8 @@ import { join } from "node:path";
 import { CACHE_ROOT, cachedEntry, readCached } from "./lib/http.ts";
 import { buildHistory } from "./lib/history.ts";
 import type { CandidateMatch } from "./match.ts";
-import { DELNA_MPS_URL, POLISTATS_DEPUTIES_URL, saeimaDeputyUrl } from "./lib/sources.ts";
+import { DELNA_MPS_URL, KNAB_PARTIES_URL, POLISTATS_DEPUTIES_URL, knabPartyUrl, saeimaDeputyUrl } from "./lib/sources.ts";
+import { foldText } from "./lib/names.ts";
 import { parseAllCandidatesTable, parseCandidatePage, parseIndex, parseListPage } from "./lib/cvk-parsers.ts";
 import type { CvkCandidatePage, CvkListPage, CvkTableRow } from "./lib/cvk-parsers.ts";
 import { ageBand, ageOf, loadTierRules, mean, median } from "./lib/derive.ts";
@@ -62,6 +63,22 @@ function main(): void {
 
   const curated = readJson<Record<string, CuratedList>>(join(DATA_DIR, "curated", "lists.json"), {});
   delete (curated as Record<string, unknown>)._comment;
+
+  // KNAB party registry (cached JSON): match by folded name, curated public_id wins.
+  type KnabParty = { public_id: string; name: string; registrationNumber: string; foundedAt: string };
+  const knabRaw = readCached(KNAB_PARTIES_URL);
+  const knabParsed = knabRaw ? (JSON.parse(knabRaw) as { parties?: KnabParty[] } | KnabParty[]) : [];
+  const knabParties: KnabParty[] = Array.isArray(knabParsed) ? knabParsed : (knabParsed as { parties?: KnabParty[] }).parties ?? (Object.values(knabParsed)[0] as KnabParty[]) ?? [];
+  const knabByFold = new Map(knabParties.map((p) => [foldText(p.name), p]));
+  const knabById = new Map(knabParties.map((p) => [p.public_id, p]));
+
+  // Debates entries (curated): only the per-list count feeds the aggregates.
+  type DebatesFile = { events?: { insights?: { list: string }[] }[] };
+  const debatesFile = readJson<DebatesFile>(join(DATA_DIR, "curated", "debates.json"), {});
+  const debatesCount = new Map<string, number>();
+  for (const ev of debatesFile.events ?? []) {
+    for (const ins of ev.insights ?? []) debatesCount.set(ins.list, (debatesCount.get(ins.list) ?? 0) + 1);
+  }
   const previous = readJson<Candidate[]>(join(DATA_DIR, "candidates.json"), []);
   const matches = readJson<CandidateMatch[]>(join(CACHE_ROOT, "raw", "match.json"), []);
   const matchById = new Map(matches.map((m) => [m.id, m]));
@@ -179,6 +196,16 @@ function main(): void {
       if (first) leads[slug] = first.name;
     }
     const cur = curated[l.slug] ?? {};
+    const knabRec = (cur.knab_public_id ? knabById.get(cur.knab_public_id) : undefined) ?? knabByFold.get(foldText(l.name)) ?? null;
+    const pctOf = (rows: { label: string; count: number }[], label: string): number | null => {
+      const r = rows.find((x) => x.label === label);
+      const total = page.stats.candidates_count ?? own.length;
+      return r && total ? Math.round((r.count / total) * 1000) / 10 : r ? 0 : null;
+    };
+    const personTerms = own.reduce((n, c) => n + c.history.terms_count, 0);
+    const committeeNames = new Set<string>();
+    for (const c of own) for (const com of c.history.committees) committeeNames.add(com.name);
+    const rigaShare = own.length ? Math.round((own.filter((c) => c.residence === "Rīga").length / own.length) * 1000) / 10 : 0;
     return {
       slug: l.slug,
       no: l.no,
@@ -192,7 +219,7 @@ function main(): void {
         education: page.stats.education,
         foreign_citizenship: page.stats.foreign_citizenship,
       },
-      knab: null,
+      knab: knabRec ? { reg_no: knabRec.registrationNumber, founded_at: knabRec.foundedAt, public_id: knabRec.public_id } : null,
       curated: {
         pm_candidate: cur.pm_candidate ?? null,
         coalition: cur.coalition ?? null,
@@ -207,6 +234,17 @@ function main(): void {
         public_office_share: own.length ? Math.round((office / own.length) * 1000) / 10 : 0,
         avg_age: mean(ages),
         median_age: median(ages),
+        women_pct: pctOf(page.stats.gender, "Sieviete"),
+        higher_ed_pct: pctOf(page.stats.education, "Augstākā"),
+        minister_count: tierCounts.minister,
+        sitting_mp_count: tierCounts.sitting_mp,
+        former_mp_count: tierCounts.former_mp,
+        newcomer_share: own.length ? Math.round((tierCounts.newcomer / own.length) * 1000) / 10 : 0,
+        person_terms: personTerms,
+        committees_distinct: committeeNames.size,
+        riga_share: rigaShare,
+        constituencies_fielded: Object.values(byConstituency).filter((ids) => ids.length > 0).length,
+        debates_count: debatesCount.get(l.slug) ?? 0,
         education_mix: page.stats.education,
         top_tags: topTags,
         by_constituency: byConstituency,
@@ -214,7 +252,7 @@ function main(): void {
       links: {
         cvk: cvkListUrl(l.slug),
         cvk_en: cvkListUrlEn(l.slug),
-        knab: cur.knab_public_id ? `https://info.knab.gov.lv/parties/${cur.knab_public_id}` : "https://info.knab.gov.lv/parties",
+        knab: knabRec ? knabPartyUrl(knabRec.public_id) : "https://info.knab.gov.lv/parties",
       },
       sources: { cvk: { url: cvkListUrl(l.slug), fetched_at: cachedEntry(cvkListUrl(l.slug))?.fetched_at ?? null } },
       debates: null,

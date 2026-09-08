@@ -74,7 +74,11 @@
     }
    ]
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008361364",
+   "founded_at": "16.06.2026",
+   "public_id": "2e9109bea32cf3dcc7edb3b10676c801"
+  },
   "curated": {
    "pm_candidate": "Jūlija Stepaņenko",
    "coalition": "extra_parliamentary",
@@ -102,6 +106,17 @@
    "public_office_share": 16.1,
    "avg_age": 49.7,
    "median_age": 48,
+   "women_pct": 35.5,
+   "higher_ed_pct": 62.9,
+   "minister_count": 0,
+   "sitting_mp_count": 0,
+   "former_mp_count": 7,
+   "newcomer_share": 83.9,
+   "person_terms": 14,
+   "committees_distinct": 25,
+   "riga_share": 39.5,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -285,7 +300,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/suverena-vara--apvieniba-jaunlatviesi",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/suverena-vara--apvieniba-jaunlatviesi",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/2e9109bea32cf3dcc7edb3b10676c801"
   },
   "sources": {
    "cvk": {
@@ -433,7 +448,11 @@
     }
    ]
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008310279",
+   "founded_at": "16.09.2021",
+   "public_id": "1b96a4d5b5205608211a486919784c58"
+  },
   "curated": {
    "pm_candidate": "Alvis Hermanis",
    "coalition": "extra_parliamentary",
@@ -461,6 +480,17 @@
    "public_office_share": 15.6,
    "avg_age": 50.5,
    "median_age": 51,
+   "women_pct": 31.2,
+   "higher_ed_pct": 90.9,
+   "minister_count": 0,
+   "sitting_mp_count": 1,
+   "former_mp_count": 5,
+   "newcomer_share": 84.4,
+   "person_terms": 13,
+   "committees_distinct": 25,
+   "riga_share": 50.6,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -597,7 +627,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/mes-mainam-noteikumus",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/mes-mainam-noteikumus",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/1b96a4d5b5205608211a486919784c58"
   },
   "sources": {
    "cvk": {
@@ -889,7 +919,11 @@
    ],
    "foreign_citizenship": []
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008093085",
+   "founded_at": "28.07.2005",
+   "public_id": "062278facb241cb90840b09683ac9ef5"
+  },
   "curated": {
    "pm_candidate": "Jānis Urbanovičs",
    "coalition": "extra_parliamentary",
@@ -917,6 +951,17 @@
    "public_office_share": 9.7,
    "avg_age": 50,
    "median_age": 48,
+   "women_pct": 25.2,
+   "higher_ed_pct": 66,
+   "minister_count": 0,
+   "sitting_mp_count": 0,
+   "former_mp_count": 9,
+   "newcomer_share": 90.3,
+   "person_terms": 33,
+   "committees_distinct": 17,
+   "riga_share": 39.8,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -1079,7 +1124,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/politisko-partiju-apvieniba-saskanas-centrs",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/politisko-partiju-apvieniba-saskanas-centrs",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/062278facb241cb90840b09683ac9ef5"
   },
   "sources": {
    "cvk": {
@@ -1202,7 +1247,11 @@
    ],
    "foreign_citizenship": []
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008068957",
+   "founded_at": "24.07.2002",
+   "public_id": "8b5d827fb111ecb1178511e19e22c051"
+  },
   "curated": {
    "pm_candidate": "Viktors Valainis",
    "coalition": "government",
@@ -1230,6 +1279,17 @@
    "public_office_share": 47.2,
    "avg_age": 53.1,
    "median_age": 54,
+   "women_pct": 32,
+   "higher_ed_pct": 90.4,
+   "minister_count": 5,
+   "sitting_mp_count": 16,
+   "former_mp_count": 5,
+   "newcomer_share": 52.8,
+   "person_terms": 57,
+   "committees_distinct": 45,
+   "riga_share": 28,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -1414,7 +1474,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/zalo-un-zemnieku-savieniba",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/zalo-un-zemnieku-savieniba",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/8b5d827fb111ecb1178511e19e22c051"
   },
   "sources": {
    "cvk": {
@@ -1607,7 +1667,11 @@
     }
    ]
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008220045",
+   "founded_at": "23.01.2014",
+   "public_id": "b37a925136643d7cd1dc7df2f6607276"
+  },
   "curated": {
    "pm_candidate": "Ilze Indriksone",
    "coalition": "opposition",
@@ -1635,6 +1699,17 @@
    "public_office_share": 41.6,
    "avg_age": 49.9,
    "median_age": 50,
+   "women_pct": 24,
+   "higher_ed_pct": 88.8,
+   "minister_count": 6,
+   "sitting_mp_count": 9,
+   "former_mp_count": 5,
+   "newcomer_share": 58.4,
+   "person_terms": 37,
+   "committees_distinct": 56,
+   "riga_share": 36,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -1814,7 +1889,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/b37a925136643d7cd1dc7df2f6607276"
   },
   "sources": {
    "cvk": {
@@ -2029,7 +2104,11 @@
    ],
    "foreign_citizenship": []
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008305013",
+   "founded_at": "25.02.2021",
+   "public_id": "efce9cfb2e589e99a9ce4151479e15e0"
+  },
   "curated": {
    "pm_candidate": "Aldis Gobzems",
    "coalition": "extra_parliamentary",
@@ -2057,6 +2136,17 @@
    "public_office_share": 1.4,
    "avg_age": 41.8,
    "median_age": 39,
+   "women_pct": 38.9,
+   "higher_ed_pct": 54.2,
+   "minister_count": 0,
+   "sitting_mp_count": 0,
+   "former_mp_count": 0,
+   "newcomer_share": 98.6,
+   "person_terms": 0,
+   "committees_distinct": 0,
+   "riga_share": 30.6,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -2188,7 +2278,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/gobzema-saraksts",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/gobzema-saraksts",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/efce9cfb2e589e99a9ce4151479e15e0"
   },
   "sources": {
    "cvk": {
@@ -2267,7 +2357,11 @@
    ],
    "foreign_citizenship": []
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "50008221771",
+   "founded_at": "11.03.2014",
+   "public_id": "da9d5dd8ec02962b108087f617ecfb33"
+  },
   "curated": {
    "pm_candidate": "Andris Kulbergs",
    "coalition": "government",
@@ -2295,6 +2389,17 @@
    "public_office_share": 49.6,
    "avg_age": 49.2,
    "median_age": 48,
+   "women_pct": 31.2,
+   "higher_ed_pct": 93.6,
+   "minister_count": 7,
+   "sitting_mp_count": 12,
+   "former_mp_count": 8,
+   "newcomer_share": 50.4,
+   "person_terms": 53,
+   "committees_distinct": 47,
+   "riga_share": 28.8,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -2474,7 +2579,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/da9d5dd8ec02962b108087f617ecfb33"
   },
   "sources": {
    "cvk": {
@@ -2604,7 +2709,11 @@
    ],
    "foreign_citizenship": []
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008310156",
+   "founded_at": "09.09.2021",
+   "public_id": "6363c9bba09da347fa751945487a2fe1"
+  },
   "curated": {
    "pm_candidate": "Ainārs Šlesers",
    "coalition": "opposition",
@@ -2632,6 +2741,17 @@
    "public_office_share": 28.2,
    "avg_age": 52.7,
    "median_age": 51.5,
+   "women_pct": 29,
+   "higher_ed_pct": 74.2,
+   "minister_count": 1,
+   "sitting_mp_count": 9,
+   "former_mp_count": 11,
+   "newcomer_share": 71.8,
+   "person_terms": 43,
+   "committees_distinct": 43,
+   "riga_share": 29,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -2815,7 +2935,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/latvija-pirmaja-vieta",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/latvija-pirmaja-vieta",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/6363c9bba09da347fa751945487a2fe1"
   },
   "sources": {
    "cvk": {
@@ -3003,7 +3123,11 @@
     }
    ]
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008158358",
+   "founded_at": "25.04.2010",
+   "public_id": "9fe6cb15005be01e0535df75acb3f3ee"
+  },
   "curated": {
    "pm_candidate": "Arvils Ašeradens",
    "coalition": "government",
@@ -3031,6 +3155,17 @@
    "public_office_share": 51.2,
    "avg_age": 47.3,
    "median_age": 48,
+   "women_pct": 40,
+   "higher_ed_pct": 94.4,
+   "minister_count": 11,
+   "sitting_mp_count": 18,
+   "former_mp_count": 5,
+   "newcomer_share": 48.8,
+   "person_terms": 67,
+   "committees_distinct": 51,
+   "riga_share": 30.4,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -3215,7 +3350,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/jauna-vienotiba",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/jauna-vienotiba",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/9fe6cb15005be01e0535df75acb3f3ee"
   },
   "sources": {
    "cvk": {
@@ -3369,7 +3504,11 @@
    ],
    "foreign_citizenship": []
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008224598",
+   "founded_at": "21.05.2014",
+   "public_id": "8df145c653e2998042b763dc1e715d10"
+  },
   "curated": {
    "pm_candidate": "Jānis Citskovskis",
    "coalition": "extra_parliamentary",
@@ -3397,6 +3536,17 @@
    "public_office_share": 9.5,
    "avg_age": 50.7,
    "median_age": 51,
+   "women_pct": 33.3,
+   "higher_ed_pct": 75,
+   "minister_count": 0,
+   "sitting_mp_count": 0,
+   "former_mp_count": 3,
+   "newcomer_share": 90.5,
+   "person_terms": 3,
+   "committees_distinct": 13,
+   "riga_share": 39.3,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -3535,7 +3685,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/jkp-jauna-konservativa-partija",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/jkp-jauna-konservativa-partija",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/8df145c653e2998042b763dc1e715d10"
   },
   "sources": {
    "cvk": {
@@ -3691,7 +3841,11 @@
    ],
    "foreign_citizenship": []
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008218695",
+   "founded_at": "19.12.2013",
+   "public_id": "fa6682bd83eb04a654351792994df13d"
+  },
   "curated": {
    "pm_candidate": "Ivars Ijabs",
    "coalition": "extra_parliamentary",
@@ -3719,6 +3873,17 @@
    "public_office_share": 15.5,
    "avg_age": 43.8,
    "median_age": 42,
+   "women_pct": 40.5,
+   "higher_ed_pct": 76.2,
+   "minister_count": 2,
+   "sitting_mp_count": 0,
+   "former_mp_count": 2,
+   "newcomer_share": 84.5,
+   "person_terms": 4,
+   "committees_distinct": 10,
+   "riga_share": 44,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -3862,7 +4027,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/latvijas-attistibai",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/latvijas-attistibai",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/fa6682bd83eb04a654351792994df13d"
   },
   "sources": {
    "cvk": {
@@ -3982,7 +4147,11 @@
     }
    ]
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008352018",
+   "founded_at": "29.09.2025",
+   "public_id": "f227b14f2f3c4c469dd21df9cffaf834"
+  },
   "curated": {
    "pm_candidate": "Raivis Zeltīts",
    "coalition": "extra_parliamentary",
@@ -4010,6 +4179,17 @@
    "public_office_share": 5.3,
    "avg_age": 50.1,
    "median_age": 50,
+   "women_pct": 24,
+   "higher_ed_pct": 62.7,
+   "minister_count": 0,
+   "sitting_mp_count": 0,
+   "former_mp_count": 2,
+   "newcomer_share": 94.7,
+   "person_terms": 2,
+   "committees_distinct": 9,
+   "riga_share": 41.3,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -4144,7 +4324,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/austosa-saule-latvijai",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/austosa-saule-latvijai",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/f227b14f2f3c4c469dd21df9cffaf834"
   },
   "sources": {
    "cvk": {
@@ -4290,7 +4470,11 @@
    ],
    "foreign_citizenship": []
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008304516",
+   "founded_at": "08.02.2021",
+   "public_id": "5c214c589fecf039d422749f0a77b4d0"
+  },
   "curated": {
    "pm_candidate": "Svetlana Čulkova",
    "coalition": "opposition",
@@ -4318,6 +4502,17 @@
    "public_office_share": 18.3,
    "avg_age": 44.7,
    "median_age": 43.5,
+   "women_pct": 50,
+   "higher_ed_pct": 51.7,
+   "minister_count": 0,
+   "sitting_mp_count": 4,
+   "former_mp_count": 4,
+   "newcomer_share": 81.7,
+   "person_terms": 14,
+   "committees_distinct": 21,
+   "riga_share": 63.3,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -4437,7 +4632,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/politiska-partija-stabilitatei",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/politiska-partija-stabilitatei",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/5c214c589fecf039d422749f0a77b4d0"
   },
   "sources": {
    "cvk": {
@@ -4571,7 +4766,11 @@
     }
    ]
   },
-  "knab": null,
+  "knab": {
+   "reg_no": "40008262104",
+   "founded_at": "07.03.2017",
+   "public_id": "fc0b20cefd00e78e0794e4abe42f16e6"
+  },
   "curated": {
    "pm_candidate": "Andris Šuvajevs",
    "coalition": "opposition",
@@ -4599,6 +4798,17 @@
    "public_office_share": 27.2,
    "avg_age": 41.7,
    "median_age": 40,
+   "women_pct": 48,
+   "higher_ed_pct": 91.2,
+   "minister_count": 3,
+   "sitting_mp_count": 7,
+   "former_mp_count": 6,
+   "newcomer_share": 72.8,
+   "person_terms": 14,
+   "committees_distinct": 40,
+   "riga_share": 45.6,
+   "constituencies_fielded": 5,
+   "debates_count": 0,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -4778,7 +4988,7 @@
   "links": {
    "cvk": "https://dati.cvk.lv/SV2026/kandidatu-saraksti/progresivie",
    "cvk_en": "https://dati.cvk.lv/SV2026/en/kandidatu-saraksti/progresivie",
-   "knab": "https://info.knab.gov.lv/parties"
+   "knab": "https://info.knab.gov.lv/parties/fc0b20cefd00e78e0794e4abe42f16e6"
   },
   "sources": {
    "cvk": {

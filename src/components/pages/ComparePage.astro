@@ -4,10 +4,6 @@ import { lists, listShortName, meta } from "../../lib/data.ts";
 import Compare from "../../islands/Compare.tsx";
 interface Props { locale: Locale }
 const { locale } = Astro.props;
-const pct = (rows: { label: string; count: number }[], label: string, total: number): number | null => {
-  const r = rows.find((x) => x.label === label);
-  return r && total ? Math.round((r.count / total) * 1000) / 10 : null;
-};
 const items = [...lists]
   .sort((a, b) => a.no - b.no)
   .map((l) => ({
@@ -21,12 +17,21 @@ const items = [...lists]
     tier_counts: l.aggregates.tier_counts,
     avg_age: l.aggregates.avg_age,
     median_age: l.aggregates.median_age,
-    women_pct: pct(l.stats.gender, "Sieviete", l.stats.candidates_count ?? l.candidates_count),
-    higher_ed_pct: pct(l.stats.education, "Augstākā", l.stats.candidates_count ?? l.candidates_count),
+    women_pct: l.aggregates.women_pct,
+    higher_ed_pct: l.aggregates.higher_ed_pct,
+    minister_count: l.aggregates.minister_count,
+    sitting_mp_count: l.aggregates.sitting_mp_count,
+    former_mp_count: l.aggregates.former_mp_count,
+    person_terms: l.aggregates.person_terms,
+    committees_distinct: l.aggregates.committees_distinct,
+    riga_share: l.aggregates.riga_share,
+    debates_count: l.aggregates.debates_count,
+    founded_year: l.knab ? Number(l.knab.founded_at.slice(-4)) : null,
   }));
 const labels = labelsFor(locale, [
   "compare.pick", "list.candidates", "list.experience_share", "list.public_office_share", "list.avg_age", "list.median_age",
-  "compare.women", "compare.higher_ed", "compare.tiers",
+  "compare.women", "compare.higher_ed", "compare.tiers", "compare.view_cards", "compare.view_table", "compare.sort_hint",
+  "list.founded", "list.mp_counts", "list.person_terms", "list.committees_distinct", "list.riga_share", "list.debates_count",
 ]);
 ---
 <h1>{t(locale, "compare.heading")}</h1>

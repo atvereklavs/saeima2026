@@ -48,6 +48,24 @@ test("official history is internally consistent", () => {
   }
 });
 
+test("list aggregates carry the metric battery with sane ranges", () => {
+  for (const l of lists) {
+    const a = l.aggregates as Rec;
+    for (const k of ["person_terms", "committees_distinct", "minister_count", "sitting_mp_count", "former_mp_count", "debates_count"]) {
+      assert.ok(Number.isInteger(a[k]) && (a[k] as number) >= 0, `${l.slug} ${k}=${a[k]}`);
+    }
+    for (const k of ["women_pct", "higher_ed_pct", "riga_share", "newcomer_share", "experience_share", "public_office_share"]) {
+      const v = a[k] as number | null;
+      assert.ok(v === null || (v >= 0 && v <= 100), `${l.slug} ${k}=${v}`);
+    }
+    const fielded = a.constituencies_fielded as number;
+    assert.ok(fielded >= 1 && fielded <= 5, `${l.slug} constituencies_fielded=${fielded}`);
+    const knab = l.knab as Rec | null;
+    if (knab) assert.match(knab.founded_at as string, /^\d{2}\.\d{2}\.\d{4}$/);
+  }
+  assert.ok(lists.filter((l) => l.knab).length >= 12, "KNAB registry should match nearly every list");
+});
+
 test("every candidate links back to its CVK source", () => {
   for (const c of candidates) {
     const links = c.links as Rec;

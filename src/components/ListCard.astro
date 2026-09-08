@@ -10,6 +10,8 @@ const { list, locale } = Astro.props;
 const a = list.aggregates;
 const lead = list.leads_by_constituency.riga ?? Object.values(list.leads_by_constituency)[0];
 const coalition = list.curated.coalition;
+const foundedYear = list.knab?.founded_at?.slice(-4) ?? null;
+const pct = (v: number | null): string => (v === null ? "-" : `${formatNumber(v, locale)}%`);
 ---
 <article class="card">
   <div class="card-head">
@@ -18,13 +20,21 @@ const coalition = list.curated.coalition;
   </div>
   {listShortName(list) !== list.name && <small class="muted">{list.name}</small>}
   <dl class="kv">
-    <dt>{t(locale, "list.candidates")}</dt><dd>{list.candidates_count}</dd>
+    <dt>{t(locale, "list.candidates")}</dt><dd>{list.candidates_count} ({a.constituencies_fielded}/5 {t(locale, "list.constituencies")})</dd>
     {lead && <><dt>{t(locale, "list.lead")}</dt><dd>{lead}</dd></>}
     {list.curated.pm_candidate && <><dt>{t(locale, "list.pm_candidate")}</dt><dd>{list.curated.pm_candidate}</dd></>}
     {coalition && <><dt>14. Saeima</dt><dd>{t(locale, `list.coalition.${coalition}` as never)}{list.curated.seats_14 !== null && ` · ${list.curated.seats_14} ${t(locale, "list.seats_14")}`}</dd></>}
-    <dt>{t(locale, "list.avg_age")}</dt><dd>{formatNumber(a.avg_age, locale)}</dd>
+    {foundedYear && <><dt>{t(locale, "list.founded")}</dt><dd>{foundedYear}</dd></>}
+    <dt>{t(locale, "list.age_row")}</dt><dd>{formatNumber(a.avg_age, locale)} / {formatNumber(a.median_age, locale)}</dd>
+    <dt>{t(locale, "compare.women")}</dt><dd>{pct(a.women_pct)}</dd>
+    <dt>{t(locale, "compare.higher_ed")}</dt><dd>{pct(a.higher_ed_pct)}</dd>
+    <dt>{t(locale, "list.mp_counts")}</dt><dd>{a.minister_count} / {a.sitting_mp_count} / {a.former_mp_count}</dd>
+    <dt>{t(locale, "list.person_terms")}</dt><dd>{a.person_terms}</dd>
+    <dt>{t(locale, "list.committees_distinct")}</dt><dd>{a.committees_distinct}</dd>
+    <dt>{t(locale, "list.riga_share")}</dt><dd>{pct(a.riga_share)}</dd>
+    {a.debates_count > 0 && <><dt>{t(locale, "list.debates_count")}</dt><dd><a href={`${listPath(list.slug, locale)}#debates`}>{a.debates_count}</a></dd></>}
   </dl>
-  <TagChips tags={a.top_tags.slice(0, 3).map((t) => t.tag)} locale={locale} />
+  <TagChips tags={a.top_tags.slice(0, 3).map((x) => x.tag)} locale={locale} />
   <Meter value={a.experience_share} label={t(locale, "list.experience_share")} locale={locale} />
   <Meter value={a.public_office_share} label={t(locale, "list.public_office_share")} locale={locale} alt />
   <TierStack counts={a.tier_counts} locale={locale} />

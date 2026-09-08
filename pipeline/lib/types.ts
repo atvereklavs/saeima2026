@@ -106,6 +106,17 @@ export type ListRecord = {
     public_office_share: number;
     avg_age: number | null;
     median_age: number | null;
+    women_pct: number | null;
+    higher_ed_pct: number | null;
+    minister_count: number;
+    sitting_mp_count: number;
+    former_mp_count: number;
+    newcomer_share: number;
+    person_terms: number;
+    committees_distinct: number;
+    riga_share: number;
+    constituencies_fielded: number;
+    debates_count: number;
     education_mix: StatRow[];
     top_tags: { tag: string; count: number }[];
     by_constituency: Record<string, number[]>;

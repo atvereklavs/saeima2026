@@ -37,6 +37,8 @@ const coalition = list.curated.coalition;
       <div class="fact"><strong>{formatNumber(a.public_office_share, locale)}%</strong><small>{t(locale, "list.public_office_share")}</small></div>
       <div class="fact"><strong>{formatNumber(a.avg_age, locale)}</strong><small>{t(locale, "list.avg_age")}</small></div>
       <div class="fact"><strong>{formatNumber(a.median_age, locale)}</strong><small>{t(locale, "list.median_age")}</small></div>
+      <div class="fact"><strong>{a.person_terms}</strong><small>{t(locale, "list.person_terms")}</small></div>
+      <div class="fact"><strong>{a.committees_distinct}</strong><small>{t(locale, "list.committees_distinct")}</small></div>
     </div>
     <div style="margin-top:1rem">
       <TierStack counts={a.tier_counts} locale={locale} legend />

@@ -3,7 +3,8 @@ export const DELNA_BASE = "https://deputatiuzdelnas.lv/";
 export const delnaCsvUrl = (file: "groups_14.csv" | "groups.csv"): string => `${DELNA_BASE}data/tab_b/${file}`;
 export const DELNA_MPS_URL = `${DELNA_BASE}index.php?saeima=14`;
 
-export const KNAB_PARTIES_URL = "https://info.knab.gov.lv/api/parties";
+// The endpoint paginates (default 20); one page with a high limit covers the whole registry.
+export const KNAB_PARTIES_URL = "https://info.knab.gov.lv/api/parties?limit=500";
 export const knabPartyUrl = (publicId: string): string => `https://info.knab.gov.lv/parties/${publicId}`;
 
 export const SAEIMA_TERMS = [12, 13, 14] as const;
