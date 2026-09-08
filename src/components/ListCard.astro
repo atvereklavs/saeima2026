@@ -1,0 +1,29 @@
+---
+import { t, type Locale } from "../i18n/labels.ts";
+import { formatNumber, listPath, listShortName } from "../lib/data.ts";
+import type { ListRecord } from "../../pipeline/lib/types.ts";
+import Meter from "./Meter.astro";
+import TierStack from "./TierStack.astro";
+interface Props { list: ListRecord; locale: Locale }
+const { list, locale } = Astro.props;
+const a = list.aggregates;
+const lead = list.leads_by_constituency.riga ?? Object.values(list.leads_by_constituency)[0];
+const coalition = list.curated.coalition;
+---
+<article class="card">
+  <div class="card-head">
+    <span class="list-no">{list.no}</span>
+    <h3><a href={listPath(list.slug, locale)}>{listShortName(list)}</a></h3>
+  </div>
+  {listShortName(list) !== list.name && <small class="muted">{list.name}</small>}
+  <dl class="kv">
+    <dt>{t(locale, "list.candidates")}</dt><dd>{list.candidates_count}</dd>
+    {lead && <><dt>{t(locale, "list.lead")}</dt><dd>{lead}</dd></>}
+    {list.curated.pm_candidate && <><dt>{t(locale, "list.pm_candidate")}</dt><dd>{list.curated.pm_candidate}</dd></>}
+    {coalition && <><dt>14. Saeima</dt><dd>{t(locale, `list.coalition.${coalition}` as never)}{list.curated.seats_14 !== null && ` · ${list.curated.seats_14} ${t(locale, "list.seats_14")}`}</dd></>}
+    <dt>{t(locale, "list.avg_age")}</dt><dd>{formatNumber(a.avg_age, locale)}</dd>
+  </dl>
+  <Meter value={a.experience_share} label={t(locale, "list.experience_share")} locale={locale} />
+  <Meter value={a.public_office_share} label={t(locale, "list.public_office_share")} locale={locale} alt />
+  <TierStack counts={a.tier_counts} locale={locale} />
+</article>

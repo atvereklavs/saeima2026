@@ -1,0 +1,13 @@
+---
+import type { ProgrammeSection } from "../../pipeline/lib/types.ts";
+interface Props { sections: ProgrammeSection[] }
+const { sections } = Astro.props;
+---
+<div class="programme">
+  {sections.map((s) => (
+    <>
+      {s.title && <h3>{s.title}</h3>}
+      {s.paragraphs.map((p) => <p>{p}</p>)}
+    </>
+  ))}
+</div>

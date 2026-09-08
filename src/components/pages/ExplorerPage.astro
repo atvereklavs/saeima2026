@@ -1,0 +1,25 @@
+---
+import { labelsFor, t, withLocale, type Locale } from "../../i18n/labels.ts";
+import { lists, listShortName, meta } from "../../lib/data.ts";
+import Explorer from "../../islands/Explorer.tsx";
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const listOpts = [...lists].sort((a, b) => a.no - b.no).map((l) => ({ no: l.no, slug: l.slug, name: listShortName(l) }));
+const labels = labelsFor(locale, [
+  "explorer.search", "explorer.all", "explorer.results", "explorer.reset", "explorer.sort", "explorer.sort.list",
+  "explorer.sort.name", "explorer.sort.age_asc", "explorer.sort.age_desc", "explorer.more", "explorer.role",
+  "candidate.list", "candidate.constituency", "candidate.tier", "candidate.age", "candidate.position", "nav.candidates",
+]);
+---
+<h1>{t(locale, "explorer.heading")}</h1>
+<p class="muted">{t(locale, "overview.how_text")}</p>
+<Explorer
+  client:load
+  locale={locale}
+  base={withLocale(locale, "")}
+  lists={listOpts}
+  constituencies={meta.constituencies}
+  tiers={meta.tiers}
+  tierOrder={meta.tier_order}
+  labels={labels}
+/>

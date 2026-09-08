@@ -1,0 +1,76 @@
+{
+ "built_at": "2026-09-08T13:58:06.990Z",
+ "election_date": "2026-10-03",
+ "cvk_index_fetched_at": "2026-09-08T13:49:37.837Z",
+ "cvk_last_updated": null,
+ "counts": {
+  "lists": 14,
+  "candidates": 1428,
+  "active": 1428,
+  "withdrawn": 0,
+  "with_profile": 0
+ },
+ "constituencies": [
+  {
+   "slug": "riga",
+   "name": "Rīga"
+  },
+  {
+   "slug": "vidzeme",
+   "name": "Vidzeme"
+  },
+  {
+   "slug": "latgale",
+   "name": "Latgale"
+  },
+  {
+   "slug": "kurzeme",
+   "name": "Kurzeme"
+  },
+  {
+   "slug": "zemgale",
+   "name": "Zemgale"
+  }
+ ],
+ "tiers": {
+  "minister": {
+   "lv": "Ministrs / ministru prezidents",
+   "en": "Minister / prime minister"
+  },
+  "sitting_mp": {
+   "lv": "Pašreizējais Saeimas deputāts",
+   "en": "Sitting MP"
+  },
+  "former_mp": {
+   "lv": "Bijušais Saeimas deputāts",
+   "en": "Former MP"
+  },
+  "municipal": {
+   "lv": "Pašvaldības deputāts / vadītājs",
+   "en": "Municipal councillor / leader"
+  },
+  "civil_service": {
+   "lv": "Valsts pārvalde",
+   "en": "Civil service"
+  },
+  "newcomer": {
+   "lv": "Bez amata valsts pārvaldē",
+   "en": "No public office record"
+  }
+ },
+ "tier_order": [
+  "minister",
+  "sitting_mp",
+  "former_mp",
+  "municipal",
+  "civil_service",
+  "newcomer"
+ ],
+ "tags": {},
+ "publish_kgb": true,
+ "excluded_fields": [
+  "ethnicity",
+  "marital_status",
+  "foreign_citizenship"
+ ]
+}

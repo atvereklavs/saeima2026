@@ -1,0 +1,605 @@
+<!DOCTYPE html><html class="h-100">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>SV2026 - 2026. gada Saeimas vēlēšanas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/datatables.min.css">
+    <link rel="stylesheet" href="../css/buttons.dataTables.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="../css/procedure-sv.css"><script src="../js/jquery.min.js"></script><script src="../js/js.cookie.min.js"></script><script src="../js/bootstrap.bundle.min.js"></script><script src="../js/datatables.min.js"></script><script src="../js/dataTables.bootstrap5.js"></script><script src="../js/globalConstants-lv.js"></script><script src="../js/custom.js"></script><script>
+            document.write('<script src="../version.js?v=' + Date.now() + '"><\/script>');
+           </script><script>
+              document.write('<script src="../menu_candidate_list.js?v=' + version + '"><\/script>');
+              document.write('<script src="../menu_activity.js?v=' + version + '"><\/script>');
+              document.write('<script src="../menu_elected.js?v=' + version + '"><\/script>');
+              document.write('<script src="../menu_results.js?v=' + version + '"><\/script>');
+             </script><link rel="shortcut icon" type="image/x-icon" href="../img/favicon-sv.ico">
+  </head>
+  <body class="h-100 d-flex flex-column"><script>changeVisualMode(true);changeZoomMode(true, null);</script><header class="page-header"><div class="container">
+        <div class="container-fluid main-navigation"><nav class="navbar navbar-expand-lg pt-0 pb-0"><a href="../"><b><i class="fa-solid fa-box-archive me-2"></i>SV2026</b></a><div class="navbar-toggler float-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><a><i class="fa fa-fw fa-lg fa-bars"></i></a></div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="navbar-nav w-100"><nav class="main-pages"><a onclick="return checkAvailability(menuCandidateList);" class="nav-item" id="uxCandidateListMenu" href="../kandidatu-saraksti">Kandidātu saraksti</a><a onclick="return checkAvailability(menuActivity);" class="nav-item" id="uxActivityMenu" href="../aktivitate">Aktivitāte</a><a onclick="return checkAvailability(menuResults);" class="nav-item" id="uxResultsMenu" href="../velesanu-rezultati">Vēlēšanu rezultāti</a><a onclick="return checkAvailability(menuElected);" class="nav-item" id="uxElectedMenu" href="../ieveletie-deputati">Ievēlētie deputāti</a></nav><nav class="additional-pages d-flex ms-auto"><a class="nav-item" href="../en/kandidatu-saraksti">EN</a><a onclick="changeVisualMode(false);return false;" class="nav-item"><i class="fa-solid fa-eye"></i></a><div class="dropdown"><a class="nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-a"></i></a><ul class="dropdown-menu font-dd">
+                      <li tabindex="0" class="dropdown-item font-size-75"><a onclick="changeZoomMode(false, '75'); return false;" href="#">75%</a></li>
+                      <li tabindex="0" class="dropdown-item font-size-100"><a onclick="changeZoomMode(false, '100'); return false;" href="#">100%</a></li>
+                      <li tabindex="0" class="dropdown-item font-size-125"><a onclick="changeZoomMode(false, '125'); return false;" href="#">125%</a></li>
+                      <li tabindex="0" class="dropdown-item font-size-150"><a onclick="changeZoomMode(false, '150'); return false;" href="#">150%</a></li>
+                    </ul>
+                  </div></nav></div>
+            </div></nav></div>
+      </div></header><div class="page-content flex-fill">
+      <div class="title-section">
+        <div class="container p-4 d-flex align-items-center">
+          <h1 class="title mb-0">2026. gada Saeimas vēlēšanas</h1>
+        </div>
+      </div><main class="container p-4"><nav aria-label="breadcrumb"><ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../kandidatu-saraksti">Kandidātu saraksti</a></li>
+          </ol></nav><div class="locations">
+          <div class="list-inline mb-3"><a class="list-inline-item" href="../kandidatu-saraksti/riga/" id="uxLocationriga">Rīga</a><a class="list-inline-item" href="../kandidatu-saraksti/vidzeme/" id="uxLocationvidzeme">Vidzeme</a><a class="list-inline-item" href="../kandidatu-saraksti/latgale/" id="uxLocationlatgale">Latgale</a><a class="list-inline-item" href="../kandidatu-saraksti/kurzeme/" id="uxLocationkurzeme">Kurzeme</a><a class="list-inline-item" href="../kandidatu-saraksti/zemgale/" id="uxLocationzemgale">Zemgale</a></div>
+        </div>
+        <div class="mb-3"><a href="../kandidati/">Visu deputātu kandidātu alfabētiskais saraksts</a></div><section class="table-section"><section class="table-wrapper"><table id="uxCandidateListTable" class="table">
+              <thead>
+                <tr>
+                  <th>Nr.</th>
+                  <th>Kandidātu saraksti</th>
+                  <th>Kandidātu skaits</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/suverena-vara--apvieniba-jaunlatviesi">SUVERĒNĀ VARA / APVIENĪBA JAUNLATVIEŠI</a></td>
+                  <td>124</td>
+                </tr>
+                <tr>
+                  <td>2.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/mes-mainam-noteikumus">"Mēs mainām noteikumus"</a></td>
+                  <td>77</td>
+                </tr>
+                <tr>
+                  <td>3.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/politisko-partiju-apvieniba-saskanas-centrs">Politisko partiju apvienība "Saskaņas Centrs"</a></td>
+                  <td>103</td>
+                </tr>
+                <tr>
+                  <td>4.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/zalo-un-zemnieku-savieniba">Zaļo un Zemnieku savienība</a></td>
+                  <td>125</td>
+                </tr>
+                <tr>
+                  <td>5.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk">Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK"</a></td>
+                  <td>125</td>
+                </tr>
+                <tr>
+                  <td>6.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/gobzema-saraksts">"Gobzema saraksts"</a></td>
+                  <td>72</td>
+                </tr>
+                <tr>
+                  <td>7.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija">"APVIENOTAIS SARAKSTS - Latvijas Zaļā partija, Latvijas Reģionu Apvienība, Liepājas partija"</a></td>
+                  <td>125</td>
+                </tr>
+                <tr>
+                  <td>8.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/latvija-pirmaja-vieta">LATVIJA PIRMAJĀ VIETĀ</a></td>
+                  <td>124</td>
+                </tr>
+                <tr>
+                  <td>9.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/jauna-vienotiba">Jaunā VIENOTĪBA</a></td>
+                  <td>125</td>
+                </tr>
+                <tr>
+                  <td>10.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/jkp-jauna-konservativa-partija">JKP Jaunā konservatīvā partija</a></td>
+                  <td>84</td>
+                </tr>
+                <tr>
+                  <td>11.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/latvijas-attistibai">"Latvijas attīstībai"</a></td>
+                  <td>84</td>
+                </tr>
+                <tr>
+                  <td>12.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/austosa-saule-latvijai">"Austošā Saule Latvijai"</a></td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <td>13.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/politiska-partija-stabilitatei">Politiskā partija "Stabilitātei!"</a></td>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <td>14.
+                                </td>
+                  <td><a href="../kandidatu-saraksti/progresivie">"PROGRESĪVIE"</a></td>
+                  <td>125</td>
+                </tr>
+              </tbody>
+            </table></section></section><script>
+                    $(function () {
+                      initTable('uxCandidateListTable', false, true, "Sarakstu skaits");
+                    });
+                  </script><h3 class="mt-3 mb-3">Statistika</h3>
+        <blockquote>
+          <p><strong>Kandidātu skaits:
+          </strong><em>1428</em></p>
+          <p><strong>Ievēlējamo deputātu skaits:
+            </strong><em>100</em></p>
+        </blockquote><section class="table-section mb-3"><section class="table-wrapper"><table id="statistics-gender" class="table table-bordered" data-paging="false" data-info="false">
+              <thead>
+                <tr>
+                  <th style="width:40%" data-dt-order="disable">Dzimums</th>
+                  <th style="width:30%" data-dt-order="disable">Kandidātu skaits</th>
+                  <th style="width:30%" data-dt-order="disable">Procenti</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-order="Sieviete">Sieviete</td>
+                  <td data-order="487">487</td>
+                  <td data-order="34.1">34,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Vīrietis">Vīrietis</td>
+                  <td data-order="941">941</td>
+                  <td data-order="65.9">65,9%</td>
+                </tr>
+              </tbody>
+            </table><script>
+      $(function () {
+        initTable('statistics-gender', false, false, "");
+      });
+    </script></section></section><section class="table-section mb-3"><section class="table-wrapper"><table id="statistics-education" class="table table-bordered" data-paging="false" data-info="false">
+              <thead>
+                <tr>
+                  <th style="width:40%" data-dt-order="disable">Izglītība</th>
+                  <th style="width:30%" data-dt-order="disable">Kandidātu skaits</th>
+                  <th style="width:30%" data-dt-order="disable">Procenti</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-order="Augstākā">Augstākā</td>
+                  <td data-order="1125">1125</td>
+                  <td data-order="78.8">78,8%</td>
+                </tr>
+                <tr>
+                  <td data-order="Vidējā">Vidējā</td>
+                  <td data-order="280">280</td>
+                  <td data-order="19.6">19,6%</td>
+                </tr>
+                <tr>
+                  <td data-order="Pamata">Pamata</td>
+                  <td data-order="23">23</td>
+                  <td data-order="1.6">1,6%</td>
+                </tr>
+              </tbody>
+            </table><script>
+      $(function () {
+        initTable('statistics-education', false, false, "");
+      });
+    </script></section></section><section class="table-section mb-3"><section class="table-wrapper"><table id="statistics-citizneship" class="table table-bordered" data-paging="false" data-info="false">
+              <thead>
+                <tr>
+                  <th style="width:40%" data-dt-order="disable">Ārvalstu pilsonības valsts</th>
+                  <th style="width:30%" data-dt-order="disable">Kandidātu skaits</th>
+                  <th style="width:30%" data-dt-order="disable">Procenti</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-order="Amerikas Savienotās Valstis">Amerikas Savienotās Valstis</td>
+                  <td data-order="2">2</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Austrālija">Austrālija</td>
+                  <td data-order="2">2</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Kanāda">Kanāda</td>
+                  <td data-order="2">2</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Libāna">Libāna</td>
+                  <td data-order="1">1</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Lielbritānija">Lielbritānija</td>
+                  <td data-order="1">1</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Spānija">Spānija</td>
+                  <td data-order="1">1</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Vācija">Vācija</td>
+                  <td data-order="2">2</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Zviedrija">Zviedrija</td>
+                  <td data-order="1">1</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+              </tbody>
+            </table><script>
+      $(function () {
+        initTable('statistics-citizneship', false, false, "");
+      });
+    </script></section></section><section class="table-section mb-3"><section class="table-wrapper"><table id="statistics-nationality" class="table table-bordered" data-paging="false" data-info="false">
+              <thead>
+                <tr>
+                  <th style="width:40%" data-dt-order="disable">Tautība</th>
+                  <th style="width:30%" data-dt-order="disable">Kandidātu skaits</th>
+                  <th style="width:30%" data-dt-order="disable">Procenti</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-order="Latvietis / latviete">Latvietis / latviete</td>
+                  <td data-order="1060">1060</td>
+                  <td data-order="74.1">74,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Baltkrievs / baltkrieviete">Baltkrievs / baltkrieviete</td>
+                  <td data-order="5">5</td>
+                  <td data-order="0.4">0,4%</td>
+                </tr>
+                <tr>
+                  <td data-order="Ebrejs / ebrejiete">Ebrejs / ebrejiete</td>
+                  <td data-order="1">1</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Krievs / krieviete">Krievs / krieviete</td>
+                  <td data-order="108">108</td>
+                  <td data-order="7.6">7,6%</td>
+                </tr>
+                <tr>
+                  <td data-order="Krimas tatārs / krimas tatāriete">Krimas tatārs / krimas tatāriete</td>
+                  <td data-order="1">1</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Libānietis / libāniete">Libānietis / libāniete</td>
+                  <td data-order="1">1</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Lībietis / lībiete">Lībietis / lībiete</td>
+                  <td data-order="1">1</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Lietuvietis / lietuviete">Lietuvietis / lietuviete</td>
+                  <td data-order="7">7</td>
+                  <td data-order="0.5">0,5%</td>
+                </tr>
+                <tr>
+                  <td data-order="Polis / poliete">Polis / poliete</td>
+                  <td data-order="14">14</td>
+                  <td data-order="1.0">1,0%</td>
+                </tr>
+                <tr>
+                  <td data-order="Tatārs / tatāriete">Tatārs / tatāriete</td>
+                  <td data-order="2">2</td>
+                  <td data-order="0.1">0,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Ukrainis / ukrainiete">Ukrainis / ukrainiete</td>
+                  <td data-order="6">6</td>
+                  <td data-order="0.4">0,4%</td>
+                </tr>
+                <tr>
+                  <td data-order="Vācietis / vāciete">Vācietis / vāciete</td>
+                  <td data-order="4">4</td>
+                  <td data-order="0.3">0,3%</td>
+                </tr>
+                <tr>
+                  <td data-order="Nav norādīta">Nav norādīta</td>
+                  <td data-order="218">218</td>
+                  <td data-order="15.2">15,2%</td>
+                </tr>
+              </tbody>
+            </table><script>
+      $(function () {
+        initTable('statistics-nationality', false, false, "");
+      });
+    </script></section></section><section class="table-section mb-3"><section class="table-wrapper"><table id="statistics-marital-statuses" class="table table-bordered" data-paging="false" data-info="false">
+              <thead>
+                <tr>
+                  <th style="width:40%" data-dt-order="disable">Ģimenes stāvoklis</th>
+                  <th style="width:30%" data-dt-order="disable">Kandidātu skaits</th>
+                  <th style="width:30%" data-dt-order="disable">Procenti</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-order="Atraitnis">Atraitnis</td>
+                  <td data-order="22">22</td>
+                  <td data-order="1.5">1,5%</td>
+                </tr>
+                <tr>
+                  <td data-order="Nav norādīts">Nav norādīts</td>
+                  <td data-order="327">327</td>
+                  <td data-order="22.9">22,9%</td>
+                </tr>
+                <tr>
+                  <td data-order="Neprecējies">Neprecējies</td>
+                  <td data-order="187">187</td>
+                  <td data-order="13.1">13,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Precējies">Precējies</td>
+                  <td data-order="762">762</td>
+                  <td data-order="53.4">53,4%</td>
+                </tr>
+                <tr>
+                  <td data-order="Šķīries">Šķīries</td>
+                  <td data-order="130">130</td>
+                  <td data-order="9.1">9,1%</td>
+                </tr>
+              </tbody>
+            </table><script>
+      $(function () {
+        initTable('statistics-marital-statuses', false, false, "");
+      });
+    </script></section></section><section class="table-section mb-3"><section class="table-wrapper"><table id="statistics-residence" class="table table-bordered" data-paging="false" data-info="false">
+              <thead>
+                <tr>
+                  <th style="width:40%" data-dt-order="disable">Dzīvesvieta</th>
+                  <th style="width:30%" data-dt-order="disable">Kandidātu skaits</th>
+                  <th style="width:30%" data-dt-order="disable">Procenti</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-order="Rīga">Rīga</td>
+                  <td data-order="537">537</td>
+                  <td data-order="37.5">37,5%</td>
+                </tr>
+                <tr>
+                  <td data-order="Daugavpils">Daugavpils</td>
+                  <td data-order="32">32</td>
+                  <td data-order="2.2">2,2%</td>
+                </tr>
+                <tr>
+                  <td data-order="Jelgava">Jelgava</td>
+                  <td data-order="48">48</td>
+                  <td data-order="3.4">3,4%</td>
+                </tr>
+                <tr>
+                  <td data-order="Jūrmala">Jūrmala</td>
+                  <td data-order="78">78</td>
+                  <td data-order="5.4">5,4%</td>
+                </tr>
+                <tr>
+                  <td data-order="Liepāja">Liepāja</td>
+                  <td data-order="39">39</td>
+                  <td data-order="2.7">2,7%</td>
+                </tr>
+                <tr>
+                  <td data-order="Rēzekne">Rēzekne</td>
+                  <td data-order="23">23</td>
+                  <td data-order="1.6">1,6%</td>
+                </tr>
+                <tr>
+                  <td data-order="Ventspils">Ventspils</td>
+                  <td data-order="22">22</td>
+                  <td data-order="1.5">1,5%</td>
+                </tr>
+                <tr>
+                  <td data-order="Aizkraukles novads">Aizkraukles novads</td>
+                  <td data-order="18">18</td>
+                  <td data-order="1.3">1,3%</td>
+                </tr>
+                <tr>
+                  <td data-order="Alūksnes novads">Alūksnes novads</td>
+                  <td data-order="8">8</td>
+                  <td data-order="0.6">0,6%</td>
+                </tr>
+                <tr>
+                  <td data-order="Augšdaugavas novads">Augšdaugavas novads</td>
+                  <td data-order="7">7</td>
+                  <td data-order="0.5">0,5%</td>
+                </tr>
+                <tr>
+                  <td data-order="Ādažu novads">Ādažu novads</td>
+                  <td data-order="34">34</td>
+                  <td data-order="2.4">2,4%</td>
+                </tr>
+                <tr>
+                  <td data-order="Balvu novads">Balvu novads</td>
+                  <td data-order="13">13</td>
+                  <td data-order="0.9">0,9%</td>
+                </tr>
+                <tr>
+                  <td data-order="Bauskas novads">Bauskas novads</td>
+                  <td data-order="28">28</td>
+                  <td data-order="2.0">2,0%</td>
+                </tr>
+                <tr>
+                  <td data-order="Cēsu novads">Cēsu novads</td>
+                  <td data-order="28">28</td>
+                  <td data-order="2.0">2,0%</td>
+                </tr>
+                <tr>
+                  <td data-order="Dienvidkurzemes novads">Dienvidkurzemes novads</td>
+                  <td data-order="16">16</td>
+                  <td data-order="1.1">1,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Dobeles novads">Dobeles novads</td>
+                  <td data-order="15">15</td>
+                  <td data-order="1.1">1,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Gulbenes novads">Gulbenes novads</td>
+                  <td data-order="13">13</td>
+                  <td data-order="0.9">0,9%</td>
+                </tr>
+                <tr>
+                  <td data-order="Jelgavas novads">Jelgavas novads</td>
+                  <td data-order="31">31</td>
+                  <td data-order="2.2">2,2%</td>
+                </tr>
+                <tr>
+                  <td data-order="Jēkabpils novads">Jēkabpils novads</td>
+                  <td data-order="17">17</td>
+                  <td data-order="1.2">1,2%</td>
+                </tr>
+                <tr>
+                  <td data-order="Krāslavas novads">Krāslavas novads</td>
+                  <td data-order="10">10</td>
+                  <td data-order="0.7">0,7%</td>
+                </tr>
+                <tr>
+                  <td data-order="Kuldīgas novads">Kuldīgas novads</td>
+                  <td data-order="22">22</td>
+                  <td data-order="1.5">1,5%</td>
+                </tr>
+                <tr>
+                  <td data-order="Ķekavas novads">Ķekavas novads</td>
+                  <td data-order="27">27</td>
+                  <td data-order="1.9">1,9%</td>
+                </tr>
+                <tr>
+                  <td data-order="Limbažu novads">Limbažu novads</td>
+                  <td data-order="12">12</td>
+                  <td data-order="0.8">0,8%</td>
+                </tr>
+                <tr>
+                  <td data-order="Līvānu novads">Līvānu novads</td>
+                  <td data-order="7">7</td>
+                  <td data-order="0.5">0,5%</td>
+                </tr>
+                <tr>
+                  <td data-order="Ludzas novads">Ludzas novads</td>
+                  <td data-order="12">12</td>
+                  <td data-order="0.8">0,8%</td>
+                </tr>
+                <tr>
+                  <td data-order="Madonas novads">Madonas novads</td>
+                  <td data-order="13">13</td>
+                  <td data-order="0.9">0,9%</td>
+                </tr>
+                <tr>
+                  <td data-order="Mārupes novads">Mārupes novads</td>
+                  <td data-order="38">38</td>
+                  <td data-order="2.7">2,7%</td>
+                </tr>
+                <tr>
+                  <td data-order="Ogres novads">Ogres novads</td>
+                  <td data-order="42">42</td>
+                  <td data-order="2.9">2,9%</td>
+                </tr>
+                <tr>
+                  <td data-order="Olaines novads">Olaines novads</td>
+                  <td data-order="10">10</td>
+                  <td data-order="0.7">0,7%</td>
+                </tr>
+                <tr>
+                  <td data-order="Preiļu novads">Preiļu novads</td>
+                  <td data-order="13">13</td>
+                  <td data-order="0.9">0,9%</td>
+                </tr>
+                <tr>
+                  <td data-order="Rēzeknes novads">Rēzeknes novads</td>
+                  <td data-order="22">22</td>
+                  <td data-order="1.5">1,5%</td>
+                </tr>
+                <tr>
+                  <td data-order="Ropažu novads">Ropažu novads</td>
+                  <td data-order="38">38</td>
+                  <td data-order="2.7">2,7%</td>
+                </tr>
+                <tr>
+                  <td data-order="Salaspils novads">Salaspils novads</td>
+                  <td data-order="10">10</td>
+                  <td data-order="0.7">0,7%</td>
+                </tr>
+                <tr>
+                  <td data-order="Saldus novads">Saldus novads</td>
+                  <td data-order="11">11</td>
+                  <td data-order="0.8">0,8%</td>
+                </tr>
+                <tr>
+                  <td data-order="Saulkrastu novads">Saulkrastu novads</td>
+                  <td data-order="21">21</td>
+                  <td data-order="1.5">1,5%</td>
+                </tr>
+                <tr>
+                  <td data-order="Siguldas novads">Siguldas novads</td>
+                  <td data-order="23">23</td>
+                  <td data-order="1.6">1,6%</td>
+                </tr>
+                <tr>
+                  <td data-order="Smiltenes novads">Smiltenes novads</td>
+                  <td data-order="9">9</td>
+                  <td data-order="0.6">0,6%</td>
+                </tr>
+                <tr>
+                  <td data-order="Talsu novads">Talsu novads</td>
+                  <td data-order="16">16</td>
+                  <td data-order="1.1">1,1%</td>
+                </tr>
+                <tr>
+                  <td data-order="Tukuma novads">Tukuma novads</td>
+                  <td data-order="21">21</td>
+                  <td data-order="1.5">1,5%</td>
+                </tr>
+                <tr>
+                  <td data-order="Valkas novads">Valkas novads</td>
+                  <td data-order="7">7</td>
+                  <td data-order="0.5">0,5%</td>
+                </tr>
+                <tr>
+                  <td data-order="Valmieras novads">Valmieras novads</td>
+                  <td data-order="28">28</td>
+                  <td data-order="2.0">2,0%</td>
+                </tr>
+                <tr>
+                  <td data-order="Ventspils novads">Ventspils novads</td>
+                  <td data-order="4">4</td>
+                  <td data-order="0.3">0,3%</td>
+                </tr>
+                <tr>
+                  <td data-order="Dzīvesvietas Latvijā nav">Dzīvesvietas Latvijā nav</td>
+                  <td data-order="5">5</td>
+                  <td data-order="0.4">0,4%</td>
+                </tr>
+              </tbody>
+            </table><script>
+      $(function () {
+        initTable('statistics-residence', false, false, "");
+      });
+    </script></section></section><script>
+                  setActive('uxCandidateListMenu');
+                </script><div class="mt-2"><span class="fw-lighter fst-italic">Pēdējais atjauninājums veikts: 04.09.2026. plkst. 14:30</span></div></main></div><footer class="page-footer pt-3 pb-3 mt-auto"><div class="container d-flex"><img src="https://dati.cvk.lv/footer-logo_black.png" width="200px"></div></footer></body>
+</html>

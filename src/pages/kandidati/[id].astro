@@ -1,0 +1,12 @@
+---
+import Base from "../../layouts/Base.astro";
+import CandidatePage from "../../components/pages/CandidatePage.astro";
+import { candidates } from "../../lib/data.ts";
+export function getStaticPaths() {
+  return candidates.map((c) => ({ params: { id: `${c.id}-${c.slug}` }, props: { candidate: c } }));
+}
+const { candidate } = Astro.props;
+---
+<Base locale="lv" title={candidate.name} description={candidate.headline_role ?? undefined}>
+  <CandidatePage locale="lv" candidate={candidate} />
+</Base>

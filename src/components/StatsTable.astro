@@ -1,0 +1,17 @@
+---
+import { t, type Locale } from "../i18n/labels.ts";
+import { formatNumber } from "../lib/data.ts";
+import type { StatRow } from "../../pipeline/lib/types.ts";
+interface Props { rows: StatRow[]; caption: string; locale: Locale }
+const { rows, caption, locale } = Astro.props;
+---
+{rows.length > 0 && (
+  <div class="table-wrap">
+    <table class="data compact">
+      <thead><tr><th>{caption}</th><th>{t(locale, "stat.count")}</th><th>{t(locale, "stat.percent")}</th></tr></thead>
+      <tbody>
+        {rows.map((r) => <tr><td>{r.label}</td><td class="num">{r.count}</td><td class="num">{r.percent === null ? "-" : `${formatNumber(r.percent, locale)}%`}</td></tr>)}
+      </tbody>
+    </table>
+  </div>
+)}

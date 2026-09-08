@@ -1,0 +1,12 @@
+---
+import Base from "../../../layouts/Base.astro";
+import ListPage from "../../../components/pages/ListPage.astro";
+import { lists, listShortName } from "../../../lib/data.ts";
+export function getStaticPaths() {
+  return lists.map((l) => ({ params: { slug: l.slug }, props: { list: l } }));
+}
+const { list } = Astro.props;
+---
+<Base locale="en" title={`${list.no}. ${listShortName(list)}`} description={list.programme.paragraphs[0]}>
+  <ListPage locale="en" slug={list.slug} />
+</Base>

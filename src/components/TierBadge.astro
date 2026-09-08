@@ -1,0 +1,7 @@
+---
+import type { Locale } from "../i18n/labels.ts";
+import { tierLabel } from "../lib/data.ts";
+interface Props { tier: string; locale: Locale; provisional?: boolean }
+const { tier, locale, provisional } = Astro.props;
+---
+<span class:list={["badge", `tier-${tier}`]} title={provisional ? "auto" : undefined}>{tierLabel(tier, locale)}</span>

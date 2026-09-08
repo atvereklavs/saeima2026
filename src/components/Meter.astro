@@ -1,0 +1,11 @@
+---
+import type { Locale } from "../i18n/labels.ts";
+import { formatNumber } from "../lib/data.ts";
+interface Props { value: number; label: string; locale: Locale; alt?: boolean }
+const { value, label, locale, alt } = Astro.props;
+---
+<div class="meter">
+  <span>{label}</span>
+  <strong>{formatNumber(value, locale)}%</strong>
+  <div class="track"><div class:list={["fill", { alt }]} style={`width:${Math.min(100, value)}%`}></div></div>
+</div>

@@ -1,0 +1,156 @@
+<!DOCTYPE html><html class="h-100">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>SV2026 - 2026. gada Saeimas vēlēšanas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/datatables.min.css">
+    <link rel="stylesheet" href="../css/buttons.dataTables.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="../css/procedure-sv.css"><script src="../js/jquery.min.js"></script><script src="../js/js.cookie.min.js"></script><script src="../js/bootstrap.bundle.min.js"></script><script src="../js/datatables.min.js"></script><script src="../js/dataTables.bootstrap5.js"></script><script src="../js/globalConstants-lv.js"></script><script src="../js/custom.js"></script><script>
+            document.write('<script src="../version.js?v=' + Date.now() + '"><\/script>');
+           </script><script>
+              document.write('<script src="../menu_candidate_list.js?v=' + version + '"><\/script>');
+              document.write('<script src="../menu_activity.js?v=' + version + '"><\/script>');
+              document.write('<script src="../menu_elected.js?v=' + version + '"><\/script>');
+              document.write('<script src="../menu_results.js?v=' + version + '"><\/script>');
+             </script><link rel="shortcut icon" type="image/x-icon" href="../img/favicon-sv.ico">
+  </head>
+  <body class="h-100 d-flex flex-column"><script>changeVisualMode(true);changeZoomMode(true, null);</script><header class="page-header"><div class="container">
+        <div class="container-fluid main-navigation"><nav class="navbar navbar-expand-lg pt-0 pb-0"><a href="../"><b><i class="fa-solid fa-box-archive me-2"></i>SV2026</b></a><div class="navbar-toggler float-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><a><i class="fa fa-fw fa-lg fa-bars"></i></a></div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="navbar-nav w-100"><nav class="main-pages"><a onclick="return checkAvailability(menuCandidateList);" class="nav-item" id="uxCandidateListMenu" href="../kandidatu-saraksti">Kandidātu saraksti</a><a onclick="return checkAvailability(menuActivity);" class="nav-item" id="uxActivityMenu" href="../aktivitate">Aktivitāte</a><a onclick="return checkAvailability(menuResults);" class="nav-item" id="uxResultsMenu" href="../velesanu-rezultati">Vēlēšanu rezultāti</a><a onclick="return checkAvailability(menuElected);" class="nav-item" id="uxElectedMenu" href="../ieveletie-deputati">Ievēlētie deputāti</a></nav><nav class="additional-pages d-flex ms-auto"><a class="nav-item" href="../en/kandidati">EN</a><a onclick="changeVisualMode(false);return false;" class="nav-item"><i class="fa-solid fa-eye"></i></a><div class="dropdown"><a class="nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-a"></i></a><ul class="dropdown-menu font-dd">
+                      <li tabindex="0" class="dropdown-item font-size-75"><a onclick="changeZoomMode(false, '75'); return false;" href="#">75%</a></li>
+                      <li tabindex="0" class="dropdown-item font-size-100"><a onclick="changeZoomMode(false, '100'); return false;" href="#">100%</a></li>
+                      <li tabindex="0" class="dropdown-item font-size-125"><a onclick="changeZoomMode(false, '125'); return false;" href="#">125%</a></li>
+                      <li tabindex="0" class="dropdown-item font-size-150"><a onclick="changeZoomMode(false, '150'); return false;" href="#">150%</a></li>
+                    </ul>
+                  </div></nav></div>
+            </div></nav></div>
+      </div></header><div class="page-content flex-fill">
+      <div class="title-section">
+        <div class="container p-4 d-flex align-items-center">
+          <h1 class="title mb-0">2026. gada Saeimas vēlēšanas</h1>
+        </div>
+      </div><main class="container p-4"><nav aria-label="breadcrumb"><ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../kandidatu-saraksti">Kandidātu saraksti</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Deputātu kandidātu alfabētiskais saraksts</li>
+          </ol></nav><div class="locations">
+          <div class="list-inline mb-3"><a class="list-inline-item" href="" id="uxLocationriga">Rīga</a><a class="list-inline-item" href="" id="uxLocationvidzeme">Vidzeme</a><a class="list-inline-item" href="" id="uxLocationlatgale">Latgale</a><a class="list-inline-item" href="" id="uxLocationkurzeme">Kurzeme</a><a class="list-inline-item" href="" id="uxLocationzemgale">Zemgale</a></div>
+        </div>
+        <h3 class="mt-3 mb-3">Deputātu kandidātu alfabētiskais saraksts</h3><section class="table-section mt-3"><section class="table-wrapper"><table id="uxCandidatesTable" class="table">
+              <thead>
+                <tr>
+                  <th>Vārds, uzvārds</th>
+                  <th>Kandidātu saraksts</th>
+                  <th>Vēlēšanu apgabals</th>
+                  <th>Kārtas nr. sarakstā</th>
+                  <th>Dzimšanas gads</th>
+                  <th>Darbavieta / nodarbošanās</th>
+                </tr>
+              </thead>
+              <tbody>
+<tr>
+                  <td><a href="../kandidati/78870-loreta-abakoka">Loreta Abakoka</a></td>
+                  <td><a href="../kandidatu-saraksti/zemgale/jauna-vienotiba">Jaunā VIENOTĪBA</a></td>
+                  <td><a href="../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                  <td>18.
+                              </td>
+                  <td>2002</td>
+                  <td class="nl2br">Latvijas Republikas Saeima, Deputāta palīgs</td>
+                </tr>
+<tr>
+                  <td><a href="../kandidati/85440-deniss-abramovs">Deniss Abramovs</a></td>
+                  <td><a href="../kandidatu-saraksti/kurzeme/politiska-partija-stabilitatei">Politiskā partija "Stabilitātei!"</a></td>
+                  <td><a href="../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                  <td>2.
+                              </td>
+                  <td>1989</td>
+                  <td class="nl2br">SIA "Djuma 4", Menedžeris</td>
+                </tr>
+<tr>
+                  <td><a href="../kandidati/78580-silvio-harijs-abrats">Silvio Harijs Abrats</a></td>
+                  <td><a href="../kandidatu-saraksti/vidzeme/jauna-vienotiba">Jaunā VIENOTĪBA</a></td>
+                  <td><a href="../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                  <td>28.
+                              </td>
+                  <td>1965</td>
+                  <td class="nl2br">XCELSUS HOTELS, SIA, Valdes priekšsēdētājs</td>
+                </tr>
+<tr>
+                  <td><a href="../kandidati/78590-hosams-abu-meri">Hosams Abu Meri</a></td>
+                  <td><a href="../kandidatu-saraksti/vidzeme/jauna-vienotiba">Jaunā VIENOTĪBA</a></td>
+                  <td><a href="../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                  <td>2.
+                              </td>
+                  <td>1974</td>
+                  <td class="nl2br">Valsts Kanceleja, Veselības ministrs</td>
+                </tr>
+<tr>
+                  <td><a href="../kandidati/80260-pauls-adijans">Pauls Adijans</a></td>
+                  <td><a href="../kandidatu-saraksti/riga/jauna-vienotiba">Jaunā VIENOTĪBA</a></td>
+                  <td><a href="../kandidatu-saraksti/riga">Rīga</a></td>
+                  <td>38.
+                              </td>
+                  <td>1988</td>
+                  <td class="nl2br">SIA "PTA", Pārdevējs - Konsultants</td>
+                </tr>
+<tr>
+                  <td><a href="../kandidati/81910-anastasija-agafonova">Anastasija Agafonova</a></td>
+                  <td><a href="../kandidatu-saraksti/kurzeme/politisko-partiju-apvieniba-saskanas-centrs">Politisko partiju apvienība "Saskaņas Centrs"</a></td>
+                  <td><a href="../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                  <td>5.
+                              </td>
+                  <td>1996</td>
+                  <td class="nl2br">SIA KORS-N, pārdevējs - konsultants</td>
+                </tr>
+<tr>
+                  <td><a href="../kandidati/81890-valerijs-agesins">Valērijs Agešins</a></td>
+                  <td><a href="../kandidatu-saraksti/kurzeme/politisko-partiju-apvieniba-saskanas-centrs">Politisko partiju apvienība "Saskaņas Centrs"</a></td>
+                  <td><a href="../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                  <td>1.
+                              </td>
+                  <td>1972</td>
+                  <td class="nl2br">Liepājas Dzintara vidusskola, Vispārējās vidējās izglītības skolotājs</td>
+                </tr>
+<tr>
+                  <td><a href="../kandidati/93360-skaidrite-astahovska-eglite">Skaidrīte Astahovska-Eglīte</a></td>
+                  <td><a href="../kandidatu-saraksti/vidzeme/latvijas-attistibai">"Latvijas attīstībai"</a></td>
+                  <td><a href="../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                  <td>9.
+                              </td>
+                  <td>1976</td>
+                  <td class="nl2br">partija "Latvijas attīstībai", Revīzijas komisijas locekle</td>
+                </tr>
+<tr>
+                  <td><a href="../kandidati/83590-krists-bergans-bergis">Krists Bergans-Berģis</a></td>
+                  <td><a href="../kandidatu-saraksti/riga/zalo-un-zemnieku-savieniba">Zaļo un Zemnieku savienība</a></td>
+                  <td><a href="../kandidatu-saraksti/riga">Rīga</a></td>
+                  <td>8.
+                              </td>
+                  <td>1993</td>
+                  <td class="nl2br">Latvijas Republikas Labklājības ministrija, Parlamentārais sekretārs</td>
+                </tr>
+<tr>
+                  <td><a href="../kandidati/80020-andris-jefimovs">Andris Jefimovs</a></td>
+                  <td><a href="../kandidatu-saraksti/kurzeme/latvija-pirmaja-vieta">LATVIJA PIRMAJĀ VIETĀ</a></td>
+                  <td><a href="../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                  <td>8.
+                              </td>
+                  <td>1986</td>
+                  <td class="nl2br">Dienvidkurzemes novada 
+pašvaldība, Ugunsdzēsības dienesta vadītājs</td>
+                </tr>
+</tbody>
+            </table></section></section><script>
+                  $(function () {
+                    initTable('uxCandidatesTable', true, true, "Kopējais kandidātu skaits", "1428");
+                  });
+                </script><script>
+                  setActive('uxCandidateListMenu');
+                </script><div class="mt-2"><span class="fw-lighter fst-italic">Pēdējais atjauninājums veikts: 04.09.2026. plkst. 14:30</span></div></main></div><footer class="page-footer pt-3 pb-3 mt-auto"><div class="container d-flex"><img src="https://dati.cvk.lv/footer-logo_black.png" width="200px"></div></footer></body>
+</html>

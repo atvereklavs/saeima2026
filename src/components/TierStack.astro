@@ -1,0 +1,16 @@
+---
+import type { Locale } from "../i18n/labels.ts";
+import { meta, tierLabel } from "../lib/data.ts";
+interface Props { counts: Record<string, number>; locale: Locale; legend?: boolean }
+const { counts, locale, legend = false } = Astro.props;
+const total = Object.values(counts).reduce((a, b) => a + b, 0) || 1;
+const segs = meta.tier_order.map((t) => ({ tier: t, n: counts[t] ?? 0, pct: ((counts[t] ?? 0) / total) * 100 }));
+---
+<div class="stack" role="img" aria-label={segs.map((s) => `${tierLabel(s.tier, locale)}: ${s.n}`).join(", ")}>
+  {segs.filter((s) => s.n > 0).map((s) => <span style={`width:${s.pct}%;background:var(--tier-${s.tier})`} title={`${tierLabel(s.tier, locale)}: ${s.n}`}></span>)}
+</div>
+{legend && (
+  <div class="legend">
+    {segs.map((s) => <span><i style={`background:var(--tier-${s.tier})`}></i>{tierLabel(s.tier, locale)} · {s.n}</span>)}
+  </div>
+)}

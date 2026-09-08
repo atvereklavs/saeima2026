@@ -1,0 +1,33 @@
+---
+import { labelsFor, t, withLocale, type Locale } from "../../i18n/labels.ts";
+import { lists, listShortName, meta } from "../../lib/data.ts";
+import Compare from "../../islands/Compare.tsx";
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const pct = (rows: { label: string; count: number }[], label: string, total: number): number | null => {
+  const r = rows.find((x) => x.label === label);
+  return r && total ? Math.round((r.count / total) * 1000) / 10 : null;
+};
+const items = [...lists]
+  .sort((a, b) => a.no - b.no)
+  .map((l) => ({
+    no: l.no,
+    slug: l.slug,
+    name: listShortName(l),
+    href: withLocale(locale, `/saraksti/${l.slug}/`),
+    candidates_count: l.candidates_count,
+    experience_share: l.aggregates.experience_share,
+    public_office_share: l.aggregates.public_office_share,
+    tier_counts: l.aggregates.tier_counts,
+    avg_age: l.aggregates.avg_age,
+    median_age: l.aggregates.median_age,
+    women_pct: pct(l.stats.gender, "Sieviete", l.stats.candidates_count ?? l.candidates_count),
+    higher_ed_pct: pct(l.stats.education, "Augstākā", l.stats.candidates_count ?? l.candidates_count),
+  }));
+const labels = labelsFor(locale, [
+  "compare.pick", "list.candidates", "list.experience_share", "list.public_office_share", "list.avg_age", "list.median_age",
+  "compare.women", "compare.higher_ed", "compare.tiers",
+]);
+---
+<h1>{t(locale, "compare.heading")}</h1>
+<Compare client:load locale={locale} lists={items} tiers={meta.tiers} tierOrder={meta.tier_order} labels={labels} />

@@ -1,0 +1,58 @@
+---
+import { type Locale } from "../../i18n/labels.ts";
+import { formatDate, meta } from "../../lib/data.ts";
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const repo = "https://github.com/atvereklavs/saeima2026";
+---
+{locale === "lv" ? (
+  <article class="prose">
+    <h1>Par vietni</h1>
+    <p>Šī ir neatkarīga, bezpeļņas vietne par 15. Saeimas vēlēšanām 2026. gada 3. oktobrī. Tā apkopo publiski pieejamo informāciju par visiem 14 kandidātu sarakstiem un to kandidātiem, liekot uzsvaru uz pieredzi, jomām un darbu valsts pārvaldē, nevis uz finansēm, kuras jau labi pārklāj KNAB partiju finanšu datubāze un Delnas rīks "Deputāti uz Delnas".</p>
+    <p>Vietne nav saistīta ne ar vienu partiju vai kandidātu un nesniedz balsošanas ieteikumus.</p>
+
+    <h2>Datu avoti</h2>
+    <ul>
+      <li><a href="https://dati.cvk.lv/SV2026/kandidatu-saraksti/">Centrālā vēlēšanu komisija (dati.cvk.lv)</a>: saraksti, programmas, kandidātu pašu sniegtā informācija par izglītību un darbavietām. CVK norāda, ka informācija publicēta kandidāta sniegtajā redakcijā uz saraksta iesniegšanas dienu un par tās patiesumu atbild kandidāts.</li>
+      <li><a href="https://www.saeima.lv">Saeima</a> un <a href="https://deputatiuzdelnas.lv">Delna</a>: 13. un 14. Saeimas deputātu mandāti, frakcijas un komisijas (tiek pievienots).</li>
+      <li><a href="https://www.wikidata.org">Wikidata</a> (CC0): agrāko sasaukumu deputāti un ministru amati (tiek pievienots).</li>
+      <li><a href="https://info.knab.gov.lv/parties">KNAB</a>: partiju reģistrācijas dati; finanšu dati skatāmi tur.</li>
+    </ul>
+
+    <h2>Kā tiek noteikts pieredzes līmenis</h2>
+    <p>Pieredzes līmenis pašlaik tiek noteikts automātiski pēc kandidāta CVK norādītajām darbavietām un amatiem (piemēram, "Saeima, deputāts" vai "novada dome, priekšsēdētājs"). Tas ir orientējošs un var kļūdīties; nākamajā versijā to papildinās oficiālie Saeimas un Wikidata dati par mandātiem, komisijām un ministru amatiem. Noteikumi ir atklāti un lasāmi <a href={`${repo}/blob/main/pipeline/rules/tiers.json`}>repozitorijā</a>.</p>
+
+    <h2>Kas netiek publicēts</h2>
+    <p>CVK publicē arī kandidātu tautību, ģimenes stāvokli un ārvalsts pilsonību. Šī vietne tos individuālā līmenī nerāda, jo tie nav nepieciešami pieredzes novērtēšanai; pieejama tikai CVK kopsavilkuma statistika par katru sarakstu. Vietne neizmanto sīkdatnes un neseko lietotājiem.</p>
+
+    <h2>Labojumi</h2>
+    <p>Ja pamanāt kļūdu, lūdzu, salīdziniet ar CVK pirmavotu (saite ir katrā kandidāta lapā) un ziņojiet <a href={`${repo}/issues`}>repozitorija Issues sadaļā</a>. Kods ir MIT licencē; datu kopa ir atvasināta no publiskiem avotiem ar norādi uz tiem.</p>
+
+    <p class="muted">CVK dati ielādēti {formatDate(meta.cvk_index_fetched_at, locale)}. Vietne uzbūvēta {formatDate(meta.built_at, locale)}.</p>
+  </article>
+) : (
+  <article class="prose">
+    <h1>About this site</h1>
+    <p>This is an independent, non-commercial site about the 15th Saeima election on 3 October 2026. It gathers public information on all 14 candidate lists and their candidates, with the emphasis on experience, areas of work and record in government rather than on finances, which the KNAB party-finance database and Delna's "Deputāti uz Delnas" already cover well.</p>
+    <p>The site is not affiliated with any party or candidate and makes no voting recommendation. Source data is in Latvian as published by the authorities.</p>
+
+    <h2>Data sources</h2>
+    <ul>
+      <li><a href="https://dati.cvk.lv/SV2026/en/kandidatu-saraksti">Central Election Commission (dati.cvk.lv)</a>: lists, programmes and the candidates' own declarations of education and workplaces. The CVK notes the information is published as supplied by the candidate on the day the list was submitted, and the candidate is responsible for its accuracy.</li>
+      <li><a href="https://www.saeima.lv">Saeima</a> and <a href="https://deputatiuzdelnas.lv">Delna</a>: mandates, factions and committees of the 13th and 14th Saeima (being added).</li>
+      <li><a href="https://www.wikidata.org">Wikidata</a> (CC0): earlier parliamentary terms and ministerial posts (being added).</li>
+      <li><a href="https://info.knab.gov.lv/parties">KNAB</a>: party registration facts; financial data lives there.</li>
+    </ul>
+
+    <h2>How the experience tier is derived</h2>
+    <p>For now the tier is derived automatically from the workplaces and positions each candidate declared to the CVK (for example "Saeima, deputāts" or "novada dome, priekšsēdētājs"). It is indicative and can be wrong; the next version adds official Saeima and Wikidata records of mandates, committees and ministerial posts. The rules are public in <a href={`${repo}/blob/main/pipeline/rules/tiers.json`}>the repository</a>.</p>
+
+    <h2>What is not published</h2>
+    <p>The CVK also publishes candidates' ethnicity, marital status and foreign citizenship. This site does not show those at individual level because they are not needed to judge experience; only the CVK's per-list summary statistics appear. The site sets no cookies and does not track visitors.</p>
+
+    <h2>Corrections</h2>
+    <p>If you spot an error, please compare with the CVK source (linked from every candidate page) and report it in <a href={`${repo}/issues`}>the repository's Issues</a>. The code is MIT-licensed; the dataset is derived from public sources with attribution.</p>
+
+    <p class="muted">CVK data fetched {formatDate(meta.cvk_index_fetched_at, locale)}. Site built {formatDate(meta.built_at, locale)}.</p>
+  </article>
+)}

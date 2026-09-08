@@ -1,0 +1,73 @@
+---
+import { t, withLocale, type Locale } from "../../i18n/labels.ts";
+import { candidateById, formatNumber, listBySlug, listShortName, meta } from "../../lib/data.ts";
+import CandidateTable from "../CandidateTable.astro";
+import Meter from "../Meter.astro";
+import Programme from "../Programme.astro";
+import StatsTable from "../StatsTable.astro";
+import TierStack from "../TierStack.astro";
+interface Props { locale: Locale; slug: string }
+const { locale, slug } = Astro.props;
+const list = listBySlug.get(slug);
+if (!list) throw new Error(`unknown list ${slug}`);
+const a = list.aggregates;
+const byCon = meta.constituencies
+  .map((con) => ({ con, rows: (a.by_constituency[con.slug] ?? []).map((id) => candidateById.get(id)!).filter(Boolean) }))
+  .filter((x) => x.rows.length > 0);
+const coalition = list.curated.coalition;
+---
+<p class="breadcrumb"><a href={withLocale(locale, "/")}>{t(locale, "nav.lists")}</a> › {list.no}. {listShortName(list)}</p>
+<div class="card-head">
+  <span class="list-no">{list.no}</span>
+  <h1 style="margin:0">{list.name}</h1>
+</div>
+<p class="muted">
+  {list.candidates_count} {t(locale, "list.candidates")}
+  {list.curated.pm_candidate && <> · {t(locale, "list.pm_candidate")}: <strong>{list.curated.pm_candidate}</strong></>}
+  {coalition && <> · {t(locale, `list.coalition.${coalition}` as never)}{list.curated.seats_14 !== null && ` (${list.curated.seats_14} ${t(locale, "list.seats_14")})`}</>}
+  · <a href={list.links.cvk}>{t(locale, "list.source")}</a>
+</p>
+
+<div class="section-grid">
+  <section>
+    <h2>{t(locale, "list.experience_profile")}</h2>
+    <div class="facts">
+      <div class="fact"><strong>{formatNumber(a.experience_share, locale)}%</strong><small>{t(locale, "list.experience_share")}</small></div>
+      <div class="fact"><strong>{formatNumber(a.public_office_share, locale)}%</strong><small>{t(locale, "list.public_office_share")}</small></div>
+      <div class="fact"><strong>{formatNumber(a.avg_age, locale)}</strong><small>{t(locale, "list.avg_age")}</small></div>
+      <div class="fact"><strong>{formatNumber(a.median_age, locale)}</strong><small>{t(locale, "list.median_age")}</small></div>
+    </div>
+    <div style="margin-top:1rem">
+      <TierStack counts={a.tier_counts} locale={locale} legend />
+    </div>
+    <p class="notice soft">{t(locale, "candidate.provisional")}</p>
+  </section>
+  <section>
+    <h2>{t(locale, "list.leads")}</h2>
+    <dl class="kv">
+      {meta.constituencies.map((con) => list.leads_by_constituency[con.slug] && <><dt>{con.name}</dt><dd>{list.leads_by_constituency[con.slug]}</dd></>)}
+    </dl>
+  </section>
+</div>
+
+<h2>{t(locale, "list.programme")}</h2>
+<p class="muted">{t(locale, "list.programme_note")}</p>
+<Programme sections={list.programme.sections} />
+
+<h2>{t(locale, "list.stats")}</h2>
+<div class="cards" style="margin-top:0.5rem">
+  <StatsTable rows={list.stats.gender} caption={t(locale, "stat.gender")} locale={locale} />
+  <StatsTable rows={list.stats.education} caption={t(locale, "stat.education")} locale={locale} />
+  <StatsTable rows={list.stats.foreign_citizenship} caption={t(locale, "stat.foreign_citizenship")} locale={locale} />
+</div>
+
+<h2 id="kandidati">{t(locale, "list.by_constituency")}</h2>
+<nav class="constituency-nav" aria-label="Constituencies">
+  {byCon.map(({ con, rows }) => <a href={`#${con.slug}`}>{con.name} · {rows.length}</a>)}
+</nav>
+{byCon.map(({ con, rows }) => (
+  <section id={con.slug}>
+    <h3>{con.name} <small class="muted">· {rows.length} {t(locale, "list.candidates")}</small></h3>
+    <CandidateTable rows={rows} locale={locale} />
+  </section>
+))}

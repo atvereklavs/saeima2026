@@ -1,0 +1,32 @@
+---
+import { t, type Locale } from "../../i18n/labels.ts";
+import { lists, meta } from "../../lib/data.ts";
+import ListCard from "../ListCard.astro";
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const sorted = [...lists].sort((a, b) => a.no - b.no);
+---
+<section class="hero">
+  <div>
+    <h1>{t(locale, "overview.heading")}</h1>
+    <p>{t(locale, "overview.intro")}</p>
+    <p class="muted">{t(locale, "election.day")}: {t(locale, "election.date_long")}</p>
+  </div>
+  <div class="countdown">
+    <strong data-countdown={meta.election_date}>·</strong>
+    <small>{t(locale, "election.days_left")}</small>
+  </div>
+</section>
+<div class="howto">
+  <h3>{t(locale, "overview.how")}</h3>
+  <p>{t(locale, "overview.how_text")}</p>
+</div>
+<div class="cards">
+  {sorted.map((l) => <ListCard list={l} locale={locale} />)}
+</div>
+<script>
+  for (const el of document.querySelectorAll<HTMLElement>("[data-countdown]")) {
+    const target = new Date(`${el.dataset.countdown}T07:00:00+03:00`);
+    el.textContent = String(Math.max(0, Math.ceil((target.getTime() - Date.now()) / 86400000)));
+  }
+</script>

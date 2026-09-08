@@ -1,0 +1,32 @@
+---
+import { t, type Locale } from "../i18n/labels.ts";
+import { candidatePath } from "../lib/data.ts";
+import type { Candidate } from "../../pipeline/lib/types.ts";
+import TierBadge from "./TierBadge.astro";
+interface Props { rows: Candidate[]; locale: Locale }
+const { rows, locale } = Astro.props;
+---
+<div class="table-wrap">
+  <table class="data">
+    <thead>
+      <tr>
+        <th>{t(locale, "candidate.position")}</th>
+        <th>{t(locale, "nav.candidates")}</th>
+        <th>{t(locale, "candidate.age")}</th>
+        <th>{t(locale, "candidate.tier")}</th>
+        <th>{t(locale, "explorer.role")}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {rows.map((c) => (
+        <tr>
+          <td class="num">{c.position}.</td>
+          <td class="name"><a href={candidatePath(c, locale)}>{c.name}</a></td>
+          <td class="num">{c.age ?? "-"}</td>
+          <td><TierBadge tier={c.history.tier} locale={locale} provisional={c.history.provisional} /></td>
+          <td class="role">{c.headline_role ?? "-"}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,66 @@
+---
+import "../styles/global.css";
+import { t, switchLocalePath, withLocale, type Locale } from "../i18n/labels.ts";
+import { formatDate, meta } from "../lib/data.ts";
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description?: string;
+}
+const { locale, title, description } = Astro.props;
+const path = Astro.url.pathname;
+const other: Locale = locale === "lv" ? "en" : "lv";
+const otherPath = switchLocalePath(locale, path);
+const nav = [
+  { href: withLocale(locale, "/"), label: t(locale, "nav.lists") },
+  { href: withLocale(locale, "/kandidati/"), label: t(locale, "nav.candidates") },
+  { href: withLocale(locale, "/salidzini/"), label: t(locale, "nav.compare") },
+  { href: withLocale(locale, "/par/"), label: t(locale, "nav.about") },
+];
+const isCurrent = (href: string): boolean => (href === withLocale(locale, "/") ? path === href : path.startsWith(href));
+const desc = description ?? t(locale, "site.tagline");
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · Saeima 2026</title>
+    <meta name="description" content={desc} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href={new URL(path, Astro.site)} />
+    <link rel="alternate" hreflang={other} href={new URL(otherPath, Astro.site)} />
+    <link rel="alternate" hreflang={locale} href={new URL(path, Astro.site)} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={`${title} · Saeima 2026`} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={new URL(path, Astro.site)} />
+    <meta property="og:locale" content={locale === "lv" ? "lv_LV" : "en_GB"} />
+    <meta name="robots" content="index,follow" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href={withLocale(locale, "/")}>Saeima <span>2026</span></a>
+        <nav class="site-nav" aria-label="Main">
+          {nav.map((n) => <a href={n.href} aria-current={isCurrent(n.href) ? "page" : undefined}>{n.label}</a>)}
+        </nav>
+        <a class="lang-switch" href={otherPath} hreflang={other} lang={other}>{other === "en" ? "English" : "Latviski"}</a>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <span>{t(locale, "footer.source")}</span>
+        <span>{t(locale, "footer.data_as_of")} {formatDate(meta.cvk_index_fetched_at, locale)}</span>
+        <span>{t(locale, "footer.built")} {formatDate(meta.built_at, locale)}</span>
+        <a href="https://github.com/atvereklavs/saeima2026">{t(locale, "footer.code")}</a>
+        <a href={withLocale(locale, "/par/")}>{t(locale, "nav.about")}</a>
+      </div>
+    </footer>
+  </body>
+</html>

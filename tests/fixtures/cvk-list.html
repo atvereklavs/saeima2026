@@ -1,0 +1,1444 @@
+<!DOCTYPE html><html class="h-100">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>SV2026 - 2026. gada Saeimas vēlēšanas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/datatables.min.css">
+    <link rel="stylesheet" href="../../css/buttons.dataTables.css">
+    <link rel="stylesheet" href="../../lib/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../../lib/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="../../lib/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="../../lib/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="../../css/procedure-sv.css"><script src="../../js/jquery.min.js"></script><script src="../../js/js.cookie.min.js"></script><script src="../../js/bootstrap.bundle.min.js"></script><script src="../../js/datatables.min.js"></script><script src="../../js/dataTables.bootstrap5.js"></script><script src="../../js/globalConstants-lv.js"></script><script src="../../js/custom.js"></script><script>
+            document.write('<script src="../../version.js?v=' + Date.now() + '"><\/script>');
+           </script><script>
+              document.write('<script src="../../menu_candidate_list.js?v=' + version + '"><\/script>');
+              document.write('<script src="../../menu_activity.js?v=' + version + '"><\/script>');
+              document.write('<script src="../../menu_elected.js?v=' + version + '"><\/script>');
+              document.write('<script src="../../menu_results.js?v=' + version + '"><\/script>');
+             </script><link rel="shortcut icon" type="image/x-icon" href="../../img/favicon-sv.ico">
+  </head>
+  <body class="h-100 d-flex flex-column"><script>changeVisualMode(true);changeZoomMode(true, null);</script><header class="page-header"><div class="container">
+        <div class="container-fluid main-navigation"><nav class="navbar navbar-expand-lg pt-0 pb-0"><a href="../../"><b><i class="fa-solid fa-box-archive me-2"></i>SV2026</b></a><div class="navbar-toggler float-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><a><i class="fa fa-fw fa-lg fa-bars"></i></a></div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="navbar-nav w-100"><nav class="main-pages"><a onclick="return checkAvailability(menuCandidateList);" class="nav-item" id="uxCandidateListMenu" href="../../kandidatu-saraksti">Kandidātu saraksti</a><a onclick="return checkAvailability(menuActivity);" class="nav-item" id="uxActivityMenu" href="../../aktivitate">Aktivitāte</a><a onclick="return checkAvailability(menuResults);" class="nav-item" id="uxResultsMenu" href="../../velesanu-rezultati">Vēlēšanu rezultāti</a><a onclick="return checkAvailability(menuElected);" class="nav-item" id="uxElectedMenu" href="../../ieveletie-deputati">Ievēlētie deputāti</a></nav><nav class="additional-pages d-flex ms-auto"><a class="nav-item" href="../../en/kandidatu-saraksti/jauna-vienotiba">EN</a><a onclick="changeVisualMode(false);return false;" class="nav-item"><i class="fa-solid fa-eye"></i></a><div class="dropdown"><a class="nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-a"></i></a><ul class="dropdown-menu font-dd">
+                      <li tabindex="0" class="dropdown-item font-size-75"><a onclick="changeZoomMode(false, '75'); return false;" href="#">75%</a></li>
+                      <li tabindex="0" class="dropdown-item font-size-100"><a onclick="changeZoomMode(false, '100'); return false;" href="#">100%</a></li>
+                      <li tabindex="0" class="dropdown-item font-size-125"><a onclick="changeZoomMode(false, '125'); return false;" href="#">125%</a></li>
+                      <li tabindex="0" class="dropdown-item font-size-150"><a onclick="changeZoomMode(false, '150'); return false;" href="#">150%</a></li>
+                    </ul>
+                  </div></nav></div>
+            </div></nav></div>
+      </div></header><div class="page-content flex-fill">
+      <div class="title-section">
+        <div class="container p-4 d-flex align-items-center">
+          <h1 class="title mb-0">2026. gada Saeimas vēlēšanas</h1>
+        </div>
+      </div><main class="container p-4"><nav aria-label="breadcrumb"><ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../kandidatu-saraksti">Kandidātu saraksti</a></li>
+            <li class="breadcrumb-item active" aria-current="page">9.
+                        Jaunā VIENOTĪBA</li>
+          </ol></nav><div class="locations">
+          <div class="list-inline mb-3"><a class="list-inline-item" href="../../kandidatu-saraksti/riga/jauna-vienotiba" id="uxLocationriga">Rīga</a><a class="list-inline-item" href="../../kandidatu-saraksti/vidzeme/jauna-vienotiba" id="uxLocationvidzeme">Vidzeme</a><a class="list-inline-item" href="../../kandidatu-saraksti/latgale/jauna-vienotiba" id="uxLocationlatgale">Latgale</a><a class="list-inline-item" href="../../kandidatu-saraksti/kurzeme/jauna-vienotiba" id="uxLocationkurzeme">Kurzeme</a><a class="list-inline-item" href="../../kandidatu-saraksti/zemgale/jauna-vienotiba" id="uxLocationzemgale">Zemgale</a></div>
+        </div>
+        <h3 class="mt-3 mb-3">9.
+                  Jaunā VIENOTĪBA</h3>
+        <ul class="nav nav-tabs mb-3" id="tab" role="tablist">
+          <li class="nav-item" role="presentation"><button class="nav-link active" id="can-tab" data-bs-toggle="tab" data-bs-target="#can-tab-pane" type="button" role="tab" aria-controls="can-tab-pane" aria-selected="true"><i class="fa-solid fa-users me-2"></i>Kandidāti</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="prog-tab" data-bs-toggle="tab" data-bs-target="#prog-tab-pane" type="button" role="tab" aria-controls="prog-tab-pane" aria-selected="false"><i class="fa-regular fa-file-lines me-2"></i>Programma</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="statistics-tab" data-bs-toggle="tab" data-bs-target="#statistics-tab-pane" type="button" role="tab" aria-controls="statistics-tab-pane" aria-selected="false"><i class="fa-regular fa-chart-line me-2"></i>Statistika</button></li>
+        </ul>
+        <div class="tab-content" id="tabContent">
+          <div class="tab-pane fade show active" id="can-tab-pane" role="tabpanel" aria-labelledby="can-tab" tabindex="0">
+            <div class="d-flex flex-row-reverse mb-2 count-wrap"></div><section class="table-section mt-3"><section class="table-wrapper"><table id="uxCandidateTable" class="table">
+                  <thead>
+                    <tr>
+                      <th>Kandidāts</th>
+                      <th>Vēlēšanu apgabals</th>
+                      <th>Kārtas nr. sarakstā</th>
+                      <th>Dzimšanas gads</th>
+                      <th>Darbavieta / nodarbošanās</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="../../kandidati/78220-baiba-braze">Baiba Braže</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>1.
+                                  </td>
+                      <td>1966</td>
+                      <td class="nl2br">Valsts kanceleja, LR Ārlietu ministre</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78040-arvils-aseradens">Arvils Ašeradens</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>2.
+                                  </td>
+                      <td>1962</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78410-inese-libina-egnere">Inese Lībiņa-Egnere</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>3.
+                                  </td>
+                      <td>1977</td>
+                      <td class="nl2br">LR Saeima, Deputāte</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78320-andrejs-judins">Andrejs Judins</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>4.
+                                  </td>
+                      <td>1970</td>
+                      <td class="nl2br">LR Saeima, deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78350-zanda-kalnina-lukasevica">Zanda Kalniņa-Lukaševica</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>5.
+                                  </td>
+                      <td>1978</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Deputāte, Saeimas priekšsēdētājas biedre</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78240-davis-martins-daugavietis">Dāvis Mārtiņš Daugavietis</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>6.
+                                  </td>
+                      <td>1996</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78340-irma-kalnina">Irma Kalniņa</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>7.
+                                  </td>
+                      <td>1950</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Deputāte</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78360-agnese-krasta">Agnese Krasta</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>8.
+                                  </td>
+                      <td>1986</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Saeimas deputāte, Saeimas frakcijas "Jaunā Vienotība" priekšsēdētāja vietniece</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78470-janis-patmalnieks">Jānis Patmalnieks</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>9.
+                                  </td>
+                      <td>1980</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Saeimas deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78300-beata-jonite">Beata Jonite</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>10.
+                                  </td>
+                      <td>1995</td>
+                      <td class="nl2br">Biedrība Centrs MARTA, Interešu aizstāvības nodaļas vadītāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78520-zane-skujina-rubene">Zane Skujiņa-Rubene</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>11.
+                                  </td>
+                      <td>1993</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, 14.Saeimas deputāte</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78390-gatis-liepins">Gatis Liepiņš</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>12.
+                                  </td>
+                      <td>1989</td>
+                      <td class="nl2br">Latvijas Republikas Satiksmes ministrija, Ministra ārštata padomnieks Rīgas metropoles areāla transporta jautājumos</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/83170-dzintra-geka-vaska">Dzintra Geka-Vaska</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>13.
+                                  </td>
+                      <td>1950</td>
+                      <td class="nl2br">Rīgas valstspilsētas pašvaldība, deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78430-linda-ozola">Linda Ozola</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>14.
+                                  </td>
+                      <td>1979</td>
+                      <td class="nl2br">Rīgas valstspilsētas pašvaldība, Rīgas domes deputāte</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78140-artjoms-ursulskis">Artjoms Uršuļskis</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>15.
+                                  </td>
+                      <td>1989</td>
+                      <td class="nl2br">Ārlietu ministrija, Parlamentārais sekretārs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78290-rihards-irbe">Rihards Irbe</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>16.
+                                  </td>
+                      <td>2003</td>
+                      <td class="nl2br">Vienotības Jaunatnes organizācija, Valdes priekšsēdētājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78450-janis-ozols">Jānis Ozols</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>17.
+                                  </td>
+                      <td>1970</td>
+                      <td class="nl2br">SIA patnis.edu, Direktors</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/80010-uldis-budrikis">Uldis Budriķis</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>18.
+                                  </td>
+                      <td>1991</td>
+                      <td class="nl2br">EZ EXPERIENCES SIA, Valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/79170-maija-novadniece">Maija Novadniece</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>19.
+                                  </td>
+                      <td>1990</td>
+                      <td class="nl2br">Sia "Skrīveru saldumi", Eksporta menedžere</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78280-edgars-ikstens">Edgars Ikstens</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>20.
+                                  </td>
+                      <td>1987</td>
+                      <td class="nl2br">Rīgas valstspilsētas pašvaldība, Rīgas domes deputāts, Mājokļu un vides komitejas priekšsēdētāja vietnieks</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/88630-agris-starts">Agris Starts</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>21.
+                                  </td>
+                      <td>1988</td>
+                      <td class="nl2br">Nodibinājums "Skaidra lieta", Valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/88220-nikola-kristopane">Nikola Krištopane</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>22.
+                                  </td>
+                      <td>1992</td>
+                      <td class="nl2br">Lokāciju menedžere / filmēšanas vietu pārvaldība</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78460-lauma-paeglkalna">Lauma Paegļkalna</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>23.
+                                  </td>
+                      <td>1978</td>
+                      <td class="nl2br">Aizsardzības ministrija, ministra padomniece juridiskajos jautājumos</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78510-ugis-rotbergs">Uģis Rotbergs</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>24.
+                                  </td>
+                      <td>1961</td>
+                      <td class="nl2br">LR Saeima, Deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/87240-elena-zviedre">Elēna Zviedre</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>25.
+                                  </td>
+                      <td>1996</td>
+                      <td class="nl2br">Latvijas Republikas Finanšu ministrija, Projekta vadītāja (saturiskais eksperts)</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78270-sarmite-dike">Sarmīte Dīķe</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>26.
+                                  </td>
+                      <td>1970</td>
+                      <td class="nl2br">Izglītības kvalitātes valsts dienests, KVD direktora vietniece</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78500-maris-purins">Māris Puriņš</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>27.
+                                  </td>
+                      <td>1980</td>
+                      <td class="nl2br">Inter Cars Latvija SIA, Jurists - Projektu vadītājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78440-zane-ozola">Zane Ozola</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>28.
+                                  </td>
+                      <td>1970</td>
+                      <td class="nl2br">Patnis, SIA, valdes priekšsēdētāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78380-janis-lazdans">Jānis Lazdāns</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>29.
+                                  </td>
+                      <td>1972</td>
+                      <td class="nl2br">As Padures muiža , Valdes priekšsēdētājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78250-davis-dejus">Dāvis Dejus</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>30.
+                                  </td>
+                      <td>2001</td>
+                      <td class="nl2br">Latvijas Republikas Izglītības un zinātnes ministrija, Departamenta direktora vietnieks politikas ieviešanas un monitoringa jomā</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78310-nils-josts">Nils Josts</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>31.
+                                  </td>
+                      <td>1966</td>
+                      <td class="nl2br">Rīgas Stradiņa universitāte, Sadarbības projektu vadītājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78530-karlis-sadurskis">Kārlis Šadurskis</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>32.
+                                  </td>
+                      <td>1959</td>
+                      <td class="nl2br">Rīgas Ziemeļvalstu augstskola, profesors</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78550-sandra-zarina">Sandra Zariņa</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>33.
+                                  </td>
+                      <td>1966</td>
+                      <td class="nl2br">Valsts darba inspekcija, Metodiskās vadības un kompetenču pilnveides nodaļas vadītāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/79150-daila-senberga">Daila Šēnberga</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>34.
+                                  </td>
+                      <td>1952</td>
+                      <td class="nl2br">Latvijas pilsētu celtniecības projektēšanas institūts, sertificēta arhitekte, pilsētbūvniece, valdes priekšsēdētāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78420-roberts-matulis">Roberts Matulis</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>35.
+                                  </td>
+                      <td>1991</td>
+                      <td class="nl2br">SIA RM DEALS, Valdes priekšsēdētājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/87210-renars-karlinskis">Renārs Karlinskis</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>36.
+                                  </td>
+                      <td>2004</td>
+                      <td class="nl2br">Rīgas Tehniskās universitātes aģentūra «Rīgas Tehniskās universitātes Olaines Tehnoloģiju koledža», Pedagogs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/80400-linda-ozolina">Linda Ozoliņa</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>37.
+                                  </td>
+                      <td>1991</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Konsultante</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/80260-pauls-adijans">Pauls Adijans</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>38.
+                                  </td>
+                      <td>1988</td>
+                      <td class="nl2br">SIA "PTA", Pārdevējs - Konsultants</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78490-olafs-pulks">Olafs Pulks</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>39.
+                                  </td>
+                      <td>1963</td>
+                      <td class="nl2br">Rīgas dome, Rīgas domes priekšsēdētāja vietnieka biroja vadītājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/87130-inna-pasnaka-irkle">Inna Pasnaka-Irkle</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>40.
+                                  </td>
+                      <td>1988</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Konsultante</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/79050-edgars-baldunciks">Edgars Baldunčiks</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>41.
+                                  </td>
+                      <td>1982</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Frakcijas JAUNĀ VIENOTĪBA vecākais konsultants</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78540-didzis-senbergs">Didzis Šēnbergs</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>42.
+                                  </td>
+                      <td>1979</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, deputāta palīgs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78480-karina-ploka">Karina Ploka</a></td>
+                      <td><a href="../../kandidatu-saraksti/riga">Rīga</a></td>
+                      <td>43.
+                                  </td>
+                      <td>1975</td>
+                      <td class="nl2br">Aizsardzības ministrija, parlamentārā sekretāre</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78560-evika-silina">Evika Siliņa</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>1.
+                                  </td>
+                      <td>1975</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Saeimas deputāte</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78590-hosams-abu-meri">Hosams Abu Meri</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>2.
+                                  </td>
+                      <td>1974</td>
+                      <td class="nl2br">Valsts Kanceleja, Veselības ministrs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78660-ainars-latkovskis">Ainars Latkovskis</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>3.
+                                  </td>
+                      <td>1967</td>
+                      <td class="nl2br">LR Saeima, Deputāts, Nacionālās drošības komisijas priekšsēdētājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78630-raimonds-cudars">Raimonds Čudars</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>4.
+                                  </td>
+                      <td>1974</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Saeimas deputāts, Publisko izdevumu un revīzijas komisijas priekšsēdētāja biedrs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78800-janis-skrastins">Jānis Skrastiņš</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>5.
+                                  </td>
+                      <td>1970</td>
+                      <td class="nl2br">LR Saeima, Deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78090-dace-melbarde">Dace Melbārde</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>6.
+                                  </td>
+                      <td>1971</td>
+                      <td class="nl2br">Politiskā partija "Vienotība", valdes locekle</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78790-agita-zarina-sture">Agita Zariņa-Stūre</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>7.
+                                  </td>
+                      <td>1971</td>
+                      <td class="nl2br">LR Saeima, deputāte</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78760-martins-spravniks">Mārtiņš Spravņiks</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>8.
+                                  </td>
+                      <td>1988</td>
+                      <td class="nl2br">SIA Baltsum, Valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78650-atis-labucis">Atis Labucis</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>9.
+                                  </td>
+                      <td>1986</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78810-janis-zarins">Jānis Zariņš</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>10.
+                                  </td>
+                      <td>1996</td>
+                      <td class="nl2br">Politisko partiju apvienība "Jaunā VIENOTĪBA", Reģionālās politikas padomnieks</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78640-dace-klavina">Dace Kļaviņa</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>11.
+                                  </td>
+                      <td>1976</td>
+                      <td class="nl2br">Ogres novada pašvaldība, domes deputāte</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78820-viesturs-zarins">Viesturs Zariņš</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>12.
+                                  </td>
+                      <td>1979</td>
+                      <td class="nl2br">Politiskā partija "Vienotība", Valkas nodaļas vadītājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78610-liga-abolina">Līga Āboliņa</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>13.
+                                  </td>
+                      <td>1976</td>
+                      <td class="nl2br">Veselības ministrija, Parlamentārā sekretāre</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78720-indrikis-putnins">Indriķis Putniņš</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>14.
+                                  </td>
+                      <td>1979</td>
+                      <td class="nl2br">Cēsu novada pašvaldība, Domes deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/87220-janis-brants">Jānis Brants</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>15.
+                                  </td>
+                      <td>1969</td>
+                      <td class="nl2br">SIA "Royal Consulting", valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78840-anta-zvilna">Anta Zvilna</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>16.
+                                  </td>
+                      <td>1982</td>
+                      <td class="nl2br">SIA "AirBaltic Training", Līgumu vadība un valdes atbalsta vadītāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/87230-andris-gainis">Andris Gainis</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>17.
+                                  </td>
+                      <td>1987</td>
+                      <td class="nl2br">Sia Anima Vitrum, Valdes priekšsēdētājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78600-silvija-amatniece">Silvija Amatniece</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>18.
+                                  </td>
+                      <td>1997</td>
+                      <td class="nl2br">Ētikas komisijas locekle politiskajā partijā "Vienotība", Ogres nodaļas valdes locekle politiskajā partijā "Vienotība"</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78830-intars-zitans">Intars Zitāns</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>19.
+                                  </td>
+                      <td>1969</td>
+                      <td class="nl2br">saimnieciskās darbības veicējs, pašnodarbināta persona</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78670-renars-lazdins">Renārs Lazdiņš</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>20.
+                                  </td>
+                      <td>2002</td>
+                      <td class="nl2br">Vienotības jaunatnes organizācija, Valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78700-gundars-pelss">Gundars Pelšs</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>21.
+                                  </td>
+                      <td>1973</td>
+                      <td class="nl2br">Biedrība "Latvijas Ilgtspējīgu iepirkumu asociācija" , Valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78620-janis-brumermanis">Jānis Brumermanis</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>22.
+                                  </td>
+                      <td>1991</td>
+                      <td class="nl2br">Rīgas valstspilsētas pašvaldība, Rīgas valstspilsētas pašvaldības policijas Kvalitātes vadības pārvaldes Iekšējās kontroles nodaļas galvenais speciālists</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78750-arita-semjonova">Arita Semjonova</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>23.
+                                  </td>
+                      <td>2003</td>
+                      <td class="nl2br">Studente</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78690-olga-ozola">Olga Ozola</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>24.
+                                  </td>
+                      <td>1986</td>
+                      <td class="nl2br">Izglītības un zinātnes ministrija, Vispārējās izglītības departamenta direktora vietniece iekļaujošās izglītības jautājumos</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78710-andris-petrovs">Andris Petrovs</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>25.
+                                  </td>
+                      <td>1982</td>
+                      <td class="nl2br">Ķekavas novada pašvaldības iestāde Ķekavas novada Sporta centrs, Sporta darba organizators</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78770-rolands-trenko">Rolands Trenko</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>26.
+                                  </td>
+                      <td>1975</td>
+                      <td class="nl2br">AS "Conexus Baltic Grid", Projektu vadītājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78680-martins-neilands">Mārtiņš Neilands</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>27.
+                                  </td>
+                      <td>1990</td>
+                      <td class="nl2br">Siguldas novada pašvaldība, Būvniecības projektu vadītājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78580-silvio-harijs-abrats">Silvio Harijs Abrats</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>28.
+                                  </td>
+                      <td>1965</td>
+                      <td class="nl2br">XCELSUS HOTELS, SIA, Valdes priekšsēdētājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78850-ilze-zurina-davidcuka">Ilze Žūriņa-Davidčuka</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>29.
+                                  </td>
+                      <td>1977</td>
+                      <td class="nl2br">Limbažu Bērnu un jauniešu centrs, Direktore</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/79200-lauris-lielbardis">Lauris Lielbārdis</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>30.
+                                  </td>
+                      <td>1975</td>
+                      <td class="nl2br">Ropažu novada pašvaldība, Uzņēmējdarbības konsultants</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78730-arnis-peteris-rozentals">Arnis Pēteris Rozentāls</a></td>
+                      <td><a href="../../kandidatu-saraksti/vidzeme">Vidzeme</a></td>
+                      <td>31.
+                                  </td>
+                      <td>2001</td>
+                      <td class="nl2br">Eiropas banku iestāde , Stažieris</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78180-rihards-kozlovskis">Rihards Kozlovskis</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>1.
+                                  </td>
+                      <td>1969</td>
+                      <td class="nl2br">Valsts kanceleja, Satiksmes ministrs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/79190-alina-gendele">Alīna Gendele</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>2.
+                                  </td>
+                      <td>1959</td>
+                      <td class="nl2br">Latvijas Republikas 14.Saeima, deputāte</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78200-anna-rancane">Anna Rancāne</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>3.
+                                  </td>
+                      <td>1959</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Deputāte</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/83600-sergejs-maksimovs">Sergejs Maksimovs</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>4.
+                                  </td>
+                      <td>1973</td>
+                      <td class="nl2br">SIA BALTIC PRESENTS, Valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/83770-jaroslavs-volkovs">Jaroslavs Volkovs</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>5.
+                                  </td>
+                      <td>1982</td>
+                      <td class="nl2br">SIA"Kind service", valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/86240-maruta-plivda">Maruta Plivda</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>6.
+                                  </td>
+                      <td>1970</td>
+                      <td class="nl2br">Preiļu novada pašvaldība, Domes priekšsēdētāja vietniece</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78190-olga-anisimovica">Olga Aņisimoviča</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>7.
+                                  </td>
+                      <td>1986</td>
+                      <td class="nl2br">Latgales Industriālais tehnikums, Administratīvās nodaļas vadītāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/83690-kristine-saulite">Kristīne Saulīte</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>8.
+                                  </td>
+                      <td>1985</td>
+                      <td class="nl2br">Augšdaugavas novada Kultūras centrs "Vārpa", vadītāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78210-raivis-zihars">Raivis Žihars</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>9.
+                                  </td>
+                      <td>2002</td>
+                      <td class="nl2br">Latvijas  Republikas Saeima, Deputāta palīgs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/86230-juris-erts">Juris Erts</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>10.
+                                  </td>
+                      <td>1970</td>
+                      <td class="nl2br">Jāņa Eglīša Preiļu Valsts ģimnāzija, Direktora vietnieks informātikas jautājumos, programmēšanas skolotājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/86350-juris-pastars">Juris Pastars</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>11.
+                                  </td>
+                      <td>1974</td>
+                      <td class="nl2br">SIA VIRIDIS LATGALIA, valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/83650-skaidrite-kupse">Skaidrīte Kupše</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>12.
+                                  </td>
+                      <td>1972</td>
+                      <td class="nl2br">Krāslavas novada Labklājības pārvalde, VSPC "Dagda" iestādes vadītāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/87620-arturs-tjuss">Artūrs Tjušs</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>13.
+                                  </td>
+                      <td>1977</td>
+                      <td class="nl2br">zs Meža Grumuži, īpašnieks</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/83680-lolita-greitane">Lolita Greitāne</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>14.
+                                  </td>
+                      <td>1964</td>
+                      <td class="nl2br">Ludzas Mūzikas pamatskola, Direktore</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/86340-edgars-baltacis">Edgars Baltacis</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>15.
+                                  </td>
+                      <td>1996</td>
+                      <td class="nl2br">Latgales Industriālais tehnikums, Sporta organizators</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/83790-maruta-castrova">Maruta Castrova</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>16.
+                                  </td>
+                      <td>1959</td>
+                      <td class="nl2br">Balvu kultūras un atpūtas centrs, Režisore/Tautas teātra vadītāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/87870-rolands-gradkovskis">Rolands Gradkovskis</a></td>
+                      <td><a href="../../kandidatu-saraksti/latgale">Latgale</a></td>
+                      <td>17.
+                                  </td>
+                      <td>1969</td>
+                      <td class="nl2br">Augšdaugavas novada Kultūras un tūrisma pārvalde, Tūrisma nodaļas vadītājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78100-inga-berzina">Inga Bērziņa</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>1.
+                                  </td>
+                      <td>1963</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Deputāte</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78160-girts-valdis-kristovskis">Ģirts Valdis Kristovskis</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>2.
+                                  </td>
+                      <td>1962</td>
+                      <td class="nl2br">Pensionārs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/79130-janis-neimanis">Jānis Neimanis</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>3.
+                                  </td>
+                      <td>1964</td>
+                      <td class="nl2br">Liepājas valstspilsētas pašvaldības aģentūra Liepājas Sabiedriskais transports, Direktors</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/80430-eva-karklina">Eva Kārkliņa</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>4.
+                                  </td>
+                      <td>1966</td>
+                      <td class="nl2br">Rojas Jūras zvejniecības muzejs, Vadītāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/79020-karlis-strautins">Kārlis Strautiņš</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>5.
+                                  </td>
+                      <td>1978</td>
+                      <td class="nl2br">Liepājas Raiņa vidusskola, direktors</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/80900-edgars-eduards-kristapsons">Edgars Eduards Kristapsons</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>6.
+                                  </td>
+                      <td>1995</td>
+                      <td class="nl2br">SIA KCB TIMBER, Valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78130-agris-kimbors">Agris Kimbors</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>7.
+                                  </td>
+                      <td>1979</td>
+                      <td class="nl2br">Kuldīgas novada sporta skola, Direktors</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/79030-janis-graholskis">Jānis Grahoļskis</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>8.
+                                  </td>
+                      <td>1964</td>
+                      <td class="nl2br">Ingrid D. AS, valdes priekšsēdētājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/80600-kristine-niedre-lathere">Kristīne Niedre-Lathere</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>9.
+                                  </td>
+                      <td>1977</td>
+                      <td class="nl2br">Latvijas Republikas Kultūras ministrija, Saliedētas sabiedrības politikas un pilsoniskās sabiedrības nodaļas vadītāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/86210-kaspars-oficieris">Kaspars Oficieris</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>10.
+                                  </td>
+                      <td>1975</td>
+                      <td class="nl2br">SIA ETTIDE, valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78170-ivans-vasilenko">Ivans Vasiļenko</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>11.
+                                  </td>
+                      <td>2003</td>
+                      <td class="nl2br">Students</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/79010-lauris-karlusas">Lauris Karlušas</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>12.
+                                  </td>
+                      <td>1995</td>
+                      <td class="nl2br">Talsu novada pašvaldība, Talsu Valsts ģimnāzija, Sporta un veselības skolotājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/88990-jana-bergmane">Jana Bergmane</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>13.
+                                  </td>
+                      <td>1979</td>
+                      <td class="nl2br">Kuldīgas novada pašvaldība, PI Kuldīgas novada Tūrisma attīstības centrs, Vadītāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/79140-dace-korna">Dace Korna</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>14.
+                                  </td>
+                      <td>1951</td>
+                      <td class="nl2br">Pensionāre</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/86370-iveta-klevcova">Iveta Kļevcova</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>15.
+                                  </td>
+                      <td>1987</td>
+                      <td class="nl2br">SIA Kinotava, Valdes locekle</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/87430-andris-anins">Andris Aniņš</a></td>
+                      <td><a href="../../kandidatu-saraksti/kurzeme">Kurzeme</a></td>
+                      <td>16.
+                                  </td>
+                      <td>1981</td>
+                      <td class="nl2br">SIA Kuldīgas slimnīca, Valdes priekšsēdētājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78860-edmunds-jurevics">Edmunds Jurēvics</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>1.
+                                  </td>
+                      <td>1992</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, 14. Saeimas deputāts, Saeimas frakcijas "Jaunā Vienotība" priekšsēdētājs</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78940-martins-limanskis">Mārtiņš Limanskis</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>2.
+                                  </td>
+                      <td>1985</td>
+                      <td class="nl2br">IKU Eduards SIA, pārdošanas konsultants</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78920-martins-felss">Mārtiņš Felss</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>3.
+                                  </td>
+                      <td>1984</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78900-martins-dagis">Mārtiņš Daģis</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>4.
+                                  </td>
+                      <td>1976</td>
+                      <td class="nl2br">Latvijas Republikas 14. Saeima, deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78950-janis-reirs">Jānis Reirs</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>5.
+                                  </td>
+                      <td>1961</td>
+                      <td class="nl2br">Airēšanas federācija, prezidents</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/79000-janis-dimants">Jānis Dimants</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>6.
+                                  </td>
+                      <td>1991</td>
+                      <td class="nl2br">SIA Adamantium, valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78960-aigars-rublis">Aigars Rublis</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>7.
+                                  </td>
+                      <td>1977</td>
+                      <td class="nl2br">Jelgavas valstspilsētas dome, Priekšsēdētāja vietnieks</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/81260-inese-didze">Inese Didže</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>8.
+                                  </td>
+                      <td>1959</td>
+                      <td class="nl2br">Dobeles Valsts ģimnāzija, direktore</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78980-inga-tarvida">Inga Tarvida</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>9.
+                                  </td>
+                      <td>1969</td>
+                      <td class="nl2br">Kandavas lauksaimniecības tehnikums, pasniedzēja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78880-ilvars-auseklis">Ilvars Auseklis</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>10.
+                                  </td>
+                      <td>1978</td>
+                      <td class="nl2br">SIA HimmelGarten, Valdes loceklis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/81930-gunita-draveniece">Gunita Draveniece</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>11.
+                                  </td>
+                      <td>1969</td>
+                      <td class="nl2br">Jelgavas Valsts ģimnāzija, Skolotāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78990-ruslans-bajarietis">Ruslans Bajārietis</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>12.
+                                  </td>
+                      <td>1972</td>
+                      <td class="nl2br">Jēkabpils novada pašvaldība, Jēkabpils novada pašvaldības domes deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78970-inese-simane">Inese Šīmane</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>13.
+                                  </td>
+                      <td>1984</td>
+                      <td class="nl2br">Tukuma pirmsskolas izglītības iestāde "Taurenītis", Vadītāja</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78930-sergejs-kovalovs">Sergejs Kovaļovs</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>14.
+                                  </td>
+                      <td>1975</td>
+                      <td class="nl2br">Latvijas Futbola federācija, Viceprezidents</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/83580-sanita-luse">Sanita Lūse</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>15.
+                                  </td>
+                      <td>1969</td>
+                      <td class="nl2br">Jēkabpils novada pašvaldība, Pārvaldes vadītāja (Viesītes pilsēta, Viesītes, Saukas, Rites, Elkšņu pagasts)</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78890-janis-sarmis-bajinskis">Jānis Sarmis Bajinskis</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>16.
+                                  </td>
+                      <td>1996</td>
+                      <td class="nl2br">Aizkraukles novada pašvaldība, Domes deputāts</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/86220-dainis-krumins">Dainis Krūmiņš</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>17.
+                                  </td>
+                      <td>1992</td>
+                      <td class="nl2br">SIA "Farels Solutions", Siltumenerģētikas tehniķis</td>
+                    </tr>
+                    <tr>
+                      <td><a href="../../kandidati/78870-loreta-abakoka">Loreta Abakoka</a></td>
+                      <td><a href="../../kandidatu-saraksti/zemgale">Zemgale</a></td>
+                      <td>18.
+                                  </td>
+                      <td>2002</td>
+                      <td class="nl2br">Latvijas Republikas Saeima, Deputāta palīgs</td>
+                    </tr>
+                  </tbody>
+                </table></section></section></div>
+          <div class="tab-pane fade" id="prog-tab-pane" role="tabpanel" aria-labelledby="prog-tab" tabindex="0">
+            <div class="text-lg text-wrap">STIPRA LATVIJA DROŠĀ EIROPĀ<br/><br/>Stipra valsts sargā savus cilvēkus, runā skaidrā latviešu valodā, ir Eiropas un NATO kodolā un spēj pieņemt savlaicīgus un arī grūtus lēmumus. Stipra valsts uzņemas atbildību un negaida, lai par mūsu drošību un labklājību rūpētos citi, un zina, ka Latvijas spēks ir arī Eiropas spēks. Stipru valsti veido mūsu cilvēki – saliedēta nācija ar stiprām saknēm latviešu kultūrā, bagātu latviešu valodu, izglītotiem cilvēkiem un stiprām ģimenēm.<br/><br/>Mēs, Jaunā VIENOTĪBA, gribam Latviju, kur veselība, izglītība, kultūra un latviešu valoda ir nākotnes drošības pamats. Stiprai valstij rūp cilvēku veselība, lai bērns augtu drošā skolā, lai talants varētu attīstīties jebkurā reģionā, lai latviešu valoda un kultūra būtu dzīva, moderna un pašsaprotama demokrātiskas līdzdalības telpa.<br/><br/>Mēs gribam valsti, kur drošība ir ikdienas spēja aizsargāt cilvēku, robežu, infrastruktūru un demokrātiju; kur Ukraina ir ne tikai solidaritātes apliecinājums, bet pieredzes krātuve mūsu noturībai; kur sabiedroto klātbūtne, civilā aizsardzība un vietējā industrija veido vienu drošības sistēmu.<br/><br/>Mēs gribam ekonomiku, kas pilsoņiem dod pārliecību par nākotni: augstas ražības uzņēmumus, pieejamu enerģiju, eksportu, zinātni, kapitālu un gudru valsts pasūtījumu, kur Latvijas daba, meži, zeme un ūdeņi ir nacionāls kapitāls, kas nodrošina pārtiku, enerģiju, eksportu, darba vietas un dzīves kvalitāti. Mēs varam pāriet no stabilizācijas pie izrāviena, kad valsts kļūst par skaidru, ātru un prasīgu partneri uzņēmējiem, zinātniekiem, pašvaldībām un sabiedrībai.<br/><br/>Mēs gribam taisnīgu finanšu politiku un pārvaldību, kas kalpo cilvēkam. Budžetam jābūt saprotamam, atbildīgam un vērstam uz rezultātu, pakalpojumiem jāseko cilvēka dzīves situācijām, datiem un digitālajiem rīkiem jāpalīdz valstij kļūt caurskatāmai un atbildībām precīzām.<br/><br/>Mēs varam būt stipra Latvija drošā Eiropā, jo esam kopīgas tiesiskuma, drošības un zināšanu telpas daļa. Mēs neveidojam valsti tikai sev: ar savu robežu mēs sargājam Eiropu, ar savu valodu bagātinām pasauli, ar savu zinātni, uzņēmību un reģioniem stiprinām Eiropas konkurētspēju. Stipri kopā – nozīmē aktīvu Latviju, kas ne tikai pielāgojas, bet veido, aizstāv un izdara.<br/><br/>APSOLĪJUMI<br/><br/>1. Drošība un aizsardzība<br/><br/>Nodrošināsim aizsardzības finansējumu 5% no IKP un attīstīsim NATO sabiedroto pastāvīgu klātbūtni Latvijā. Stiprināsim pretgaisa, dronu un pretdronu, un citas mūsdienīgas aizsardzības spējas, izmantojot Ukrainas pieredzi. Attīstīsim vietējo militāro un divējāda lietojuma industriju, lai ieguldījumi vienlaikus stiprinātu arī Latvijas ražošanu, zinātni un eksportu. Stiprināsim Nacionālos bruņotos spēkus un Zemessardzi. Palielināsim apmaksāto brīvdienu skaitu zemessargiem. Stiprināsim civilās aizsardzības sistēmu un iekšlietu dienestu – ugunsdzēsēju, policijas, robežsardzes kapacitāti. Stiprināsim austrumu robežu, neļausim robežpārkāpējiem iekļūt Latvijā, noteiksim stingrākus nosacījumus trešo valstu pilsoņu uzturēšanās, studiju un nodarbinātības jomā.<br/><br/>2. Ārpolitika un latvieši pasaulē<br/><br/>Nostiprināsim Latviju Eiropas un NATO kodolā kā drošu, brīvu un konkurētspējīgu valsti. Turpināsim visaptverošu politisku, militāru un diplomātisku atbalstu Ukrainai līdz taisnīgam mieram un Ukrainas eiroatlantiskajai integrācijai. Uzturēsim starptautisko spiedienu pret Krieviju, stiprināsim sankcijas un pārtrauksim ekonomisko ietekmējamību no Krievijas un Baltkrievijas. ES daudzgadu budžeta sarunās aizstāvēsim finansējumu drošībai, robežai, kohēzijai, lauksaimniecībai, &#171;Rail Baltica&#187;, pētniecībai un inovācijām. Veicināsim Latvijas uzņēmēju ieiešanu ārvalstu tirgos, ES konkurētspēju un regulējuma vienkāršošanu. Stiprināsim diasporas saikni ar Latviju, veicināsim pilsoņu atgriešanos Latvijā, latviešu valodas un kultūras saglabāšanu, diasporas iesaisti ekonomiskajā diplomātijā.<br/><br/>3. Finanses<br/><br/>Veidosim fiskāli atbildīgu budžetu ar valsts ārējā parāda līmeni zem 55% no IKP, ievērojot eirozonas fiskālos noteikumus. Rūpējoties par valsts nākotni, drošību finansēsim atbildīgi. Celsim minimālo algu līdz 50% no vidējās bruto darba samaksas, palielināsim fiksēto neapliekamo minimumu līdz 80% no minimālās algas, mazinot darbaspēka nodokļu slogu zemāko ienākumu saņēmējiem. Padarīsim nekustamā īpašuma nodokli par pilnvērtīgu pašvaldību nodokli ar prognozējamību un sociālo taisnīgumu. Attīstīsim kapitāla tirgu un valsts attīstības fondu. Veidosim taisnīgu un uzņēmējdarbību veicinošu nodokļu ieņēmumu sadali starp pašvaldībām un valsti.<br/><br/>4. Ekonomika, enerģētika un uzņēmējdarbība<br/><br/>Mērķis ir produktīvākā ekonomika Baltijā: vismaz 3,5% IKP izaugsme gadā, augstākā darba samaksa, investīcijas virs 30% no IKP un pāreja uz augstas pievienotās vērtības ekonomiku. Attīstīsim pieejamu, drošu un prognozējamu enerģiju, jaunas elektroenerģijas jaudas, tīklus, uzkrāšanas risinājumus, energoefektivitāti, satiksmes un siltuma elektrifikāciju. Veidosim paātrinātus investīciju koridorus enerģētikā, aizsardzībā, mākslīgajā intelektā un citās stratēģiskās nozarēs, stiprinot LIAA kā vienas pieturas aģentūru. Mērķēti atbalstīsim eksportspējīgus uzņēmumus, industriālos parkus, zinātņietilpīgus produktus, kapitāla tirgu un valsts pasūtījumu kā instrumentu jaunu risinājumu testēšanai. Samazināsim administratīvo slogu, īpaši mazajiem uzņēmumiem. Ieviesīsim nacionālu mākslīgā intelekta attīstības plānu un uzticamus Latvijas tehnoloģiskos risinājumus.<br/><br/>5. Veselība, labklājība un demogrāfija<br/><br/>Veidosim prognozējamu veselības finansējumu ne mazāk kā 6% no IKP un izveidosim Nacionālo veselības un apdrošināšanas fondu efektīvākai pārvaldībai. Mazināsim rindas, stiprināsim primāro aprūpi, ģimenes ārstu pieejamību, slimnīcu pakalpojumus, zāļu pieejamību, onkoloģijas, sirds un asinsvadu, garīgās veselības, rehabilitācijas, paliatīvās aprūpes un hospisa pakalpojumus. Attīstīsim digitālu veselības sistēmu ar vienotu pacientu portālu, pierakstiem, atgādinājumiem un ārstniecības kvalitātes datiem. Stiprināsim mediķu izglītību, cieņpilnu atalgojumu un krīzes gatavību. Demogrāfijas politiku veidosim kā rūpes par stiprām ģimenēm, grūtniecību, dzemdībām, bērnu veselību, neauglības ārstēšanu, vecāku psihisko veselību, tēvu iesaisti, bērnu aprūpi, darba un privātās dzīves līdzsvaru. Profilaksi un veselībpratību padarīsim par nacionālās drošības daļu. Bērnu agrīnās attīstības vajadzību noteikšana un nepieciešamā atbalsta sniegšana (BAASIK) būs to ietvarā. Sportu atbalstīsim kā sabiedrības veselības, bērnu attīstības, kopienu un nacionālās pašapziņas daļu.<br/><br/>6. Valsts pārvalde<br/><br/>Modernizēsim valsts pārvaldi, mainot fokusu no procesa uz rezultātu. Katrā nozarē noteiksim galvenos attīstības rādītājus, ministrus un iestāžu vadītājus vērtēsim pēc rezultātiem. Publiskosim šo attīstības rādītāju datus. Ieviesīsim vienotas valdības pieeju, kopīgus pakalpojumu centrus, funkciju nepārklāšanos un īpašas pārmaiņu īstenošanas komandas lielajām reformām. Veidosim pakalpojumus cilvēka dzīves situācijām – ar skaidru atbildību, digitālu pieejamību, lietotāja pieredzes mērījumiem un caurskatāmām izmaksām. Pāriesim uz rezultātos balstītu budžeta veidošanu, datu un mākslīgā intelekta asistentu izmantošanu publiskajā pārvaldē.<br/><br/>7. Zinātne, inovācijas un tehnoloģijas<br/><br/>Stiprināsim Latvijas zinātnes neatkarību, starptautisko konkurētspēju un komercializāciju. Virzīsimies uz ieguldījumiem pētniecībā un attīstībā 3% no IKP, stiprinot valsts pētījumu programmas, bāzes finansējumu, nepārtrauktu pēcdoktorantūras finansējumu un industriālo doktorantūru. Prioritāri attīstīsim aizsardzības tehnoloģijas, kvantu drošību, sensorus, autonomās sistēmas, 5G un 6G, biomedicīnu, enerģētiku, klimata tehnoloģijas un mākslīgo intelektu. Izstrādāsim jaunu Zinātniskās darbības likumu, kas sekmēs patentēšanu, licencēšanu, komercializāciju, jaunuzņēmumus un universitāšu sadarbību ar industriju. Stiprināsim jauno zinātnieku lomu zinātnes politikas, kvalitātes un ētikas lēmumos.<br/><br/>8. Izglītība, latviešu valoda, kultūra un pilsoniskā sabiedrība<br/><br/>Nodrošināsim kvalitatīvu, drošu un iekļaujošu izglītību katram bērnam, mūsdienīgus, pieejamus mācību līdzekļus un taisnīgu, konkurētspējīgu atalgojumu visiem pedagogiem. Noteiksim vidējo vispārējo vai profesionālo izglītību obligātu, veidosim nacionālu talantu attīstības sistēmu. Stiprināsim drošu un iekļaujošu skolas vidi, vardarbības novēršanu, labbūtību un vērtēšanu kā mācīšanās atbalstu. Veidosim elastīgu, darba vidē balstītu profesionālo izglītību un augstskolas kā reģionālus un nacionālus zināšanu un inovāciju centrus. Pārejai uz augstas produktivitātes ekonomiku nodrošināsim vienotu Latvijas cilvēkkapitāla pārvaldību un programmu darba tirgum nepieciešamo kompetenču apguvei.<br/>Stingri iestāsimies par kvalitatīvu un atbildīgu valsts valodas lietojumu visās jomās. Paplašināsim latviešu valodas apguves iespējas un pētniecību. Veidosim latvisku kultūrvidi, atbalstīsim kultūras mantojuma saglabāšanu un pieejamību, izcilu un daudzveidīgu laikmetīgo kultūru un starptautiski konkurētspējīgu kultūras un radošo industriju. Ieguldīsim spēcīgas pilsoniskas sabiedrības un noturīgas demokrātijas attīstībā: atbalstīsim biedrību un nodibinājumu darbu, jauniešu iniciatīvas, pilsonisko dialogu, kvalitatīvu un daudzveidīgu mediju saturu latviešu valodā.<br/><br/>9. Vide, reģioni un infrastruktūra<br/><br/>Uzturēsim dabas kapitālu, zinātnē balstītu mežu, jūras un ūdeņu pārvaldību, ilgtspējīgu lauksaimniecību, aprites ekonomiku, klimatnoturīgu infrastruktūru un taisnīgu zaļo pāreju, tādējādi nodrošinot tiesības ikvienam dzīvot labvēlīgā vidē. Šo mērķu sasniegšanai garantēsim taisnīgas kompensācijas, kopienu līdzdalību un prognozējamus noteikumus uzņēmējiem, kāpinot nozaru eksportspēju. Pieprasīsim ES tiešmaksājumu pieaugumu mūsu lauksaimniekiem līdz ES vidējam līmenim. Noteiksim publiskajos iepirkumos prioritāti Latvijas pārtikai. Veicināsim kooperāciju, lai ar kopīgām investīcijām kāpinātu produktivitāti. Stiprināsim Latvijas līderību zilajā ekonomikā, pilnveidojot jūras un iekšējo ūdeņu pārvaldību, attīstot inovatīvu akvakultūru un zvejniecību.<br/>Satiksmē nodrošināsim &#171;Rail Baltica&#187;, reģionālo ceļu, dzelzceļa, ostu, sabiedriskā transporta un digitālās infrastruktūras attīstību ar skaidru atbildību, termiņiem un izmaksu kontroli. Reģionos stiprināsim pašvaldību spēju attīstīties, skolu, veselības, sociālo pakalpojumu un mājokļu pieejamību, veicināsim uzņēmējdarbību un ģimenēm draudzīgu vidi.<br/><br/>10. Tiesiskums<br/><br/>Stiprināsim tiesiskumu, tiesu efektivitāti, korupcijas apkarošanu, publisko iepirkumu caurskatāmību. Iestāsimies par cilvēktiesībām, bērnu tiesībām un vardarbības novēršanu ģimenē, skolā un darba vidē. Lai vairotu taisnīgumu visā sabiedrībā, stiprināsim tiesu neatkarību un spēju spriest tiesiski un taisnīgi atbilstoši likuma garam. Aizstāvēsim un stiprināsim cilvēka pamattiesības, demokrātiskās un eiropeiskās vērtības, cilvēktiesības, kā arī Latvijas starptautiskās saistības kā mūsu drošības pamatu Latvijas demokrātijas un tiesiskuma noturībai.<br/><br/>Izvērsti uzdevumi katram solījumam un papildu prioritātes – jaunavienotiba.lv<br/><br/>MŪSU REDZĒJUMS<br/><br/>Mēs gribam politiku, kas spēj labot kļūdas un izdarīt solīto līdz galam. Mēs to varam, ja valsts, pašvaldības, uzņēmēji, zinātnieki, nevalstiskais sektors un pilsoņi strādā kā viena komanda un spēj ieklausīties viens otrā.<br/><br/>Programma ir mūsu darba līgums ar sabiedrību: stiprināt Latviju tā, lai katrs solis mājās vienlaikus stiprina Eiropu.</div>
+          </div>
+          <div class="tab-pane fade" id="statistics-tab-pane" role="tabpanel" aria-labelledby="statistics-tab" tabindex="0">
+            <div class="text-lg text-wrap">
+              <blockquote>
+                <p><strong>Kandidātu skaits:
+          </strong><em>125</em></p>
+              </blockquote><section class="table-section mb-3"><section class="table-wrapper"><table id="statistics-gender" class="table table-bordered" data-paging="false" data-info="false">
+                    <thead>
+                      <tr>
+                        <th style="width:40%" data-dt-order="disable">Dzimums</th>
+                        <th style="width:30%" data-dt-order="disable">Kandidātu skaits</th>
+                        <th style="width:30%" data-dt-order="disable">Procenti</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-order="Sieviete">Sieviete</td>
+                        <td data-order="50">50</td>
+                        <td data-order="40.0">40,0%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Vīrietis">Vīrietis</td>
+                        <td data-order="75">75</td>
+                        <td data-order="60.0">60,0%</td>
+                      </tr>
+                    </tbody>
+                  </table><script>
+      $(function () {
+        initTable('statistics-gender', false, false, "");
+      });
+    </script></section></section><section class="table-section mb-3"><section class="table-wrapper"><table id="statistics-education" class="table table-bordered" data-paging="false" data-info="false">
+                    <thead>
+                      <tr>
+                        <th style="width:40%" data-dt-order="disable">Izglītība</th>
+                        <th style="width:30%" data-dt-order="disable">Kandidātu skaits</th>
+                        <th style="width:30%" data-dt-order="disable">Procenti</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-order="Augstākā">Augstākā</td>
+                        <td data-order="118">118</td>
+                        <td data-order="94.4">94,4%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Vidējā">Vidējā</td>
+                        <td data-order="6">6</td>
+                        <td data-order="4.8">4,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Pamata">Pamata</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                    </tbody>
+                  </table><script>
+      $(function () {
+        initTable('statistics-education', false, false, "");
+      });
+    </script></section></section><section class="table-section mb-3"><section class="table-wrapper"><table id="statistics-citizneship" class="table table-bordered" data-paging="false" data-info="false">
+                    <thead>
+                      <tr>
+                        <th style="width:40%" data-dt-order="disable">Ārvalstu pilsonības valsts</th>
+                        <th style="width:30%" data-dt-order="disable">Kandidātu skaits</th>
+                        <th style="width:30%" data-dt-order="disable">Procenti</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-order="Amerikas Savienotās Valstis">Amerikas Savienotās Valstis</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Libāna">Libāna</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Vācija">Vācija</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                    </tbody>
+                  </table><script>
+      $(function () {
+        initTable('statistics-citizneship', false, false, "");
+      });
+    </script></section></section><section class="table-section mb-3"><section class="table-wrapper"><table id="statistics-nationality" class="table table-bordered" data-paging="false" data-info="false">
+                    <thead>
+                      <tr>
+                        <th style="width:40%" data-dt-order="disable">Tautība</th>
+                        <th style="width:30%" data-dt-order="disable">Kandidātu skaits</th>
+                        <th style="width:30%" data-dt-order="disable">Procenti</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-order="Latvietis / latviete">Latvietis / latviete</td>
+                        <td data-order="116">116</td>
+                        <td data-order="92.8">92,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Libānietis / libāniete">Libānietis / libāniete</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Lietuvietis / lietuviete">Lietuvietis / lietuviete</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Polis / poliete">Polis / poliete</td>
+                        <td data-order="2">2</td>
+                        <td data-order="1.6">1,6%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Ukrainis / ukrainiete">Ukrainis / ukrainiete</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Nav norādīta">Nav norādīta</td>
+                        <td data-order="4">4</td>
+                        <td data-order="3.2">3,2%</td>
+                      </tr>
+                    </tbody>
+                  </table><script>
+      $(function () {
+        initTable('statistics-nationality', false, false, "");
+      });
+    </script></section></section><section class="table-section mb-3"><section class="table-wrapper"><table id="statistics-marital-statuses" class="table table-bordered" data-paging="false" data-info="false">
+                    <thead>
+                      <tr>
+                        <th style="width:40%" data-dt-order="disable">Ģimenes stāvoklis</th>
+                        <th style="width:30%" data-dt-order="disable">Kandidātu skaits</th>
+                        <th style="width:30%" data-dt-order="disable">Procenti</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-order="Atraitnis">Atraitnis</td>
+                        <td data-order="3">3</td>
+                        <td data-order="2.4">2,4%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Nav norādīts">Nav norādīts</td>
+                        <td data-order="21">21</td>
+                        <td data-order="16.8">16,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Neprecējies">Neprecējies</td>
+                        <td data-order="14">14</td>
+                        <td data-order="11.2">11,2%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Precējies">Precējies</td>
+                        <td data-order="77">77</td>
+                        <td data-order="61.6">61,6%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Šķīries">Šķīries</td>
+                        <td data-order="10">10</td>
+                        <td data-order="8.0">8,0%</td>
+                      </tr>
+                    </tbody>
+                  </table><script>
+      $(function () {
+        initTable('statistics-marital-statuses', false, false, "");
+      });
+    </script></section></section><section class="table-section mb-3"><section class="table-wrapper"><table id="statistics-residence" class="table table-bordered" data-paging="false" data-info="false">
+                    <thead>
+                      <tr>
+                        <th style="width:40%" data-dt-order="disable">Dzīvesvieta</th>
+                        <th style="width:30%" data-dt-order="disable">Kandidātu skaits</th>
+                        <th style="width:30%" data-dt-order="disable">Procenti</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-order="Rīga">Rīga</td>
+                        <td data-order="38">38</td>
+                        <td data-order="30.4">30,4%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Daugavpils">Daugavpils</td>
+                        <td data-order="2">2</td>
+                        <td data-order="1.6">1,6%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Jelgava">Jelgava</td>
+                        <td data-order="3">3</td>
+                        <td data-order="2.4">2,4%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Jūrmala">Jūrmala</td>
+                        <td data-order="5">5</td>
+                        <td data-order="4.0">4,0%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Liepāja">Liepāja</td>
+                        <td data-order="2">2</td>
+                        <td data-order="1.6">1,6%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Rēzekne">Rēzekne</td>
+                        <td data-order="2">2</td>
+                        <td data-order="1.6">1,6%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Ventspils">Ventspils</td>
+                        <td data-order="2">2</td>
+                        <td data-order="1.6">1,6%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Aizkraukles novads">Aizkraukles novads</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Alūksnes novads">Alūksnes novads</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Augšdaugavas novads">Augšdaugavas novads</td>
+                        <td data-order="2">2</td>
+                        <td data-order="1.6">1,6%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Ādažu novads">Ādažu novads</td>
+                        <td data-order="4">4</td>
+                        <td data-order="3.2">3,2%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Balvu novads">Balvu novads</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Bauskas novads">Bauskas novads</td>
+                        <td data-order="2">2</td>
+                        <td data-order="1.6">1,6%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Cēsu novads">Cēsu novads</td>
+                        <td data-order="2">2</td>
+                        <td data-order="1.6">1,6%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Dienvidkurzemes novads">Dienvidkurzemes novads</td>
+                        <td data-order="4">4</td>
+                        <td data-order="3.2">3,2%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Dobeles novads">Dobeles novads</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Jelgavas novads">Jelgavas novads</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Jēkabpils novads">Jēkabpils novads</td>
+                        <td data-order="4">4</td>
+                        <td data-order="3.2">3,2%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Krāslavas novads">Krāslavas novads</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Kuldīgas novads">Kuldīgas novads</td>
+                        <td data-order="5">5</td>
+                        <td data-order="4.0">4,0%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Ķekavas novads">Ķekavas novads</td>
+                        <td data-order="3">3</td>
+                        <td data-order="2.4">2,4%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Limbažu novads">Limbažu novads</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Ludzas novads">Ludzas novads</td>
+                        <td data-order="2">2</td>
+                        <td data-order="1.6">1,6%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Mārupes novads">Mārupes novads</td>
+                        <td data-order="3">3</td>
+                        <td data-order="2.4">2,4%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Ogres novads">Ogres novads</td>
+                        <td data-order="7">7</td>
+                        <td data-order="5.6">5,6%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Preiļu novads">Preiļu novads</td>
+                        <td data-order="4">4</td>
+                        <td data-order="3.2">3,2%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Rēzeknes novads">Rēzeknes novads</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Ropažu novads">Ropažu novads</td>
+                        <td data-order="3">3</td>
+                        <td data-order="2.4">2,4%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Salaspils novads">Salaspils novads</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Saldus novads">Saldus novads</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Saulkrastu novads">Saulkrastu novads</td>
+                        <td data-order="4">4</td>
+                        <td data-order="3.2">3,2%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Siguldas novads">Siguldas novads</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Talsu novads">Talsu novads</td>
+                        <td data-order="3">3</td>
+                        <td data-order="2.4">2,4%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Tukuma novads">Tukuma novads</td>
+                        <td data-order="5">5</td>
+                        <td data-order="4.0">4,0%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Valkas novads">Valkas novads</td>
+                        <td data-order="1">1</td>
+                        <td data-order="0.8">0,8%</td>
+                      </tr>
+                      <tr>
+                        <td data-order="Valmieras novads">Valmieras novads</td>
+                        <td data-order="2">2</td>
+                        <td data-order="1.6">1,6%</td>
+                      </tr>
+                    </tbody>
+                  </table><script>
+      $(function () {
+        initTable('statistics-residence', false, false, "");
+      });
+    </script></section></section></div>
+          </div>
+        </div><script>
+                  $(function () {
+                    initTable('uxCandidateTable', false, true, "Kandidātu skaits", "125");
+                  });
+                </script><script>
+                  setActive('uxCandidateListMenu');
+                </script><div class="mt-2"><span class="fw-lighter fst-italic">Pēdējais atjauninājums veikts: 27.08.2026. plkst. 14:38</span></div></main></div><footer class="page-footer pt-3 pb-3 mt-auto"><div class="container d-flex"><img src="https://dati.cvk.lv/footer-logo_black.png" width="200px"></div></footer></body>
+</html>

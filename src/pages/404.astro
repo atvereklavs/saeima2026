@@ -1,0 +1,8 @@
+---
+import Base from "../layouts/Base.astro";
+import { t } from "../i18n/labels.ts";
+---
+<Base locale="lv" title="404">
+  <h1>{t("lv", "notfound.heading")} / {t("en", "notfound.heading")}</h1>
+  <p><a href="/">{t("lv", "notfound.back")}</a> · <a href="/en/">{t("en", "notfound.back")}</a></p>
+</Base>

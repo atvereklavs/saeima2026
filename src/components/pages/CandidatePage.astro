@@ -1,0 +1,84 @@
+---
+import { t, type Locale } from "../../i18n/labels.ts";
+import { formatDate, listBySlug, listPath, listShortName, meta, tierLabel } from "../../lib/data.ts";
+import type { Candidate } from "../../../pipeline/lib/types.ts";
+import TierBadge from "../TierBadge.astro";
+interface Props { locale: Locale; candidate: Candidate }
+const { locale, candidate: c } = Astro.props;
+const list = listBySlug.get(c.list_slug);
+const h = c.history;
+const otherFlags = h.flags.filter((f) => f !== h.tier);
+const positions = c.positions.length ? c.positions : c.positions_raw.map((line) => ({ workplace: line, role: "" }));
+---
+<p class="breadcrumb">
+  <a href={list ? listPath(list.slug, locale) : "#"}>{c.list_no}. {list ? listShortName(list) : c.list_slug}</a> › {c.constituency_name} › {c.position}.
+</p>
+<h1>{c.name}</h1>
+{c.status === "withdrawn" && <p class="notice">{t(locale, "candidate.withdrawn")}{c.withdrawn_at && ` (${formatDate(c.withdrawn_at, locale)})`}</p>}
+<p>
+  <TierBadge tier={h.tier} locale={locale} provisional={h.provisional} />
+  {c.headline_role && <span class="muted"> · {c.headline_role}</span>}
+</p>
+
+<div class="section-grid">
+  <section>
+    <h2>{t(locale, "candidate.positions")}</h2>
+    {positions.length === 0 && <p class="muted">-</p>}
+    {positions.length > 0 && (
+      <div class="table-wrap">
+        <table class="data compact">
+          <thead><tr><th>{t(locale, "candidate.workplace")}</th><th>{t(locale, "candidate.role")}</th></tr></thead>
+          <tbody>{positions.map((p) => <tr><td>{p.workplace}</td><td>{p.role || "-"}</td></tr>)}</tbody>
+        </table>
+      </div>
+    )}
+
+    <h2>{t(locale, "candidate.education")}</h2>
+    {c.education.length === 0 && <p class="muted">{c.education_level ?? (c.has_profile ? "-" : t(locale, "candidate.no_profile"))}</p>}
+    {c.education.length > 0 && (
+      <div class="table-wrap">
+        <table class="data compact">
+          <thead><tr><th>{t(locale, "candidate.institution")}</th><th>{t(locale, "candidate.year")}</th><th>{t(locale, "candidate.degree")}</th></tr></thead>
+          <tbody>{c.education.map((e) => <tr><td>{e.institution}</td><td class="num">{e.year ?? "-"}</td><td>{e.degree}</td></tr>)}</tbody>
+        </table>
+      </div>
+    )}
+
+    <h2>{t(locale, "candidate.history")}</h2>
+    <div class="card">
+      <dl class="kv">
+        <dt>{t(locale, "candidate.tier")}</dt><dd><TierBadge tier={h.tier} locale={locale} provisional={h.provisional} /></dd>
+        {otherFlags.length > 0 && <><dt>{t(locale, "candidate.flags")}</dt><dd class="chips">{otherFlags.map((f) => <span class="chip">{tierLabel(f, locale)}</span>)}</dd></>}
+        {h.municipal_role && <><dt>{t(locale, "list.coalition.extra_parliamentary").slice(0, 0)}{locale === "lv" ? "Pašvaldība" : "Municipality"}</dt><dd>{h.municipal_role === "mayor" ? (locale === "lv" ? "vadītājs / vietnieks" : "mayor / deputy mayor") : (locale === "lv" ? "deputāts" : "councillor")}</dd></>}
+      </dl>
+      {h.provisional && <p class="muted" style="margin:0.5rem 0 0;font-size:0.88rem">{t(locale, "candidate.provisional")}</p>}
+    </div>
+
+    {meta.publish_kgb && c.kgb_no_collaboration !== null && c.kgb_no_collaboration !== undefined && (
+      <>
+        <h2>{t(locale, "candidate.kgb")}</h2>
+        <p>{c.kgb_no_collaboration ? t(locale, "candidate.kgb_no") : t(locale, "candidate.kgb_yes")}</p>
+      </>
+    )}
+  </section>
+
+  <aside>
+    <div class="card">
+      <dl class="kv">
+        <dt>{t(locale, "candidate.list")}</dt><dd><a href={list ? listPath(list.slug, locale) : "#"}>{c.list_no}. {list ? listShortName(list) : c.list_slug}</a></dd>
+        <dt>{t(locale, "candidate.constituency")}</dt><dd>{c.constituency_name}</dd>
+        <dt>{t(locale, "candidate.position")}</dt><dd>{c.position}.</dd>
+        <dt>{t(locale, "candidate.birth_year")}</dt><dd>{c.birth_year ?? "-"}{c.age !== null && ` (${c.age})`}</dd>
+        {c.residence && <><dt>{t(locale, "candidate.residence")}</dt><dd>{c.residence}</dd></>}
+        {c.education_level && <><dt>{t(locale, "candidate.education_level")}</dt><dd>{c.education_level}</dd></>}
+      </dl>
+    </div>
+    <div class="card" style="margin-top:1rem">
+      <h3 style="margin:0">{t(locale, "candidate.sources")}</h3>
+      <p style="margin:0"><a href={locale === "en" ? c.links.cvk_en : c.links.cvk}>{t(locale, "candidate.cvk_source")}</a></p>
+      {c.sources.cvk.updated_at && <small class="muted">{t(locale, "candidate.updated")}: {c.sources.cvk.updated_at.replace("T", " ")}</small>}
+      <small class="muted">{t(locale, "candidate.cvk_note")}</small>
+      {!c.has_profile && <small class="muted">{t(locale, "candidate.no_profile")}</small>}
+    </div>
+  </aside>
+</div>

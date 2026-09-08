@@ -1,0 +1,41 @@
+{
+  "_comment": "Experience tiers derived from position lines (workplace + role). Patterns are regexes matched against diacritic-folded lowercase text, so write them in ASCII. 'any' must hit and no 'none' may hit within the same line. Order = precedence, highest first.",
+  "order": ["minister", "sitting_mp", "former_mp", "municipal", "civil_service", "newcomer"],
+  "labels": {
+    "minister": { "lv": "Ministrs / ministru prezidents", "en": "Minister / prime minister" },
+    "sitting_mp": { "lv": "Pašreizējais Saeimas deputāts", "en": "Sitting MP" },
+    "former_mp": { "lv": "Bijušais Saeimas deputāts", "en": "Former MP" },
+    "municipal": { "lv": "Pašvaldības deputāts / vadītājs", "en": "Municipal councillor / leader" },
+    "civil_service": { "lv": "Valsts pārvalde", "en": "Civil service" },
+    "newcomer": { "lv": "Bez amata valsts pārvaldē", "en": "No public office record" }
+  },
+  "rules": {
+    "minister": {
+      "any": ["\\bministr[se]\\b", "ministru prezident"],
+      "none": ["ministrij", "parlamentar", "padomniek", "sekretar", "biroj", "bijus"]
+    },
+    "sitting_mp": {
+      "any": ["saeim[a-z]*[^a-z]+.*deputat", "deputat.*saeim"],
+      "none": ["palig", "konsultant", "darbinie", "biroj", "kancelej", "pasvaldib", "\\bdome", "bijus", "eiropas parlament", "kandidat"]
+    },
+    "former_mp": {
+      "any": ["bijus[a-z]* .*saeimas deputat"]
+    },
+    "municipal": {
+      "any": [
+        "(\\bdome|pasvaldib|novad|valstspilset).*(deputat|priekssedetaj|\\bmer[se]\\b|vicemer)",
+        "(deputat|priekssedetaj|\\bmer[se]\\b|vicemer).*(\\bdome|pasvaldib|novad|valstspilset)"
+      ],
+      "none": ["saeim", "bijus", "kandidat"]
+    },
+    "civil_service": {
+      "any": [
+        "ministrij",
+        "valsts (kancelej|agentur|dienest|inspekcij|parvald|policij|ienemum|kontrol)",
+        "saeimas kancelej",
+        "ministru kabinet"
+      ],
+      "none": ["bijus"]
+    }
+  }
+}

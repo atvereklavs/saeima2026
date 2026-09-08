@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://saeima2026.atvereklavs.workers.dev/sitemap-index.xml
