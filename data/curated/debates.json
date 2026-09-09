@@ -1,0 +1,370 @@
+{
+ "version": 1,
+ "_comment": "Curated editorial entries about 2026 pre-election debates, interviews and programme reviews. Every event carries its source URL; summaries are neutral restatements of the cited coverage. Upcoming LTV schedule (to add after airing): Partija fokusa ZZS 11.09, JV 14.09, NA 15.09, LPV 18.09; regional debates Riga 10.09, Liepaja 17.09; KNL PM-candidate interviews from 11.09. Hub: https://www.lsm.lv/velesanas-2026/debates-un-diskusijas/",
+ "events": [
+  {
+   "id": "2026-08-26-knl-lideru-diskusija-2",
+   "date": "2026-08-26",
+   "kind": "debate",
+   "title": {
+    "lv": "Kas notiek Latvijā? Politisko spēku līderu diskusija par priekšvēlēšanu piedāvājumiem (II)",
+    "en": "\"Kas notiek Latvijā?\" leaders' discussion on the pre-election offers (II)"
+   },
+   "organiser": "LTV \"Kas notiek Latvijā?\"",
+   "source": {
+    "name": "LSM / REplay.lv",
+    "url": "https://replay.lsm.lv/lv/skaties/ieraksts/ltv/379839/kas-notiek-ar-15-saeimas-prieksvelesanu-piedavajumiem-politisko-speku-lideru-diskusija-ii"
+   },
+   "video_url": "https://replay.lsm.lv/lv/skaties/ieraksts/ltv/379839/kas-notiek-ar-15-saeimas-prieksvelesanu-piedavajumiem-politisko-speku-lideru-diskusija-ii",
+   "topics": [],
+   "insights": [
+    {
+     "list": "mes-mainam-noteikumus",
+     "speaker": "Jāzeps Baško",
+     "summary": {
+      "lv": "Pārstāvēja sarakstu LTV diskusijā par priekšvēlēšanu piedāvājumiem un atbildēja uz raidījuma vadītāju jautājumiem par programmu.",
+      "en": "Represented the list in the LTV discussion on pre-election offers and took questions on the programme."
+     },
+     "quote": null,
+     "source_url": null
+    },
+    {
+     "list": "politiska-partija-stabilitatei",
+     "speaker": "Svetlana Čulkova",
+     "summary": {
+      "lv": "Pārstāvēja sarakstu LTV diskusijā par priekšvēlēšanu piedāvājumiem un atbildēja uz raidījuma vadītāju jautājumiem par programmu.",
+      "en": "Represented the list in the LTV discussion on pre-election offers and took questions on the programme."
+     },
+     "quote": null,
+     "source_url": null
+    },
+    {
+     "list": "latvijas-attistibai",
+     "speaker": "Juris Pūce",
+     "summary": {
+      "lv": "Pārstāvēja sarakstu LTV diskusijā par priekšvēlēšanu piedāvājumiem un atbildēja uz raidījuma vadītāju jautājumiem par programmu.",
+      "en": "Represented the list in the LTV discussion on pre-election offers and took questions on the programme."
+     },
+     "quote": null,
+     "source_url": null
+    },
+    {
+     "list": "politisko-partiju-apvieniba-saskanas-centrs",
+     "speaker": "Valērijs Agešins",
+     "summary": {
+      "lv": "Pārstāvēja sarakstu LTV diskusijā par priekšvēlēšanu piedāvājumiem un atbildēja uz raidījuma vadītāju jautājumiem par programmu.",
+      "en": "Represented the list in the LTV discussion on pre-election offers and took questions on the programme."
+     },
+     "quote": null,
+     "source_url": null
+    },
+    {
+     "list": "austosa-saule-latvijai",
+     "speaker": "Raivis Zeltīts",
+     "summary": {
+      "lv": "Pārstāvēja sarakstu LTV diskusijā par priekšvēlēšanu piedāvājumiem un atbildēja uz raidījuma vadītāju jautājumiem par programmu.",
+      "en": "Represented the list in the LTV discussion on pre-election offers and took questions on the programme."
+     },
+     "quote": null,
+     "source_url": null
+    },
+    {
+     "list": "jkp-jauna-konservativa-partija",
+     "speaker": "Jānis Citskovskis",
+     "summary": {
+      "lv": "Pārstāvēja sarakstu LTV diskusijā par priekšvēlēšanu piedāvājumiem un atbildēja uz raidījuma vadītāju jautājumiem par programmu.",
+      "en": "Represented the list in the LTV discussion on pre-election offers and took questions on the programme."
+     },
+     "quote": null,
+     "source_url": null
+    },
+    {
+     "list": "gobzema-saraksts",
+     "speaker": "Agris Freifalts",
+     "summary": {
+      "lv": "Pārstāvēja sarakstu LTV diskusijā par priekšvēlēšanu piedāvājumiem un atbildēja uz raidījuma vadītāju jautājumiem par programmu.",
+      "en": "Represented the list in the LTV discussion on pre-election offers and took questions on the programme."
+     },
+     "quote": null,
+     "source_url": null
+    }
+   ]
+  },
+  {
+   "id": "2026-08-27-debates-latgale",
+   "date": "2026-08-27",
+   "kind": "debate",
+   "title": {
+    "lv": "Izvēlies Latvijas nākotni! Priekšvēlēšanu debates reģionos un ekspertu diskusija. Daugavpils (Latgale)",
+    "en": "Choose Latvia's Future! Regional pre-election debates and expert discussion, Daugavpils (Latgale)"
+   },
+   "organiser": "LTV",
+   "source": {
+    "name": "LSM",
+    "url": "https://www.lsm.lv/raksts/zinas/latvija/27.08.2026-tiesraide-izvelies-latvijas-nakotni-prieksvelesanu-debates-latgale.a660638/"
+   },
+   "video_url": "https://replay.lsm.lv/lv/skaties/ieraksts/ltv/379870/izvelies-latvijas-nakotni-prieksvelesanu-debates-regionos-un-ekspertu-diskusija-daugavpils",
+   "topics": [],
+   "insights": []
+  },
+  {
+   "id": "2026-08-31-partija-fokusa-mmn",
+   "date": "2026-08-31",
+   "kind": "interview",
+   "title": {
+    "lv": "Izvēlies Latvijas nākotni! Partija fokusā: \"Mēs mainām noteikumus\"",
+    "en": "Party in Focus: \"Mēs mainām noteikumus\""
+   },
+   "organiser": "LTV",
+   "source": {
+    "name": "LSM / REplay.lv",
+    "url": "https://replay.lsm.lv/lv/skaties/ieraksts/ltv/379989/izvelies-latvijas-nakotni-partija-fokusa-mes-mainam-noteikumus"
+   },
+   "video_url": "https://replay.lsm.lv/lv/skaties/ieraksts/ltv/379989/izvelies-latvijas-nakotni-partija-fokusa-mes-mainam-noteikumus",
+   "topics": [],
+   "insights": [
+    {
+     "list": "mes-mainam-noteikumus",
+     "speaker": null,
+     "summary": {
+      "lv": "Saraksts atbildēja uz LTV žurnālistu un ekspertu jautājumiem par savu priekšvēlēšanu programmu raidījumā \"Partija fokusā\".",
+      "en": "The list took questions on its programme from LTV journalists and experts in the \"Party in Focus\" broadcast."
+     },
+     "quote": null,
+     "source_url": null
+    }
+   ]
+  },
+  {
+   "id": "2026-08-31-lsm-parties-and-promises",
+   "date": "2026-08-31",
+   "kind": "article",
+   "title": {
+    "lv": "LSM apskats: partijas un to solījumi (angļu valodā)",
+    "en": "LSM review: The Parties and their Promises"
+   },
+   "organiser": "eng.lsm.lv (Mike Collier)",
+   "source": {
+    "name": "LSM English",
+    "url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+   },
+   "video_url": null,
+   "topics": [],
+   "insights": [
+    {
+     "list": "suverena-vara--apvieniba-jaunlatviesi",
+     "speaker": null,
+     "summary": {
+      "lv": "Solījumi pēc LSM apkopojuma: \"tradicionālās\" ģimenes vērtības, lielāki ģimenes pabalsti, 5 gadu moratorijs jauniem nodokļiem, atcelt mājokļu nodokļus, nedot naudu militāriem konfliktiem, stiprināt mazākumtautību skolas, atteikties no Rail Baltica un ES zaļā kursa, uz pusi samazināt Saeimu, atcelt obligāto dienestu, apsvērt izstāšanos no PVO, vēlēts prezidents.",
+      "en": "Promises per LSM: 'traditional' family values, higher family benefits, a 5-year moratorium on new taxes, abolishing housing taxes, no money for military conflicts, empowering minority-language schools, abandoning Rail Baltica and the EU Green Deal, halving the Saeima, abolishing conscription, considering WHO withdrawal, an elected president."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "mes-mainam-noteikumus",
+     "speaker": null,
+     "summary": {
+      "lv": "Pēc LSM apkopojuma: Īrijas tipa vēlēšanu sistēma, atcelt 5% barjeru un partiju valsts finansējumu, fiksēts 10% mikrouzņēmumu nodoklis, samazināta PVN likme pierobežā, tieši vēlēti mēri, atbalsts kodolenerģijai, bez imigrācijas no trešajām valstīm, reģionālās brīvprātīgo aizsardzības vienības, zemāks referendumu slieksnis.",
+      "en": "Per LSM: an Irish-type voting system, abolishing the 5% threshold and state party financing, a fixed 10% micro-enterprise tax, reduced VAT in the border zone, directly elected mayors, pro-nuclear, no third-country immigration, regional volunteer defence units, a lower referendum threshold."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "politisko-partiju-apvieniba-saskanas-centrs",
+     "speaker": null,
+     "summary": {
+      "lv": "Pēc LSM apkopojuma: par 25% lielāki invaliditātes pabalsti, atjaunot izglītību mazākumtautību valodās, Rīgas-Liepājas četru joslu šoseja, jauni bagātības nodokļi, obligātas pirmās palīdzības apmācības, Latvijas kultūras centri ārvalstīs, vēlēts prezidents, bezmaksas latviešu valodas kursi, dzelzceļa elektrifikācija.",
+      "en": "Per LSM: disability benefits up 25%, minority-language education reintroduced, a four-lane Rīga-Liepāja highway, new wealth taxes, mandatory first-aid training, Latvian cultural centres abroad, an elected president, free Latvian courses, railway electrification."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "zalo-un-zemnieku-savieniba",
+     "speaker": null,
+     "summary": {
+      "lv": "LSM atzīmē, ka programmā maz konkrētu skaitļu; konkrētie solījumi: 2% no IKP augstākajai izglītībai un zinātnei, 6% no IKP veselībai, valsts funkciju audits ar solītu vismaz 500 miljonu eiro ietaupījumu veselībai un reģioniem.",
+      "en": "LSM notes few concrete figures; the specifics: 2% of GDP for higher education and science, 6% of GDP for healthcare, and a state-functions audit promised to save at least 500 million euros for health and the regions."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk",
+     "speaker": null,
+     "summary": {
+      "lv": "Pēc LSM apkopojuma: vairāk nekā 5% no IKP aizsardzībai, veicināt Krievijas pilsoņu un \"nelojālo\" izceļošanu, pārtraukt ekonomiskās saites ar Krieviju un Baltkrieviju, ierobežot ārvalstu studentu vietas līdz ES, NATO un OECD valstu pilsoņiem, jauns nacionālais kinoteātra komplekss.",
+      "en": "Per LSM: more than 5% of GDP on defence, promoting the departure of Russian citizens and the 'disloyal', breaking all economic ties with Russia and Belarus, limiting foreign-student places to EU, NATO and OECD citizens, and a new national cinema complex."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "gobzema-saraksts",
+     "speaker": null,
+     "summary": {
+      "lv": "Pēc LSM apkopojuma: \"radikāls atbalsts dzimstībai\", daudzbērnu ģimenes atbrīvotas no IIN, 5000 eiro par bērna piedzimšanu, atcelt mājasdarbus skolās, atcelt NĪN pamata mājoklim, kapitāla pieauguma nodoklis 15%, dubultotas algas policijai, ugunsdzēsējiem un robežsargiem, bez \"aktīvas\" pozīcijas Krievijas-Ukrainas karā, vēlēts prezidents.",
+      "en": "Per LSM: 'radical support for the birth rate', large families exempt from income tax, a EUR 5,000 birth payment, abolishing school homework, no real-estate tax on the primary dwelling, capital-gains tax at 15%, doubled police, firefighter and border-guard salaries, no 'active' position on the Russia-Ukraine war, an elected president."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija",
+     "speaker": null,
+     "summary": {
+      "lv": "LSM atzīmē, ka solījumi lielākoties bez izmaksām un termiņiem; konkrētais: jauns Attīstības fonds valsts aktīvu pārvaldībai, Rail Baltica apjoma samazināšana līdz minimumam, 10% mikrouzņēmumu nodoklis, 4 gadu nodokļu atvieglojumi remigrantiem, centralizēta valsts IKT pārvaldība, vairāk adopciju un audžuģimeņu.",
+      "en": "LSM notes promises largely without costs or deadlines; the concrete parts: a new Development Fund for state assets, Rail Baltica reduced to a minimum, a 10% micro-enterprise tax, 4-year tax breaks for returning emigrants, centralised state ICT management, more adoptions and foster families."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "latvija-pirmaja-vieta",
+     "speaker": null,
+     "summary": {
+      "lv": "Pēc LSM apkopojuma: ASV kā tuvākā sabiedrotā, vēlēts prezidents, vieglāk sasaucami referendumi, 10% likme pašnodarbinātajiem, kapitāla pieaugumam un UIN, ASV būvēta atomelektrostacija, airBaltic lido tikai no Rīgas, Rail Baltica atcelšana, izstāšanās no Stambulas konvencijas, 50% militāro iepirkumu no ASV.",
+      "en": "Per LSM: the USA as the closest ally, an elected president, easier referendums, a 10% rate for the self-employed, capital gains and corporate income tax, an American-built nuclear plant, airBaltic flying only to and from Rīga, Rail Baltica cancelled, exiting the Istanbul Convention, 50% of military procurement from the USA."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "jauna-vienotiba",
+     "speaker": null,
+     "summary": {
+      "lv": "LSM vērtē programmu kā visai vispārīgu; konkrētie solījumi: 5% no IKP aizsardzībai, 6% veselībai, minimālā alga 50% apmērā no vidējās bruto algas, virzība uz 3% no IKP pētniecībai un attīstībai.",
+      "en": "LSM finds the manifesto rather vague; the concrete pledges: 5% of GDP for defence, 6% for health, a minimum wage at 50% of the gross average wage, and moving toward 3% of GDP for research and development."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "jkp-jauna-konservativa-partija",
+     "speaker": null,
+     "summary": {
+      "lv": "LSM atzīmē, ka programmā nav neviena konkrēta skaitļa, arī nodokļu sadaļā; izceltais solījums - valsts programma Latvijas lauku ainavas atdzimšanai ar tradicionālās arhitektūras mājokļu būvniecību.",
+      "en": "LSM notes the manifesto contains not a single concrete figure, even on tax policy; the highlighted pledge is a state programme for regenerating the Latvian rural landscape with traditional-architecture housing."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "latvijas-attistibai",
+     "speaker": null,
+     "summary": {
+      "lv": "Pēc LSM apkopojuma: 5% no IKP aizsardzībai, sabalansēts budžets līdz 2030. gadam, pētniecībai un attīstībai vismaz 2% no IKP līdz 2030. gadam, skolotāju algas vismaz 1,2 reizes virs vidējās; pārējais balstās uz \"izaugsmi\" kā priekšnoteikumu.",
+      "en": "Per LSM: 5% of GDP for defence, a balanced budget by 2030, research and development at least 2% of GDP by 2030, teachers' salaries at least 1.2 times the national average; beyond that, 'growth' is the stated prerequisite for everything else."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "austosa-saule-latvijai",
+     "speaker": null,
+     "summary": {
+      "lv": "Pēc LSM apkopojuma: austrumu robeža tikai izceļošanai, demontēt dzelzceļa savienojumus ar Krieviju un Baltkrieviju, mudināt trešo valstu iedzīvotājus izbraukt, novērst islāma izplatību, dzimstība vismaz 2,1, 20 000 eiro pensijas bonuss par bērnu, atsevišķas klases bērniem ar mācīšanās grūtībām, policijas algas +30-50%.",
+      "en": "Per LSM: an eastern border for departures only, ripping up rail links to Russia and Belarus, encouraging third-country residents to leave, preventing the spread of Islam, a birth rate of at least 2.1, a EUR 20,000 pension bonus per child, separate classes for children with learning difficulties, police wages up 30-50%."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "politiska-partija-stabilitatei",
+     "speaker": null,
+     "summary": {
+      "lv": "Pēc LSM apkopojuma: atjaunot ekonomiskās saites ar Krieviju un Baltkrieviju, atteikties no sankcijām, valsts neitralitāte, plašākas krievu valodas lietošanas iespējas, vienkāršota pilsonība, atcelt nepilsoņa statusu, uz pusi mazāka Saeima, apvienot ministrijas, atcelt obligāto dienestu, vēlēts prezidents, izglītība krievu valodā.",
+      "en": "Per LSM: restoring economic ties with Russia and Belarus, dropping sanctions, declared state neutrality, wider use of Russian, simplified citizenship for long-term residents, abolishing non-citizen status, halving the Saeima, merging ministries, abolishing conscription, an elected president, education in Russian."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    },
+    {
+     "list": "progresivie",
+     "speaker": null,
+     "summary": {
+      "lv": "Pēc LSM apkopojuma: atbalsts atjaunojamai enerģijai, aizstāvēt Stambulas konvenciju, vienota mēneša biļete sabiedriskajā transportā ar 50% atlaidi jauniešiem, plašāki atbalsta pakalpojumi vardarbības upuriem, Latvijas Valsts mežu reforma un dabas atjaunošanas plāns, skolotāju minimālā alga 2100 eiro, aizsardzībai vismaz 5% no IKP.",
+      "en": "Per LSM: backing renewables, defending the Istanbul Convention, a single monthly public-transport ticket with a 50% youth discount, expanded support services for victims of violence, reform of Latvian State Forests plus a nature restoration plan, a teachers' minimum wage of EUR 2,100, defence at a minimum 5% of GDP."
+     },
+     "quote": null,
+     "source_url": "https://eng.lsm.lv/article/politics/election/31.08.2026-latvian-saeima-elections-2026-the-parties-and-their-promises.a658526/"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-03-debates-zemgale",
+   "date": "2026-09-03",
+   "kind": "debate",
+   "title": {
+    "lv": "Izvēlies Latvijas nākotni! Priekšvēlēšanu debates reģionos un ekspertu diskusija. Jelgava (Zemgale)",
+    "en": "Choose Latvia's Future! Regional pre-election debates and expert discussion, Jelgava (Zemgale)"
+   },
+   "organiser": "LTV",
+   "source": {
+    "name": "LSM",
+    "url": "https://www.lsm.lv/raksts/zinas/latvija/03.09.2026-video-izvelies-latvijas-nakotni-prieksvelesanu-debates-zemgale.a661566/"
+   },
+   "video_url": "https://replay.lsm.lv/lv/skaties/ieraksts/ltv/380076/izvelies-latvijas-nakotni-prieksvelesanu-debates-regionos-un-ekspertu-diskusija-jelgava",
+   "topics": [],
+   "insights": []
+  },
+  {
+   "id": "2026-09-04-partija-fokusa-la",
+   "date": "2026-09-04",
+   "kind": "interview",
+   "title": {
+    "lv": "Izvēlies Latvijas nākotni! Partija fokusā: \"Latvijas attīstībai\"",
+    "en": "Party in Focus: \"Latvijas attīstībai\""
+   },
+   "organiser": "LTV",
+   "source": {
+    "name": "LSM / REplay.lv",
+    "url": "https://replay.lsm.lv/lv/skaties/ieraksts/ltv/380123/izvelies-latvijas-nakotni-partija-fokusa-latvijas-attistibai"
+   },
+   "video_url": "https://replay.lsm.lv/lv/skaties/ieraksts/ltv/380123/izvelies-latvijas-nakotni-partija-fokusa-latvijas-attistibai",
+   "topics": [],
+   "insights": [
+    {
+     "list": "latvijas-attistibai",
+     "speaker": null,
+     "summary": {
+      "lv": "Saraksts atbildēja uz LTV žurnālistu un ekspertu jautājumiem par savu priekšvēlēšanu programmu raidījumā \"Partija fokusā\".",
+      "en": "The list took questions on its programme from LTV journalists and experts in the \"Party in Focus\" broadcast."
+     },
+     "quote": null,
+     "source_url": null
+    }
+   ]
+  },
+  {
+   "id": "2026-09-07-partija-fokusa-st",
+   "date": "2026-09-07",
+   "kind": "interview",
+   "title": {
+    "lv": "Izvēlies Latvijas nākotni! Partija fokusā: \"Stabilitātei!\"",
+    "en": "Party in Focus: \"Stabilitātei!\""
+   },
+   "organiser": "LTV",
+   "source": {
+    "name": "LSM / REplay.lv",
+    "url": "https://replay.lsm.lv/lv/skaties/ieraksts/ltv/380210/izvelies-latvijas-nakotni-partija-fokusa-stabilitatei"
+   },
+   "video_url": "https://replay.lsm.lv/lv/skaties/ieraksts/ltv/380210/izvelies-latvijas-nakotni-partija-fokusa-stabilitatei",
+   "topics": [],
+   "insights": [
+    {
+     "list": "politiska-partija-stabilitatei",
+     "speaker": null,
+     "summary": {
+      "lv": "Saraksts atbildēja uz LTV žurnālistu un ekspertu jautājumiem par savu priekšvēlēšanu programmu raidījumā \"Partija fokusā\".",
+      "en": "The list took questions on its programme from LTV journalists and experts in the \"Party in Focus\" broadcast."
+     },
+     "quote": null,
+     "source_url": null
+    }
+   ]
+  }
+ ]
+}

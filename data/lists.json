@@ -116,7 +116,7 @@
    "committees_distinct": 25,
    "riga_share": 39.5,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 1,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -490,7 +490,7 @@
    "committees_distinct": 25,
    "riga_share": 50.6,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 3,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -961,7 +961,7 @@
    "committees_distinct": 17,
    "riga_share": 39.8,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 2,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -1289,7 +1289,7 @@
    "committees_distinct": 45,
    "riga_share": 28,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 1,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -1709,7 +1709,7 @@
    "committees_distinct": 56,
    "riga_share": 36,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 1,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -2146,7 +2146,7 @@
    "committees_distinct": 0,
    "riga_share": 30.6,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 2,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -2399,7 +2399,7 @@
    "committees_distinct": 47,
    "riga_share": 28.8,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 1,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -2751,7 +2751,7 @@
    "committees_distinct": 43,
    "riga_share": 29,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 1,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -3165,7 +3165,7 @@
    "committees_distinct": 51,
    "riga_share": 30.4,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 1,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -3546,7 +3546,7 @@
    "committees_distinct": 13,
    "riga_share": 39.3,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 2,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -3883,7 +3883,7 @@
    "committees_distinct": 10,
    "riga_share": 44,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 3,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -4189,7 +4189,7 @@
    "committees_distinct": 9,
    "riga_share": 41.3,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 2,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -4512,7 +4512,7 @@
    "committees_distinct": 21,
    "riga_share": 63.3,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 3,
    "education_mix": [
     {
      "label": "Augstākā",
@@ -4808,7 +4808,7 @@
    "committees_distinct": 40,
    "riga_share": 45.6,
    "constituencies_fielded": 5,
-   "debates_count": 0,
+   "debates_count": 1,
    "education_mix": [
     {
      "label": "Augstākā",

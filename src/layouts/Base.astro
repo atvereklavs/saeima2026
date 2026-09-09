@@ -16,6 +16,7 @@ const nav = [
   { href: withLocale(locale, "/"), label: t(locale, "nav.lists") },
   { href: withLocale(locale, "/kandidati/"), label: t(locale, "nav.candidates") },
   { href: withLocale(locale, "/salidzini/"), label: t(locale, "nav.compare") },
+  { href: withLocale(locale, "/debates/"), label: t(locale, "nav.debates") },
   { href: withLocale(locale, "/par/"), label: t(locale, "nav.about") },
 ];
 const isCurrent = (href: string): boolean => (href === withLocale(locale, "/") ? path === href : path.startsWith(href));

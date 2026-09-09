@@ -1,0 +1,32 @@
+---
+import { t, type Locale } from "../i18n/labels.ts";
+import { formatDate } from "../lib/data.ts";
+import { eventsForList } from "../lib/debates.ts";
+interface Props { slug: string; locale: Locale }
+const { slug, locale } = Astro.props;
+const entries = eventsForList(slug);
+---
+{entries.length > 0 && (
+  <section id="debates">
+    <h2>{t(locale, "debates.list_section")}</h2>
+    <ul class="timeline">
+      {entries.map(({ event, insights }) => (
+        <li>
+          <strong>{event.title[locale]}</strong>
+          <span class="muted"> · {formatDate(event.date, locale)} · {t(locale, `debates.kind.${event.kind}` as never)}</span>
+          {insights.map((i) => (
+            <div style="margin-top:0.25rem">
+              {i.speaker && <div class="muted" style="font-size:0.88rem">{t(locale, "debates.represented")}: {i.speaker}</div>}
+              <p style="margin:0.15rem 0 0">{i.summary[locale]}</p>
+              {i.quote && <blockquote style="margin:0.35rem 0 0;padding-left:0.75rem;border-left:3px solid var(--border)">{i.quote}</blockquote>}
+            </div>
+          ))}
+          <div style="margin-top:0.3rem;font-size:0.88rem">
+            <a href={event.insights.find((i) => i.list === slug)?.source_url ?? event.source.url} rel="noopener">{t(locale, "debates.source")}: {event.source.name}</a>
+            {event.video_url && event.video_url !== event.source.url && <> · <a href={event.video_url} rel="noopener">{t(locale, "debates.video")}</a></>}
+          </div>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}

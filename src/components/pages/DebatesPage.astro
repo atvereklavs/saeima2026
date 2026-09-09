@@ -1,0 +1,37 @@
+---
+import { t, type Locale } from "../../i18n/labels.ts";
+import { formatDate, listByNo, listBySlug, listPath, listShortName } from "../../lib/data.ts";
+import { debateEvents } from "../../lib/debates.ts";
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+---
+<h1>{t(locale, "debates.heading")}</h1>
+<p class="muted prose">{t(locale, "debates.intro")}</p>
+{debateEvents.length === 0 && <p class="muted">{t(locale, "debates.empty")}</p>}
+{debateEvents.map((event) => (
+  <article class="card" style="margin-top:1rem">
+    <h3 style="margin:0">{event.title[locale]}</h3>
+    <p class="muted" style="margin:0">
+      {formatDate(event.date, locale)} · {t(locale, `debates.kind.${event.kind}` as never)} · {event.organiser}
+      · <a href={event.source.url} rel="noopener">{t(locale, "debates.source")}: {event.source.name}</a>
+      {event.video_url && event.video_url !== event.source.url && <> · <a href={event.video_url} rel="noopener">{t(locale, "debates.video")}</a></>}
+    </p>
+    {event.insights.length > 0 && (
+      <dl class="kv" style="margin-top:0.5rem">
+        {event.insights.map((i) => {
+          const list = listBySlug.get(i.list);
+          return (
+            <>
+              <dt>{list ? <a href={listPath(list.slug, locale)}>{list.no}. {listShortName(list)}</a> : i.list}</dt>
+              <dd>
+                {i.speaker && <span class="muted">{i.speaker}: </span>}
+                {i.summary[locale]}
+                {i.source_url && i.source_url !== event.source.url && <> <a href={i.source_url} rel="noopener">→</a></>}
+              </dd>
+            </>
+          );
+        })}
+      </dl>
+    )}
+  </article>
+))}

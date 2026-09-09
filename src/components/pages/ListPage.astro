@@ -2,6 +2,7 @@
 import { t, withLocale, type Locale } from "../../i18n/labels.ts";
 import { candidateById, formatNumber, listBySlug, listShortName, meta } from "../../lib/data.ts";
 import CandidateTable from "../CandidateTable.astro";
+import DebatesSection from "../DebatesSection.astro";
 import Meter from "../Meter.astro";
 import Programme from "../Programme.astro";
 import StatsTable from "../StatsTable.astro";
@@ -71,6 +72,8 @@ const coalition = list.curated.coalition;
   <StatsTable rows={list.stats.education} caption={t(locale, "stat.education")} locale={locale} />
   <StatsTable rows={list.stats.foreign_citizenship} caption={t(locale, "stat.foreign_citizenship")} locale={locale} />
 </div>
+
+<DebatesSection slug={list.slug} locale={locale} />
 
 <h2 id="kandidati">{t(locale, "list.by_constituency")}</h2>
 <nav class="constituency-nav" aria-label="Constituencies">
