@@ -1,0 +1,21 @@
+---
+import positionsJson from "../../../data/curated/positions.json";
+import { labelsFor, t, withLocale, type Locale } from "../../i18n/labels.ts";
+import { lists, listShortName } from "../../lib/data.ts";
+import Kompass from "../../islands/Kompass.tsx";
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const statements = (positionsJson as { statements: unknown[] }).statements;
+const listInfos = [...lists]
+  .sort((a, b) => a.no - b.no)
+  .map((l) => ({ slug: l.slug, no: l.no, name: listShortName(l), href: withLocale(locale, `/saraksti/${l.slug}/`) }));
+const labels = labelsFor(locale, [
+  "kompass.intro", "kompass.disclaimer", "kompass.start", "kompass.restart", "kompass.progress", "kompass.agree",
+  "kompass.neutral", "kompass.disagree", "kompass.skip", "kompass.important", "kompass.back", "kompass.results",
+  "kompass.see_results", "kompass.match", "kompass.coverage", "kompass.of_answered", "kompass.unranked",
+  "kompass.min_answers", "kompass.your_answer", "kompass.list_position", "kompass.quote_note", "kompass.silent",
+  "kompass.details", "kompass.open_list",
+]);
+---
+<h1>{t(locale, "kompass.heading")}</h1>
+<Kompass client:load locale={locale} statements={statements as never} lists={listInfos} labels={labels} />

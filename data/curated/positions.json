@@ -1,0 +1,798 @@
+{
+ "version": 1,
+ "scale_note": "score: -2 strongly against ... +2 strongly for the statement; null = the programme is silent on it. Every non-null stance carries a verbatim quote from that list's CVK programme (data/lists.json programme.text); tests/positions.test.ts enforces this.",
+ "statements": [
+  {
+   "id": "defence-spending",
+   "statement": {
+    "lv": "Aizsardzības finansējums jāceļ līdz 5% no IKP vai vairāk, pat ierobežojot citus izdevumus.",
+    "en": "Defence spending should rise to 5% of GDP or more, even if other spending is constrained."
+   },
+   "topic": {
+    "lv": "Aizsardzība",
+    "en": "Defence"
+   },
+   "stances": {
+    "suverena-vara--apvieniba-jaunlatviesi": {
+     "score": -2,
+     "quote": "pārdalīt aizsardzības budžetu iekšējās drošības garantēšanai un infrastruktūrai, nodrošinot papildu finansējumu medicīnai un glābšanas dienestiem"
+    },
+    "mes-mainam-noteikumus": {
+     "score": 1,
+     "quote": "paātrināti izbūvēsim slāņveida pretgaisa un pretraķešu aizsardzības sistēmas."
+    },
+    "politisko-partiju-apvieniba-saskanas-centrs": {
+     "score": 1,
+     "quote": "Stiprināsim Latvijas aizsardzību NATO ietvarā un Eiropas spējas kopīgos iepirkumos, munīcijā, dronos, pretgaisa aizsardzībā un kiberdrošībā"
+    },
+    "zalo-un-zemnieku-savieniba": {
+     "score": 2,
+     "quote": "aizsardzībai – virs 5% no IKP"
+    },
+    "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": {
+     "score": 2,
+     "quote": "Aizsardzības finansējumu palielināsim virs 5% no IKP, attīstot vietējo militāro industriju."
+    },
+    "gobzema-saraksts": {
+     "score": 1,
+     "quote": "Latvijas galvenā militārā prioritāte būs pašmāju dronu ražošanas, pretgaisa aizsardzības un elektroniskās cīņas sistēmu tūlītēja un masveidīga ieviešana Nacionālajos bruņotajos spēkos."
+    },
+    "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": {
+     "score": 1,
+     "quote": "Paplašināsim Valsts aizsardzības dienestu, piedāvājot papildu dienesta virzienus, kas nepieciešami visaptverošai valsts aizsardzībai."
+    },
+    "latvija-pirmaja-vieta": {
+     "score": 1,
+     "quote": "Izveidosim modernu aizsardzības sistēmu, lai nepieļautu naidīgu vai neidentificētu dronu nonākšanu Latvijas teritorijā."
+    },
+    "jauna-vienotiba": {
+     "score": 2,
+     "quote": "Nodrošināsim aizsardzības finansējumu 5% no IKP un attīstīsim NATO sabiedroto pastāvīgu klātbūtni Latvijā."
+    },
+    "jkp-jauna-konservativa-partija": {
+     "score": 1,
+     "quote": "Veidosim PAŠPIETIEKAMU UN MODERNU VALSTS AIZSARDZĪBAS SISTĒMU, stiprinot Latvijas spēju novērst apdraudējumus un atturēt agresoru."
+    },
+    "latvijas-attistibai": {
+     "score": 2,
+     "quote": "saglabāsim aizsardzības finansējumu vismaz 5 % apmērā no iekšzemes kopprodukta"
+    },
+    "austosa-saule-latvijai": {
+     "score": 1,
+     "quote": "Celsim Nacionālo bruņoto spēku (NBS) spējas, nodrošinot gatavību 30 dienas patstāvīgi aizsargāt austrumu robežu"
+    },
+    "politiska-partija-stabilitatei": {
+     "score": -2,
+     "quote": "Valsts neitralitātes atjaunošana un atteikšanās no dalības militāros konfliktos starp citām valstīm."
+    },
+    "progresivie": {
+     "score": 2,
+     "quote": "Saglabāsim finansējumu aizsardzības nozarei vismaz 5% apjomā."
+    }
+   }
+  },
+  {
+   "id": "eu-course",
+   "statement": {
+    "lv": "Latvijai jāvirzās uz ciešāku integrāciju Eiropas Savienībā.",
+    "en": "Latvia should pursue deeper integration in the European Union."
+   },
+   "topic": {
+    "lv": "Eiropa",
+    "en": "Europe"
+   },
+   "stances": {
+    "suverena-vara--apvieniba-jaunlatviesi": {
+     "score": -1,
+     "quote": "atteikties no “Zaļā kursa” noteikumiem, kas apgrūtina iedzīvotāju un uzņēmēju dzīvi"
+    },
+    "mes-mainam-noteikumus": {
+     "score": -2,
+     "quote": "gala lēmumus par kārtību Latvijā pieņemt var vienīgi tautas vēlētas institūcijas; pārnacionālas institūcijas nedrīkst diktēt lokālos noteikumus."
+    },
+    "politisko-partiju-apvieniba-saskanas-centrs": {
+     "score": -1,
+     "quote": "ES ārpolitikā un aizsardzībā aizstāvēsim dalībvalstu konsensu, nevis lēmumu nodošanu virsnacionālam vairākumam"
+    },
+    "zalo-un-zemnieku-savieniba": {
+     "score": 1,
+     "quote": "stiprināta dalība ES un NATO, nelokāms atbalsts Ukrainai un Latvijas uzņēmēju iesaiste tās atjaunošanā, stiprs ārlietu dienests"
+    },
+    "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": {
+     "score": 0,
+     "quote": "Neatbalstīsim ES lēmumus, kas noteiks Latvijai pienākumu uzņemt imigrantus."
+    },
+    "gobzema-saraksts": {
+     "score": 0,
+     "quote": "Mums ir kopēja Eiropas Savienības ārpolitika, kuras ietvaros mēs darbojamies kā pragmatiski partneri, aizstāvot savas nacionālās ekonomiskās intereses."
+    },
+    "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": {
+     "score": 1,
+     "quote": "Iestājamies par stipru Latviju stiprā NATO un ES, ciešā sadarbībā ar ASV, Apvienoto Karalisti, Ziemeļvalstīm, Baltijas valstīm un demokrātiskajiem sabiedrotajiem."
+    },
+    "latvija-pirmaja-vieta": {
+     "score": -1,
+     "quote": "Nostiprināsim Latvijas suverenitāti un nodrošināsim, ka valsts pati nosaka savu nākotni un pieņem lēmumus savu iedzīvotāju interesēs."
+    },
+    "jauna-vienotiba": {
+     "score": 2,
+     "quote": "Nostiprināsim Latviju Eiropas un NATO kodolā kā drošu, brīvu un konkurētspējīgu valsti."
+    },
+    "jkp-jauna-konservativa-partija": null,
+    "latvijas-attistibai": {
+     "score": 2,
+     "quote": "Latvijas drošība balstās spēcīgā NATO, vienotā Eiropas Savienībā un ciešā sadarbībā ar Baltijas un Ziemeļvalstīm."
+    },
+    "austosa-saule-latvijai": {
+     "score": -1,
+     "quote": "Eiropas Savienība kā vienā civilizācijā balstīta nacionālu valstu kopiena – padziļināsim sadarbību ar valstīm, kas iestājas par nacionālkonservatīvām vērtībām un pret Krievijas agresiju"
+    },
+    "politiska-partija-stabilitatei": {
+     "score": -2,
+     "quote": "Atteikties no sankcijām, kas grauj Latvijas ekonomiku."
+    },
+    "progresivie": {
+     "score": 2,
+     "quote": "Progresīvie stingri iestāsies par Latvijas ciešāku integrāciju Eiropas Savienībā."
+    }
+   }
+  },
+  {
+   "id": "state-language",
+   "statement": {
+    "lv": "Publiskajai dzīvei un izglītībai jānotiek tikai latviešu valodā, nepaplašinot mazākumtautību valodu lomu.",
+    "en": "Public life and education should run only in Latvian, without expanding the role of minority languages."
+   },
+   "topic": {
+    "lv": "Valoda",
+    "en": "Language"
+   },
+   "stances": {
+    "suverena-vara--apvieniba-jaunlatviesi": {
+     "score": -2,
+     "quote": "atjaunot skolās krievu valodas apguvi izvēles kārtībā"
+    },
+    "mes-mainam-noteikumus": null,
+    "politisko-partiju-apvieniba-saskanas-centrs": {
+     "score": -2,
+     "quote": "Izvirzīsim Mazākumtautību izglītības iestāžu likumu, nodrošinot izglītību mazākumtautību valodās, garantējot pilnvērtīgu valsts valodas apguvi"
+    },
+    "zalo-un-zemnieku-savieniba": null,
+    "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": {
+     "score": 2,
+     "quote": "Nodrošināsim patērētāju tiesības saņemt jebkuru pakalpojumu latviešu valodā – gan publiskajā, gan privātajā sektorā."
+    },
+    "gobzema-saraksts": null,
+    "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": null,
+    "latvija-pirmaja-vieta": {
+     "score": -1,
+     "quote": "Saliedēsim Latvijas tautu, apvienojot iedzīvotājus neatkarīgi no viņu dzimtās valodas."
+    },
+    "jauna-vienotiba": {
+     "score": 2,
+     "quote": "Stingri iestāsimies par kvalitatīvu un atbildīgu valsts valodas lietojumu visās jomās."
+    },
+    "jkp-jauna-konservativa-partija": {
+     "score": 2,
+     "quote": "Stiprināsim LATVIEŠU VALODAS LOMU izglītībā, publiskajā telpā un valsts pārvaldē."
+    },
+    "latvijas-attistibai": null,
+    "austosa-saule-latvijai": {
+     "score": 2,
+     "quote": "Nodrošināsim darba vidi, apkalpošanu un saziņu, kā arī mediju darbu un reklāmas tikai valsts valodā"
+    },
+    "politiska-partija-stabilitatei": {
+     "score": -2,
+     "quote": "Nodrošināt plašākas iespējas krievu valodas lietošanai."
+    },
+    "progresivie": {
+     "score": 1,
+     "quote": "Šīs trīs prioritātes varēs sasniegt, tikai stingri iestājoties par Latviju kā daļu no Eiropas, vienlaikus stiprinot nacionālo identitāti, valodu un kultūru."
+    }
+   }
+  },
+  {
+   "id": "russia-relations",
+   "statement": {
+    "lv": "Ekonomiskās saites ar Krieviju un Baltkrieviju nedrīkst atjaunot, kamēr turpinās agresija.",
+    "en": "Economic ties with Russia and Belarus must not be restored while the aggression continues."
+   },
+   "topic": {
+    "lv": "Krievija",
+    "en": "Russia"
+   },
+   "stances": {
+    "suverena-vara--apvieniba-jaunlatviesi": {
+     "score": -1,
+     "quote": "nepieļaut Latvijas iesaistīšanos militārajos konfliktos, tai skaitā to finansēšanu; sekmēt konfliktu atrisināšanu diplomātiskajā ceļā"
+    },
+    "mes-mainam-noteikumus": {
+     "score": 1,
+     "quote": "Sabiedroto kodols — īpaši stiprināsim divpusējas attiecības ar tuvākajiem sabiedrotajiem: ASV, Baltiju, Somiju, Poliju, Ukrainu, Lielbritāniju."
+    },
+    "politisko-partiju-apvieniba-saskanas-centrs": {
+     "score": 1,
+     "quote": "Ārpolitikā balstīsimies ANO Statūtos un Latvijas suverenitātē, nosodot Krievijas agresiju pret Ukrainu"
+    },
+    "zalo-un-zemnieku-savieniba": {
+     "score": 1,
+     "quote": "stiprināta dalība ES un NATO, nelokāms atbalsts Ukrainai un Latvijas uzņēmēju iesaiste tās atjaunošanā, stiprs ārlietu dienests"
+    },
+    "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": {
+     "score": 2,
+     "quote": "Pārrausim ekonomiskās saites ar Krieviju un Baltkrieviju."
+    },
+    "gobzema-saraksts": {
+     "score": -1,
+     "quote": "Krievijas un Ukrainas konfliktā Latvija neieņems aktīvu, priekšplānā ejošu pozīciju, kas nepamatoti palielina riskus mūsu pašu drošībai."
+    },
+    "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": {
+     "score": 2,
+     "quote": "Turpināsim nelokāmu atbalstu Ukrainai, vienlaikus stiprinot Latvijas aizsardzības industriju, militāro mobilitāti un noturību pret Krievijas agresiju un hibrīduzbrukumiem."
+    },
+    "latvija-pirmaja-vieta": {
+     "score": 1,
+     "quote": "Atbalstīsim Ukrainas iestāšanos ES."
+    },
+    "jauna-vienotiba": {
+     "score": 2,
+     "quote": "Uzturēsim starptautisko spiedienu pret Krieviju, stiprināsim sankcijas un pārtrauksim ekonomisko ietekmējamību no Krievijas un Baltkrievijas."
+    },
+    "jkp-jauna-konservativa-partija": {
+     "score": 1,
+     "quote": "Veidosim MILITĀRI TEHNOLOĢISKU ALIANSI AR UKRAINU, pārņemot kara pieredzi un attīstot kopīgus aizsardzības industrijas projektus."
+    },
+    "latvijas-attistibai": {
+     "score": 2,
+     "quote": "Turpināsim visaptverošu politisko, militāro un humāno atbalstu Ukrainai līdz taisnīga un ilgtspējīga miera panākšanai."
+    },
+    "austosa-saule-latvijai": {
+     "score": 2,
+     "quote": "Pilnīga sadarbības un tirdzniecības pārtraukšana ar Krieviju, Baltkrieviju un citām terorismu atbalstošām valstīm, dzelzceļa sliežu nojaukšana pie austrumu robežas"
+    },
+    "politiska-partija-stabilitatei": {
+     "score": -2,
+     "quote": "Atjaunot ekonomisko sadarbību ar Krieviju un Baltkrieviju visās nozarēs, kur tas atbilst Latvijas Republikas interesēm."
+    },
+    "progresivie": {
+     "score": 2,
+     "quote": "Latvijai jābūt aktīvai NATO austrumu flanga valstij, kas reaģē, paredz un novērš draudus sadarbībā ar NATO, ES, NB8+, Poliju, Lielbritāniju un Ukrainu."
+    }
+   }
+  },
+  {
+   "id": "tax-vs-welfare",
+   "statement": {
+    "lv": "Nodokļi jāsamazina, pat ja tāpēc publiskie izdevumi aug lēnāk.",
+    "en": "Taxes should be cut even if public spending then grows more slowly."
+   },
+   "topic": {
+    "lv": "Nodokļi",
+    "en": "Taxes"
+   },
+   "stances": {
+    "suverena-vara--apvieniba-jaunlatviesi": {
+     "score": 2,
+     "quote": "ieviest vismaz 5 gadu moratoriju nodokļu paaugstināšanai un jaunu nodokļu ieviešanai"
+    },
+    "mes-mainam-noteikumus": {
+     "score": 2,
+     "quote": "Mazais bizness — fiksēts 10% mikrouzņēmuma nodoklis apgrozījumam līdz 50 000 EUR gadā, un darbojies brīvi!"
+    },
+    "politisko-partiju-apvieniba-saskanas-centrs": {
+     "score": -2,
+     "quote": "Pastiprinot progresivitātes principa īstenošanu, pārcelsim nodokļu slogu no zemajiem un vidējiem visu veidu ienākumiem uz lielajiem ienākumiem"
+    },
+    "zalo-un-zemnieku-savieniba": {
+     "score": 1,
+     "quote": "PVN 5% pirmās nepieciešamības pārtikai; PVN 12% ēdināšanas nozarei; NĪN 0% primārajam mājoklim"
+    },
+    "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": {
+     "score": 1,
+     "quote": "Ieviesīsim atvieglotu nodokļu režīmu mazajiem un vidējiem uzņēmumiem."
+    },
+    "gobzema-saraksts": {
+     "score": 2,
+     "quote": "mēs samazināsim kapitāla pieauguma nodokli un uzņēmumu peļņas sadales nodokli (UIN) līdz 15%"
+    },
+    "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": {
+     "score": 1,
+     "quote": "Samazināsim IIN par ienākumiem no kapitāla pieauguma līdz 17%."
+    },
+    "latvija-pirmaja-vieta": {
+     "score": 2,
+     "quote": "10% uzņēmuma ienākuma nodokli (UIN),"
+    },
+    "jauna-vienotiba": {
+     "score": 0,
+     "quote": "Celsim minimālo algu līdz 50% no vidējās bruto darba samaksas, palielināsim fiksēto neapliekamo minimumu līdz 80% no minimālās algas, mazinot darbaspēka nodokļu slogu zemāko ienākumu saņēmējiem."
+    },
+    "jkp-jauna-konservativa-partija": {
+     "score": 1,
+     "quote": "Rosināsim NEKUSTAMĀ ĪPAŠUMA NODOKĻA ATCELŠANU MĀJOKĻIEM."
+    },
+    "latvijas-attistibai": {
+     "score": 1,
+     "quote": "Mūsu mērķis ir līdz 2030. gadam panākt sabalansētu valsts budžetu, vienlaikus saglabājot spēju ieguldīt drošībā, izglītībā, veselības aprūpē, sociālajā nodrošinājumā, zinātnē un attīstībā."
+    },
+    "austosa-saule-latvijai": {
+     "score": 2,
+     "quote": "Palielināsim IIN neapliekamo minimumu vidējās algas apmērā – šobrīd 1900 eiro mēnesī"
+    },
+    "politiska-partija-stabilitatei": {
+     "score": 1,
+     "quote": "Samazināt PVN līdz 12% pamatpārtikas produktiem."
+    },
+    "progresivie": {
+     "score": -1,
+     "quote": "Ieviesīsim plašāku progresivitāti, koriģējot ienākumu sliekšņus un likmes, lai samazinātu nodokļus mazajām un vidējām algām."
+    }
+   }
+  },
+  {
+   "id": "green-transition",
+   "statement": {
+    "lv": "Zaļā kursa un klimata mērķu īstenošana jāturpina un jāpaātrina.",
+    "en": "The Green Deal and climate goals should be pursued and accelerated."
+   },
+   "topic": {
+    "lv": "Klimats",
+    "en": "Climate"
+   },
+   "stances": {
+    "suverena-vara--apvieniba-jaunlatviesi": {
+     "score": -2,
+     "quote": "atteikties no “Zaļā kursa” noteikumiem, kas apgrūtina iedzīvotāju un uzņēmēju dzīvi"
+    },
+    "mes-mainam-noteikumus": {
+     "score": -1,
+     "quote": "Nacionālās intereses — ES Zaļā kursa prasības nedrīkst vājināt Latvijas drošību, ekonomikas konkurētspēju vai pasliktināt iedzīvotāju labklājību."
+    },
+    "politisko-partiju-apvieniba-saskanas-centrs": {
+     "score": 0,
+     "quote": "Zaļajai pārejai jāmazina cilvēku rēķini, jāstiprina vietējā ražošana un jāatbalsta Latvijas lauksaimnieki, nevis jāuzliek jauns slogs strādājošajiem un reģioniem."
+    },
+    "zalo-un-zemnieku-savieniba": {
+     "score": -1,
+     "quote": "saprātīga “zaļā vienošanās” ieviešana, aizsargājot iedzīvotājus un uzņēmējus no nesamērīgām izmaksām"
+    },
+    "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": {
+     "score": 0,
+     "quote": "Klimata un ilgtspējas politikas pasākumus īstenosim, izvērtējot to ietekmi uz sociāli ekonomisko attīstību."
+    },
+    "gobzema-saraksts": null,
+    "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": {
+     "score": -1,
+     "quote": "Pārskatīsim zaļā kursa ieviešanu. Klimata mērķiem jābūt savienojamiem ar Latvijas konkurētspēju, enerģētisko un pārtikas drošību un dabas vērtību aizsardzību."
+    },
+    "latvija-pirmaja-vieta": {
+     "score": -2,
+     "quote": "Samazināsim tās \"zaļā kursa\" prasības, kas ir pretrunā ar Latvijas nacionālajām interesēm un sadārdzina mūsu ražojumu cenas."
+    },
+    "jauna-vienotiba": {
+     "score": 1,
+     "quote": "Uzturēsim dabas kapitālu, zinātnē balstītu mežu, jūras un ūdeņu pārvaldību, ilgtspējīgu lauksaimniecību, aprites ekonomiku, klimatnoturīgu infrastruktūru un taisnīgu zaļo pāreju, tādējādi nodrošinot tiesības ikvienam dzīvot labvēlīgā vidē."
+    },
+    "jkp-jauna-konservativa-partija": {
+     "score": 0,
+     "quote": "Atbalstīsim tikai tādus ATJAUNĪGĀS ENERĢIJAS PROJEKTUS, kas rada tiešu labumu vietējām kopienām un pašvaldībām."
+    },
+    "latvijas-attistibai": {
+     "score": 1,
+     "quote": "Klimata politikai jākļūst par Latvijas konkurētspējas priekšrocību, nevis par kavēkli."
+    },
+    "austosa-saule-latvijai": {
+     "score": -1,
+     "quote": "Atbalstīsim ilgtspējīgu enerģētiku – apturēsim VES projektus tuvu apdzīvotām un ainaviski vērtīgām vietām."
+    },
+    "politiska-partija-stabilitatei": {
+     "score": -2,
+     "quote": "Likvidēt Klimata un enerģētikas ministriju."
+    },
+    "progresivie": {
+     "score": 2,
+     "quote": "Progresīvie iestājas par klimatneitralitāti un pāreju uz ekonomiku, kas respektē planētas resursu ierobežotību un cilvēka tiesības uz veselīgu vidi."
+    }
+   }
+  },
+  {
+   "id": "immigration",
+   "statement": {
+    "lv": "Imigrācija no trešajām valstīm ir būtiski jāierobežo.",
+    "en": "Immigration from third countries should be sharply limited."
+   },
+   "topic": {
+    "lv": "Imigrācija",
+    "en": "Immigration"
+   },
+   "stances": {
+    "suverena-vara--apvieniba-jaunlatviesi": {
+     "score": 1,
+     "quote": "nepieļaut augstskolu un izglītības sistēmas izmantošanu lētā darbaspēka ieviešanai valstī"
+    },
+    "mes-mainam-noteikumus": {
+     "score": 2,
+     "quote": "Imigrācija — totāla trešo valstu imigrācijas ierobežošana, uzturēšanās atļauju izsniegšana uz noteiktu laiku tikai Latvijā nepieejamiem kvalificētiem speciālistiem."
+    },
+    "politisko-partiju-apvieniba-saskanas-centrs": null,
+    "zalo-un-zemnieku-savieniba": {
+     "score": 1,
+     "quote": "gudra imigrācijas politika – nepieļaut nelegālu imigrāciju; priekšroka augsti kvalificētam darbaspēkam terminētam darbam Latvijas tautsaimniecības attīstībai"
+    },
+    "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": {
+     "score": 2,
+     "quote": "Ieviesīsim striktas kvotas uzturēšanās atļaujām pilsoņiem no trešajām valstīm."
+    },
+    "gobzema-saraksts": {
+     "score": 2,
+     "quote": "Mēs kategoriski iebilstam pret masveida migrāciju un migrācijas kvotām, kas tiek uzspiestas no ārpuses."
+    },
+    "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": {
+     "score": 1,
+     "quote": "Imigrāciju īstenosim kontrolēti, uzturēšanās sasaistot uzturēšanās atļaujas ar tiesisku nodarbinātību, integrāciju un latviešu valodas apguvi."
+    },
+    "latvija-pirmaja-vieta": {
+     "score": 1,
+     "quote": "Uzsāksim bezprecedenta cīņu ar nelegālo migrāciju, lai Latvijas robežas būtu drošas."
+    },
+    "jauna-vienotiba": {
+     "score": 1,
+     "quote": "noteiksim stingrākus nosacījumus trešo valstu pilsoņu uzturēšanās, studiju un nodarbinātības jomā"
+    },
+    "jkp-jauna-konservativa-partija": {
+     "score": 2,
+     "quote": "Iestāsimies par STINGRU UN KONTROLĒTU IMIGRĀCIJAS POLITIKU, nosakot augstas integrācijas prasības un prioritāti Latvijas ilgtermiņa interesēm."
+    },
+    "latvijas-attistibai": null,
+    "austosa-saule-latvijai": {
+     "score": 2,
+     "quote": "Veicināsim trešo valstu imigrantu izceļošanu no Latvijas. Padarīsim uzturēšanās atļauju izsniegšanas kārtību stingrāku."
+    },
+    "politiska-partija-stabilitatei": null,
+    "progresivie": {
+     "score": -1,
+     "quote": "Veidosim gudru, tālredzīgu un drošu migrācijas politiku ar mērķi nodrošināt cieņpilnus dzīves apstākļus Latvijas un Eiropas iedzīvotājiem."
+    }
+   }
+  },
+  {
+   "id": "healthcare-funding",
+   "statement": {
+    "lv": "Valsts finansējums veselības aprūpei būtiski jāpalielina.",
+    "en": "Public healthcare funding should rise substantially."
+   },
+   "topic": {
+    "lv": "Veselība",
+    "en": "Health"
+   },
+   "stances": {
+    "suverena-vara--apvieniba-jaunlatviesi": {
+     "score": 1,
+     "quote": "nodrošināt stabilu un prognozējamu finansējumu medicīnai, prioritāri novirzot līdzekļus personāla atalgojuma celšanai un izmaksājot papildu atbalstu par darbu reģionos"
+    },
+    "mes-mainam-noteikumus": {
+     "score": 1,
+     "quote": "Atbalsts personālam — budžeta palielinājumu primāri virzīsim māsu un ārstu palīgu algām."
+    },
+    "politisko-partiju-apvieniba-saskanas-centrs": {
+     "score": 2,
+     "quote": "Ieviesīsim četru gadu atalgojuma grafiku mediķiem, māsām un NMPD darbiniekiem"
+    },
+    "zalo-un-zemnieku-savieniba": {
+     "score": 2,
+     "quote": "ikgadējs nozares budžeta pieaugums līdz 6% no IKP, lai samazinātu rindas un uzlabotu pakalpojumu pieejamību"
+    },
+    "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": {
+     "score": 1,
+     "quote": "Nodrošināsim 100% valsts finansētu veselības aprūpi bērniem līdz 18 gadu vecumam."
+    },
+    "gobzema-saraksts": {
+     "score": 1,
+     "quote": "Valsts garantēs un nodrošinās primārās medicīnas jeb ģimenes ārstu, speciālistu un medmāsu reālu un ātru pieejamību ikvienam Latvijas iedzīvotājam."
+    },
+    "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": {
+     "score": 0,
+     "quote": "Ieviesīsim valsts veselības apdrošināšanas modeli, kur nauda seko pacientam neatkarīgi no tā, vai ārstējas valsts vai sertificētā privātā iestādē."
+    },
+    "latvija-pirmaja-vieta": {
+     "score": 2,
+     "quote": "Palielināsim finansējumu kvalitatīvai medicīnas aprūpei un veicināsim atalgojuma pieaugumu veselības nozarē."
+    },
+    "jauna-vienotiba": {
+     "score": 2,
+     "quote": "Veidosim prognozējamu veselības finansējumu ne mazāk kā 6% no IKP un izveidosim Nacionālo veselības un apdrošināšanas fondu efektīvākai pārvaldībai."
+    },
+    "jkp-jauna-konservativa-partija": {
+     "score": 2,
+     "quote": "Veicināsim VALSTS FINANSĒJUMA VESELĪBAS APRŪPEI apjoma tuvināšanu Eiropas attīstīto valstu vidējam līmenim, sasaistot finansējuma palielināšanu ar uzlabojumiem ārstniecības pieejamībā, kvalitātē un rindu samazināšanā."
+    },
+    "latvijas-attistibai": {
+     "score": 1,
+     "quote": "Nodrošināsim ikgadēju, prognozējamu budžeta palielinājumu kompensējamajiem medikamentiem."
+    },
+    "austosa-saule-latvijai": {
+     "score": 1,
+     "quote": "Ambulatoro pakalpojumu gaidīšanas rindu samazināšana līdz 30 dienām."
+    },
+    "politiska-partija-stabilitatei": {
+     "score": 2,
+     "quote": "Palielināt veselības aprūpes finansējumu."
+    },
+    "progresivie": {
+     "score": 2,
+     "quote": "Valstij vairāk jāinvestē sabiedriskajos pakalpojumos – veselības aprūpē, izglītībā, mājokļu būvniecībā."
+    }
+   }
+  },
+  {
+   "id": "family-demography",
+   "statement": {
+    "lv": "Ģimeņu pabalsti un dzimstības veicināšana jāizvirza par budžeta prioritāti.",
+    "en": "Family benefits and birth-rate support should be a top budget priority."
+   },
+   "topic": {
+    "lv": "Ģimene",
+    "en": "Family"
+   },
+   "stances": {
+    "suverena-vara--apvieniba-jaunlatviesi": {
+     "score": 2,
+     "quote": "noteikt, ka ģimenes valsts pabalsts par katru bērnu ir 1/4 no minimālās algas"
+    },
+    "mes-mainam-noteikumus": {
+     "score": 1,
+     "quote": "Ģimenes — palielināsim IIN atvieglojumu par katru apgādībā esošu bērnu līdz 500 EUR mēnesī."
+    },
+    "politisko-partiju-apvieniba-saskanas-centrs": {
+     "score": 2,
+     "quote": "Ģimenēm par otro bērnu palielināsim valsts pabalstu piecreiz, salīdzinot ar pašreizējo apmēru."
+    },
+    "zalo-un-zemnieku-savieniba": {
+     "score": 1,
+     "quote": "bērna piedzimšanas pabalsts 2000 €; attaisnoto izdevumu slieksnis 1800 €"
+    },
+    "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": {
+     "score": 2,
+     "quote": "Celsim ģimenes valsts pabalstu: par vienu bērnu – 100 EUR, par diviem – 300 EUR, par trim un vairāk – 600 EUR."
+    },
+    "gobzema-saraksts": {
+     "score": 2,
+     "quote": "Tāpēc mēs atbrīvosim daudzbērnu ģimenes no iedzīvotāju ienākuma nodokļa maksāšanas, ļaujot vecākiem nopelnīto naudu atstāt ģimenes budžetā."
+    },
+    "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": {
+     "score": 1,
+     "quote": "Atbalstīsim jaunās un daudzbērnu ģimenes ar mājokļa grantiem, valsts garantijām un īres mājokļu programmām."
+    },
+    "latvija-pirmaja-vieta": {
+     "score": 2,
+     "quote": "Ieviesīsim 5000 eiro pabalstu par katru jaundzimušo bērnu."
+    },
+    "jauna-vienotiba": {
+     "score": 1,
+     "quote": "Demogrāfijas politiku veidosim kā rūpes par stiprām ģimenēm, grūtniecību, dzemdībām, bērnu veselību, neauglības ārstēšanu, vecāku psihisko veselību, tēvu iesaisti, bērnu aprūpi, darba un privātās dzīves līdzsvaru."
+    },
+    "jkp-jauna-konservativa-partija": {
+     "score": 1,
+     "quote": "Veidosim ĢIMENĒM DRAUDZĪGU UN DZIMSTĪBU VEICINOŠU POLITIKU, mazinot ekonomiskos šķēršļus bērnu audzināšanai."
+    },
+    "latvijas-attistibai": {
+     "score": 1,
+     "quote": "Veidosim ilgtermiņa ģimeņu politiku, kas uzlabo mājokļu pieejamību, nodrošina kvalitatīvu pirmsskolas un skolas izglītību un palīdz savienot darbu ar ģimenes dzīvi."
+    },
+    "austosa-saule-latvijai": {
+     "score": 2,
+     "quote": "Par katru bērnu pēc tā piedzimšanas katrai Latvijas pilsonei tiek piešķirts pensijas 1. līmeņa kapitāls 20 000 eiro apmērā"
+    },
+    "politiska-partija-stabilitatei": {
+     "score": 2,
+     "quote": "Izstrādāt visaptverošu dzimstības veicināšanas programmu."
+    },
+    "progresivie": {
+     "score": 1,
+     "quote": "Palielināsim ģimenes valsts pabalstu un vienkāršosim pieteikšanos atbalstam pēc bērna piedzimšanas."
+    }
+   }
+  },
+  {
+   "id": "governance-democracy",
+   "statement": {
+    "lv": "Valsts aparāts jāsamazina un jāievieš vairāk tiešās demokrātijas - vēlēts prezidents, vieglāk sasaucami referendumi.",
+    "en": "The state apparatus should shrink and direct democracy expand - an elected president, easier referendums."
+   },
+   "topic": {
+    "lv": "Pārvalde",
+    "en": "Governance"
+   },
+   "stances": {
+    "suverena-vara--apvieniba-jaunlatviesi": {
+     "score": 2,
+     "quote": "tautas vēlēts prezidents; likvidēt visas bijušo prezidentu privilēģijas"
+    },
+    "mes-mainam-noteikumus": {
+     "score": 2,
+     "quote": "Atgriezīsim reālu iespēju tautai izlemt valstiski svarīgus jautājumus, pazeminot slieksni referenduma ierosināšanai līdz 25 000 parakstu."
+    },
+    "politisko-partiju-apvieniba-saskanas-centrs": {
+     "score": 2,
+     "quote": "Rosināsim tiešas, vispārējās Valsts Prezidenta vēlēšanas"
+    },
+    "zalo-un-zemnieku-savieniba": {
+     "score": 1,
+     "quote": "ministriju skaita samazināšana un funkciju deleģēšana, kur tas lietderīgi"
+    },
+    "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": {
+     "score": 0,
+     "quote": "Pārskatīsim funkciju dublēšanos starp ministrijām un pašvaldībām."
+    },
+    "gobzema-saraksts": {
+     "score": 2,
+     "quote": "Mēs panāksim Satversmes grozījumus, lai Latvijas Valsts prezidentu turpmāk vēlētu visa tauta, nodrošinot viņam reālu mandātu parlamenta varas sabalansēšanai."
+    },
+    "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": {
+     "score": 0,
+     "quote": "Ieviesīsim skaidrus augstāko amatpersonu rezultātu rādītājus un rotāciju."
+    },
+    "latvija-pirmaja-vieta": {
+     "score": 2,
+     "quote": "Samazināsim parakstu slieksni referendumu ierosināšanai no 10% līdz 5% balsstiesīgo."
+    },
+    "jauna-vienotiba": {
+     "score": 0,
+     "quote": "Modernizēsim valsts pārvaldi, mainot fokusu no procesa uz rezultātu."
+    },
+    "jkp-jauna-konservativa-partija": {
+     "score": 1,
+     "quote": "Veidosim EFEKTĪVU, profesionālu un uz rezultātu orientētu VALSTS PĀRVALDI, mazinot birokrātiju, izvērtējot valsts iestāžu funkcijas, apvienošanas iespējas un nepieciešamās strukturālās reformas."
+    },
+    "latvijas-attistibai": null,
+    "austosa-saule-latvijai": {
+     "score": 2,
+     "quote": "Samazināsim valsts pārvaldes aparātu un birokrātiju – iesaldēsim administratīvo līdzekļu daļu valsts pārvaldē, apvienosim un likvidēsim liekās ministrijas, atcelsim valsts kapitālsabiedrību padomes"
+    },
+    "politiska-partija-stabilitatei": {
+     "score": 2,
+     "quote": "Samazināt Saeimas deputātu skaitu no 100 uz 50."
+    },
+    "progresivie": null
+   }
+  },
+  {
+   "id": "industrial-policy",
+   "statement": {
+    "lv": "Valstij ar savu banku un uzņēmumiem aktīvi jāvada ekonomikas attīstība.",
+    "en": "The state should actively steer the economy through its own bank and companies."
+   },
+   "topic": {
+    "lv": "Ekonomika",
+    "en": "Economy"
+   },
+   "stances": {
+    "suverena-vara--apvieniba-jaunlatviesi": {
+     "score": 2,
+     "quote": "nodrošināt reālu kapitāla un kredītu pieejamību vietējiem uzņēmumiem, pārveidojot ALTUM par pilnvērtīgu nacionālo banku ar paplašinātām finansēšanas funkcijām"
+    },
+    "mes-mainam-noteikumus": {
+     "score": -2,
+     "quote": "Brīvais tirgus — pārtrauksim valsts konkurenci ar privāto sektoru un tirgus kropļošanu. Kapitālsabiedrību skaitu samazināsim uz pusi."
+    },
+    "politisko-partiju-apvieniba-saskanas-centrs": {
+     "score": 2,
+     "quote": "Dibināsim Latvijas Valsts attīstības banku valsts investīciju politikas nodrošināšanai"
+    },
+    "zalo-un-zemnieku-savieniba": {
+     "score": 1,
+     "quote": "lielo valsts kapitālsabiedrību iesaistes palielināšana pētniecībā, inovāciju sistēmas stingra pārvaldība EM"
+    },
+    "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": {
+     "score": 1,
+     "quote": "Investīciju fonda atbalstu sniegsim produktīviem eksportspējīgiem uzņēmumiem, kuros darbinieku atalgojums pārsniedz vidējo valstī."
+    },
+    "gobzema-saraksts": {
+     "score": -1,
+     "quote": "Bagātību rada brīvi un drosmīgi uzņēmēji, nevis ierēdņi."
+    },
+    "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": {
+     "score": -2,
+     "quote": "Samazināsim valsts tiešo iejaukšanos ekonomikā."
+    },
+    "latvija-pirmaja-vieta": {
+     "score": 1,
+     "quote": "Izveidosim spēcīgu Nacionālo attīstības banku uz ALTUM bāzes, kas veicinās, pirmkārt, mazo un vidējo vietējo uzņēmumu finansēšanu."
+    },
+    "jauna-vienotiba": {
+     "score": 1,
+     "quote": "Mērķēti atbalstīsim eksportspējīgus uzņēmumus, industriālos parkus, zinātņietilpīgus produktus, kapitāla tirgu un valsts pasūtījumu kā instrumentu jaunu risinājumu testēšanai."
+    },
+    "jkp-jauna-konservativa-partija": {
+     "score": -1,
+     "quote": "Stiprināsim MAZO UZŅĒMĒJDARBĪBU kā reģionu dzīvotspējas pamatu, mazinot administratīvo slogu mikrouzņēmumiem un pašnodarbinātajiem."
+    },
+    "latvijas-attistibai": {
+     "score": -2,
+     "quote": "Valsts uzdevums nav aizvietot cilvēku iniciatīvu, bet radīt vidi, kurā ikviens var īstenot savu potenciālu."
+    },
+    "austosa-saule-latvijai": {
+     "score": 1,
+     "quote": "Radīsim modernu ekosistēmu zinātnes komercializācijai un efektīviem iepirkumiem"
+    },
+    "politiska-partija-stabilitatei": {
+     "score": 1,
+     "quote": "Nodrošināt sociāli pieejamu elektroenerģiju Latvijas ģimenēm."
+    },
+    "progresivie": {
+     "score": 2,
+     "quote": "Veidosim valsts atbalsta programmas, mērķtiecīgi atbalstot uzņēmumus, kuri spēj uzrādīt augstu pievienoto vērtību, būtisku eksporta intensitāti apgrozījumā un nozīmīgus ieguldījumus pētniecībā un attīstībā."
+    }
+   }
+  },
+  {
+   "id": "regional-development",
+   "statement": {
+    "lv": "Valsts investīcijas un pakalpojumi mērķtiecīgi jāvirza no Rīgas uz reģioniem.",
+    "en": "State investment and services should shift deliberately from Rīga to the regions."
+   },
+   "topic": {
+    "lv": "Reģioni",
+    "en": "Regions"
+   },
+   "stances": {
+    "suverena-vara--apvieniba-jaunlatviesi": {
+     "score": 1,
+     "quote": "ieviest vienotu valsts pakalpojumu autobusu, kas nodrošina atbalstu iedzīvotājiem reģionos"
+    },
+    "mes-mainam-noteikumus": {
+     "score": 2,
+     "quote": "apturēsim pierobežas iztukšošanos un stiprināsim valsts drošību, Latgalē un Alūksnes novadā ieviešot īpašu ekonomisko režīmu"
+    },
+    "politisko-partiju-apvieniba-saskanas-centrs": {
+     "score": 2,
+     "quote": "Pārcelsim daļu valsts pārvaldes darbavietu uz reģioniem"
+    },
+    "zalo-un-zemnieku-savieniba": {
+     "score": 2,
+     "quote": "valsts izdevumu un funkciju audits, ietaupot vismaz 500 milj. € un pārvirzot uz veselību un reģioniem"
+    },
+    "nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk": {
+     "score": 1,
+     "quote": "Izveidosim reģionālo būvniecības programmu energoefektīviem īres mājokļiem ar izpirkuma tiesībām."
+    },
+    "gobzema-saraksts": {
+     "score": 1,
+     "quote": "Pirmsskolas izglītības iestādēm un sākumskolām ir jābūt maksimāli tuvu bērna dzīvesvietai."
+    },
+    "apvienotais-saraksts---latvijas-zala-partija-latvijas-regionu-apvieniba-liepajas-partija": {
+     "score": 1,
+     "quote": "Izveidosim taisnīgāku pašvaldību finanšu modeli, kas motivēs radīt darba vietas, piesaistīt investīcijas un palielināt pašu ieņēmumus."
+    },
+    "latvija-pirmaja-vieta": {
+     "score": 1,
+     "quote": "Lai veicinātu reģionu attīstību, pusi no UIN atdosim pašvaldībām."
+    },
+    "jauna-vienotiba": {
+     "score": 1,
+     "quote": "Reģionos stiprināsim pašvaldību spēju attīstīties, skolu, veselības, sociālo pakalpojumu un mājokļu pieejamību, veicināsim uzņēmējdarbību un ģimenēm draudzīgu vidi."
+    },
+    "jkp-jauna-konservativa-partija": {
+     "score": 1,
+     "quote": "Atbalstīsim REĢIONĀLĀS EKONOMISKĀS ATDEVES principu — daļai reģionos radīto nodokļu jāatgriežas to attīstībā."
+    },
+    "latvijas-attistibai": {
+     "score": 1,
+     "quote": "Attīstīsim reģionu ekonomiku, transporta un digitālo infrastruktūru, stiprināsim pašvaldību kapacitāti un veicināsim investīciju piesaisti ārpus Rīgas."
+    },
+    "austosa-saule-latvijai": {
+     "score": 1,
+     "quote": "Stiprināsim lauku skolu tīklu"
+    },
+    "politiska-partija-stabilitatei": {
+     "score": 1,
+     "quote": "Uzlabot medicīnas pieejamību reģionos."
+    },
+    "progresivie": {
+     "score": 1,
+     "quote": "Mobilitātes atbalstu Latgalē attiecināsim uz visiem darbiniekiem, kuru ienākumi gadā nepārsniedz 12 tūkstošus eiro."
+    }
+   }
+  }
+ ]
+}
